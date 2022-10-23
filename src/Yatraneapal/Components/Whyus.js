@@ -4,19 +4,19 @@ import Chain from "../Assests/Chain.svg";
 const Whyusdata=[
     {
     id:1,
-    image:"../Images/box-img-1",
+    image:"../Images/box3.svg",
     title:"lorem ipsum",
     discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
 },
 {
     id:2,
-    image:"../Images/box-img-2",
+    image:"../Images/box1.svg",
     title:"lorem ipsum",
     discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
 },
 {
     id:3,
-    image:"../Images/box-img-3",
+    image:"../Images/box2.svg",
     title:"lorem ipsum",
     discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
 },

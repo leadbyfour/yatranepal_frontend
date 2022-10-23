@@ -15,7 +15,9 @@ ul li {
 .header {
   font-size: 15px;
 }
-
+.navlink.active{
+    color: red !important;
+}
 /* -------banner-2--------- */
 .banner-2 h2 {
   font-weight: 800;

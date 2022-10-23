@@ -40,8 +40,8 @@ const Footer = () => {
             <div className="col-lg-3">
               <h3>Contact</h3>
               <span className="d-block">
-                <img src={call} alt="facebbok" className="me-3" />
-                9851160294,9849167028,9749835510
+                <img src={call} alt="facebbok" className="me-1 img-fluid" />
+                9851160294,9849167028,<p className="d-block">9749835510</p>
               </span>
               <span className="d-block">
                 <img src={email} alt="email" className="me-3 img-fluid" />
