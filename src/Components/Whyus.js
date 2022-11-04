@@ -1,22 +1,25 @@
 import React from 'react'
-import Chain from "../Assests/Chain.svg";
+import chain from "../Components/asset/chain.png";
+import Box2 from './icons/Box2';
+import Box3 from './icons/Box3';
+import Box1 from "../Components/icons/Box1";
 
 const Whyusdata=[
     {
     id:1,
-    image:"../Images/box3.svg",
+    image:<Box3/>,
     title:"lorem ipsum",
     discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
 },
 {
     id:2,
-    image:"../Images/box1.svg",
+    image:<Box1/>,
     title:"lorem ipsum",
     discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
 },
 {
     id:3,
-    image:"../Images/box2.svg",
+    image:<Box2/>,
     title:"lorem ipsum",
     discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
 },
@@ -31,7 +34,7 @@ const whyus = () => {
  <div className="col-lg-4">
  <div className="box-1 text-white">
  <div className="box1-img text-center">
- <img src={props.image} className="img-fluid" alt='images'/> 
+ {props.image}
  </div>
  <div className="box-text p-5">
  <h3 className="text-center">{props.title}</h3>
@@ -43,7 +46,7 @@ const whyus = () => {
            
           </div>
           <div className="text-center mt-5">
-            <img src={Chain} className="img-fluid" alt='chain'/>
+            <img src={chain} className="img-fluid" alt='chain'/>
           </div>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import Yatranepal from "./Yatranepal";
-import Website from "./Yatraneapal/Website";
+import Home from "./pages/Home";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -10,5 +9,5 @@ root.render(
   </React.StrictMode>,
 );
 
-ReactDOM.createRoot(document.getElementById('root')).render(<Website/>);
+ReactDOM.createRoot(document.getElementById('root')).render(<Home/>);
 
