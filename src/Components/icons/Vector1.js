@@ -1,6 +1,6 @@
 import React from "react";
 
-function Box1() {
+function Vector1() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -29,4 +29,4 @@ function Box1() {
   );
 }
 
-export default Box1;
+export default Vector1;

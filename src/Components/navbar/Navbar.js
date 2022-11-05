@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import logo from "../asset/logo.png";
+import Logo from "../asset/logo.png";
 import Call from "../icons/Call";
 import Email from "../icons/Email";
 
@@ -11,16 +11,14 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg">
           <div className="container">
             <a className="navbar-brand" href="#">
-              <img src={logo} alt="logo" />
+              <img src={Logo} alt="logo" />
             </a>
             <div className="phn-no ms-5 text-white">
-              {/* <img src={call} className="img-fluid me-2" alt="phn-img" /> */}
               <Call/>
               
               <span className="ms-2">977-985106598</span>
             </div>
             <div className="Email ms-4 text-white">
-              {/* <img src={email} className="img-fluid me-2" alt="email-img" /> */}
               <Email/>
               <span className="ms-2">yatranepal@gmail.com</span>
             </div>

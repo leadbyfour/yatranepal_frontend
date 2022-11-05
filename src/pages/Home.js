@@ -2,12 +2,12 @@ import React from "react";
 import "../styles/home.css";
 import "../index.css"
 import Navbar from "../Components/navbar/Navbar";
-import banner from "../Components/asset/banner.png"
+import Banner from "../Components/asset/banner.png"
 import Ticks from "../Components/icons/Ticks";
-import machine from "../Components/asset/machine.png";
-import chain from "../Components/asset/chain.png";
+import Machine from "../Components/asset/machine.png";
+import Chain from "../Components/asset/chain.png";
 import Whyus from "../Components/Whyus";
-import garage from "../Components/asset/garage.png";
+import Garage from "../Components/asset/garage.png";
 import Footer from "../Components/footer/Footer";
 
 const Qualified=()=> {
@@ -17,7 +17,7 @@ const Qualified=()=> {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <img src={machine} className="img-fluid" alt="banner2" />
+              <img src={Machine} className="img-fluid" alt="banner2" />
             </div>
             <div className="col-lg-6">
               <div className="text-center  mt-5">
@@ -40,7 +40,7 @@ const Qualified=()=> {
                   </li>
                 </ul>
               </div>
-              <img src={chain} className="img-fluid mt-3" alt="chain" />
+              <img src={Chain} className="img-fluid mt-3" alt="chain" />
             </div>
           </div>
         </div>
@@ -49,7 +49,6 @@ const Qualified=()=> {
     
   )
 }
-
 
 const Aboutyatra = () => {
   return (
@@ -74,10 +73,10 @@ const Aboutyatra = () => {
                 The point of using Lorem Ipsum is that it has a more-or-less
                 normal distribution of letters,
               </p>
-              <img src={chain} className="img-fluid mt-4" alt='chain'/>
+              <img src={Chain} className="img-fluid mt-4" alt='chain'/>
             </div>
             <div className="col-lg-6">
-                <img src={garage} className="img-fluid" alt='garage'/>
+                <img src={Garage} className="img-fluid" alt='garage'/>
             </div>
           </div>
         </div>
@@ -86,13 +85,12 @@ const Aboutyatra = () => {
   )
 }
 
-
 const Home = () => {
   return (
     <>
       <Navbar />
       <div className="banner-1">
-        <img src={banner} alt="bannerphoto" className="img-fluid" />
+        <img src={Banner} alt="bannerphoto" className="img-fluid" />
       </div>
       <Qualified />
       <Whyus />
