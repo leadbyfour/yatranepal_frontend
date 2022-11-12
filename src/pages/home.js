@@ -1,16 +1,69 @@
-import React from 'react';
-import '../styles/home.css';
-import '../index.css';
-import Navbar from '../Components/navbar/Navbar';
-import Banner from '../Components/asset/banner.png';
-import Ticks from '../Components/icons/Ticks';
-import Machine from '../Components/asset/machine.png';
-import Chain from '../Components/asset/chain.png';
-import Whyus from '../Components/Whyus';
-import Garage from '../Components/asset/garage.png';
-import Footer from '../Components/footer/Footer';
+import Navbar from "../components/Navbar/navbar";
+import Banner from "../images/banner.png"
+import Ticks from "../components/Icons/tick";
+import Machine from "../images/machine.png";
+import Chain from '../images/chain.png';
+import Garage from "../images/garage.png";
+import Footer from "../components/Footer/footer";
+import Vector1 from "components/Icons/Vector1";
+import Vector2 from "components/Icons/Vector2";
+import Vector3 from "components/Icons/Vector3";
+import "../styles/home.css";
 
-function Qualified() {
+
+const Whyusdata=[
+  {
+  id:1,
+  image:<Vector3/>,
+  title:"lorem ipsum",
+  discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
+},
+{
+  id:2,
+  image:<Vector1/>,
+  title:"lorem ipsum",
+  discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.",
+  bg:"red"
+},
+{
+  id:3,
+  image:<Vector2/>,
+  title:"lorem ipsum",
+  discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
+},
+]
+
+const WhyUsSection = () => {
+  return (
+    <div className="banner-3 mt-5">
+    <div className="container">
+     <h2 className="text-center">Why Us?</h2>
+        <div className="row mt-5">
+          {Whyusdata.map((props)=>(
+        <div className="col-lg-4">
+          <div className="box-1 text-white">
+            <div className="box1-img text-center">
+ {props.image}
+ </div>
+ <div className="box-text p-5">
+ <h3 className="text-center">{props.title}</h3>
+ <p className='mt-4'>{props.discription}</p>
+ </div>
+ </div>
+ </div>
+            ))}
+           
+          </div>
+          <div className="text-center mt-5">
+            <img src={Chain} className="img-fluid" alt='chain'/>
+          </div>
+        </div>
+      </div>
+  )
+}
+
+
+const QualifiedSection=()=> {
   return (
     <div className="banner-2 padtb">
       <div className="container">
@@ -24,18 +77,18 @@ function Qualified() {
               <ul>
                 <li className="mt-5">
                   <Ticks />
-                  It is a long established fact that a reader will be
-                  distracted.
+                  <span className="ms-3">It is a long established fact that a reader will be
+                  distracted.</span>
                 </li>
                 <li className="mt-5">
                   <Ticks />
-                  It is a long established fact that a reader will be
-                  distracted.
+                  <span className="ms-3">It is a long established fact that a reader will be
+                  distracted.</span>
                 </li>
                 <li className="mt-5">
                   <Ticks />
-                  It is a long established fact that a reader will be
-                  distracted.
+                  <span className="ms-3">It is a long established fact that a reader will be
+                  distracted.</span>
                 </li>
               </ul>
             </div>
@@ -56,7 +109,6 @@ function Aboutyatra() {
           <div className="col-lg-6">
             <h2>
               About
-              {' '}
               <span className="yatraNepal">Yatra Nepal</span>
             </h2>
             <p className="mt-4">
@@ -90,8 +142,8 @@ function Home() {
       <div className="banner-1">
         <img src={Banner} alt="bannerphoto" className="img-fluid" />
       </div>
-      <Qualified />
-      <Whyus />
+      <QualifiedSection />
+      <WhyUsSection />
       <Aboutyatra />
       <Footer />
     </>
