@@ -1,8 +1,7 @@
-import React from 'react'
-import Chain from "../Components/asset/chain.png";
-import Vector2 from './icons/Vector2';
-import Vector3 from './icons/Vector3';
-import Vector1 from "./icons/Vector1";
+import Vector2 from './Icons/Vector2';
+import Vector3 from './Icons/Vector3';
+import Vector1 from "./Icons/Vector1";
+import Chain from "../../public/assets/chain.png";
 
 const Whyusdata=[
     {

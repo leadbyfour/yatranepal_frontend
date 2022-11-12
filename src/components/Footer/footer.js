@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
-import Logo from "../asset/logo.png";
-import Facebook from "../icons/Facebook";
-import Instagram from "../icons/Instagram";
-import Twitter from "../icons/Twitter";
-import Location from "../icons/Location";
-import Call from "../icons/Call";
-import Email from "../icons/Email";
+import Logo from "../../images/logo.png";
+import Facebook from "../Icons/facebook";
+import Instagram from "../Icons/instagram";
+import Twitter from "../Icons/twitter";
+import Location from "../Icons/location";
+import Call from "../Icons/call";
+import Email from "../Icons/email";
 
 const footerdata=[{
 id:1,

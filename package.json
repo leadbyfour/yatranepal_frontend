@@ -6,17 +6,20 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.2.2",
     "classnames": "^2.3.2",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev": "nodemon --exec npm start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "react-scripts eslint",
+    "lint --fix": "react-scripts eslint --fix",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,11 +41,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.26.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-react": "^7.31.10",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "nodemon": "^2.0.20"
   }
 }

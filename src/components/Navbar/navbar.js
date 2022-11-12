@@ -1,8 +1,7 @@
-import React from "react";
+import Logo from '../../images/logo.png';
+import Call from "../Icons/call";
+import Email from "../Icons/email";
 import "./style.css";
-import Logo from "../asset/logo.png";
-import Call from "../icons/Call";
-import Email from "../icons/Email";
 
 const Navbar = () => {
   return (
