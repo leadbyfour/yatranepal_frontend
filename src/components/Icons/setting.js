@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Vector2() {
+function Setting() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ function Vector2() {
   );
 }
 
-export default Vector2;
+export default Setting;

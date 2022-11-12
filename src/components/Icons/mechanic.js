@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Vector1() {
+function Mechanic() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -29,4 +29,4 @@ function Vector1() {
   );
 }
 
-export default Vector1;
+export default Mechanic;

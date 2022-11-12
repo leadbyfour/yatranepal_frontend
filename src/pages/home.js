@@ -5,29 +5,29 @@ import Machine from "../images/machine.png";
 import Chain from '../images/chain.png';
 import Garage from "../images/garage.png";
 import Footer from "../components/Footer/footer";
-import Vector1 from "components/Icons/Vector1";
-import Vector2 from "components/Icons/Vector2";
-import Vector3 from "components/Icons/Vector3";
 import "../styles/home.css";
+import Battery from "components/Icons/battery";
+import Mechanic from "components/Icons/mechanic";
+import Setting from "components/Icons/setting";
 
 
 const Whyusdata=[
   {
   id:1,
-  image:<Vector3/>,
+  image:<Battery/>,
   title:"lorem ipsum",
   discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
 },
 {
   id:2,
-  image:<Vector1/>,
+  image:<Mechanic/>,
   title:"lorem ipsum",
   discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.",
   bg:"red"
 },
 {
   id:3,
-  image:<Vector2/>,
+  image:<Setting/>,
   title:"lorem ipsum",
   discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
 },
