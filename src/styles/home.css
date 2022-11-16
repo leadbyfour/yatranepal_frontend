@@ -1,0 +1,76 @@
+
+.header {
+  font-size: 15px;
+}
+
+/* --------banner-1------------ */
+.banner-1{
+  text-align: center;
+}
+/* -------banner-2--------- */
+.banner-2 h2 {
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ed1e24;
+}
+
+.banner-2 ul li {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.banner-2 ul {
+  margin-top: 50px;
+}
+
+/* -----banner-3--------- */
+.banner-3 h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.box-1 {
+    position: relative;
+  }
+  
+.banner-3 .box-1 {
+  background-color: rgba(237, 30, 36, 0.2);
+  border-radius: 19px;
+  border: rgba(237, 30, 36, 0.2);
+}
+.box1-img {
+  position: absolute;
+  top: -14%;
+  text-align: center;
+  right: 50%;
+  transform: translateX(50%);
+}
+/* ---banner-4--- */
+.banner-4 h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.banner-4 span {
+  color: #ed1e24;
+}
+.banner-4 p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 147.5%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
