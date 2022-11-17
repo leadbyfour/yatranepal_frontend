@@ -4,8 +4,9 @@
 }
 
 /* --------banner-1------------ */
-.banner-1{
-  text-align: center;
+.banner-1 img{
+  /* text-align: center; */
+  width: 100%;
 }
 /* -------banner-2--------- */
 .banner-2 h2 {
