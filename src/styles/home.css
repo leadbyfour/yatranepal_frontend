@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .header {
   font-size: 15px;
 }
@@ -37,24 +37,9 @@
   line-height: 115.5%;
   letter-spacing: 0.05em;
   color: #ffffff;
+  margin-bottom: 69px;
 }
 
-.box-1 {
-    position: relative;
-  }
-  
-.banner-3 .box-1 {
-  background-color: rgba(237, 30, 36, 0.2);
-  border-radius: 19px;
-  border: rgba(237, 30, 36, 0.2);
-}
-.box1-img {
-  position: absolute;
-  top: -14%;
-  text-align: center;
-  right: 50%;
-  transform: translateX(50%);
-}
 /* ---banner-4--- */
 .banner-4 h2 {
   font-weight: 700;

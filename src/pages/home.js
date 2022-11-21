@@ -9,6 +9,7 @@ import "../styles/home.css";
 import Battery from "components/Icons/battery";
 import Mechanic from "components/Icons/mechanic";
 import Setting from "components/Icons/setting";
+import Infobox from "components/InfoBox";
 
 
 const Whyusdata=[
@@ -16,20 +17,22 @@ const Whyusdata=[
   id:1,
   image:<Battery/>,
   title:"lorem ipsum",
-  discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
+  description:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.",
+bg:"red"
 },
 {
   id:2,
   image:<Mechanic/>,
   title:"lorem ipsum",
-  discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.",
-  bg:"red"
+  description:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.",
+  bg:"grey"
 },
 {
   id:3,
   image:<Setting/>,
   title:"lorem ipsum",
-  discription:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is."
+  description:"It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.",
+bg:"red"
 },
 ]
 
@@ -39,18 +42,12 @@ const WhyUsSection = () => {
     <div className="container">
      <h2 className="text-center">Why Us?</h2>
         <div className="row mt-5">
-          {Whyusdata.map((props)=>(
-        <div className="col-lg-4">
-          <div className="box-1 text-white">
-            <div className="box1-img text-center">
- {props.image}
- </div>
- <div className="box-text p-5">
- <h3 className="text-center">{props.title}</h3>
- <p className='mt-4'>{props.discription}</p>
- </div>
- </div>
- </div>
+          {Whyusdata.map((whyusItem)=>(
+<Infobox
+title={whyusItem.title}
+description={whyusItem.description}
+image={whyusItem.image}
+color={whyusItem.bg}/>
             ))}
            
           </div>
