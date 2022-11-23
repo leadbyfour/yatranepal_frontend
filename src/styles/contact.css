@@ -1,0 +1,78 @@
+.contact-banner{
+    background-color: #252525;
+    position: relative;
+}
+.Touch{
+    position: absolute;
+    top: -30%;
+    right: 5%;
+    background-color: #252525;
+    border:2px solid #ED1E24;
+}
+input{
+    width: 223px;
+height: 62px;
+}
+.form-bg{
+background: rgba(217, 217, 217, 0.4) !important;
+border: none !important;
+border-radius: 0% !important;
+color: #ffffff !important;
+
+}
+
+.text-area{
+    width: 508px;
+height: 157px;
+}
+
+::placeholder{
+    color: #ffffff !important;
+}
+.banner-3{
+    margin-top: 100px;
+}
+.red{
+    color:#ED1E24;
+    
+}
+
+.faq{
+    font-weight: 700;
+font-size: 128px;
+line-height: 130%;
+letter-spacing: 0.135em;
+color: #ED1E24;
+}
+.banner-3 h5{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.135em;
+    color: #ED1E24;
+}
+.banner-3 p{
+    font-style: normal;
+    font-weight: 800;
+font-size: 18px;
+line-height: 130%;
+letter-spacing: 0.135em;
+color: #FFFFFF;
+}
+.frequently{
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 130%;
+letter-spacing: 0.135em;
+color: #FFFFFF;
+}
+.banner-3 ul li{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 200%;    
+    letter-spacing: 0.135em;
+    color: #ED1E24;
+}
