@@ -39,7 +39,7 @@ function Navbar() {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a
-                  className="nav-link active text-white me-2"
+                  className="nav-link text-white me-2"
                   aria-current="page"
                   href="#"
                 >
@@ -48,7 +48,7 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <a
-                  className="nav-link text-white me-2"
+                  className="nav-link active text-white me-2"
                   aria-current="page"
                   href="#"
                 >
