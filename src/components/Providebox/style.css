@@ -1,0 +1,21 @@
+.service-box{
+    border:1px solid #ED1E24;
+    border-radius: 15px;
+    color: #FFFFFF;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 115.5%;
+    letter-spacing: 0.05em;
+    
+    }
+
+.background-red{
+    background-color: rgba(237, 30, 36, 0.2);
+}
+.background-grey{
+    background-color: #191919;
+}
