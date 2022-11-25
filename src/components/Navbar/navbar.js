@@ -1,3 +1,9 @@
+import { Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Home from 'pages/home';
+import About from 'pages/about';
+import Contact from 'pages/contact';
+import Service from 'pages/service';
 import Logo from '../../images/logo.png';
 import Call from "../Icons/call";
 import Email from "../Icons/email";
@@ -5,12 +11,13 @@ import "./style.css"
 
 function Navbar() {
   return (
+    <>
     <div className="header">
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             <img src={Logo} alt="logo" />
-          </a>
+          </Link>
           <div className="phn-no ms-5 text-white">
             <Call />
 
@@ -38,55 +45,65 @@ function Navbar() {
           >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link active text-white me-2"
                   aria-current="page"
-                  href="#"
+                  to="/"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link text-white me-2"
                   aria-current="page"
-                  href="#"
+                  to="/about"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link text-white me-2"
                   aria-current="page"
-                  href="#"
+                  to="/service"
                 >
                   Service
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link text-white me-2"
                   aria-current="page"
-                  href="#"
+                  to="/contact"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link text-white"
                   aria-current="page"
-                  href="#"
+                  to="/gallery"
                 >
                   Gallery
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
+
+    <Routes>
+<Route path="/" element={<Home />}/>
+<Route path="/about" element={<About />} />
+  <Route path="/contact" element={<Contact />} />
+  <Route path="/service" element={<Service />} />
+</Routes>
+
+</>
+
   );
 }
 
