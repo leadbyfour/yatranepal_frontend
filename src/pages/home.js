@@ -2,7 +2,6 @@ import Navbar from "../components/Navbar/navbar";
 import Banner from "../images/banner.png"
 import Ticks from "../components/Icons/tick";
 import Machine from "../images/machine.png";
-import Chain from '../images/chain.png';
 import Garage from "../images/garage.png";
 import Footer from "../components/Footer/footer";
 import "../styles/home.css";
@@ -10,6 +9,7 @@ import Battery from "components/Icons/battery";
 import Mechanic from "components/Icons/mechanic";
 import Setting from "components/Icons/setting";
 import Infobox from "components/InfoBox";
+import ChainBreak from "components/Icons/chainBreak";
 
 
 const Whyusdata=[
@@ -52,7 +52,7 @@ color={whyusItem.bg}/>
            
           </div>
           <div className="text-center mt-5">
-            <img src={Chain} className="img-fluid" alt='chain'/>
+            <ChainBreak/>
           </div>
         </div>
       </div>
@@ -89,7 +89,9 @@ const QualifiedSection=()=> {
                 </li>
               </ul>
             </div>
-            <img src={Chain} className="img-fluid mt-3" alt="chain" />
+            <div className="chain-break mt-5">
+            <ChainBreak/>
+            </div>
           </div>
         </div>
       </div>
@@ -121,7 +123,9 @@ function Aboutyatra() {
               The point of using Lorem Ipsum is that it has a more-or-less
               normal distribution of letters,
             </p>
-            <img src={Chain} className="img-fluid mt-4" alt="chain" />
+            <div className="chain-break mt-5">
+            <ChainBreak/>
+            </div>
           </div>
           <div className="col-lg-6">
             <img src={Garage} className="img-fluid" alt="garage" />
