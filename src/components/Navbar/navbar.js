@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-// import Home from 'pages/home';
 import Routers from 'routers';
 import Logo from '../../images/logo.png';
 import Call from "../Icons/call";
