@@ -1,3 +1,6 @@
+.banner-2 img{
+    width: 100%;
+  }
 
 .banner-3 h1{
     font-weight: 700;
@@ -12,21 +15,4 @@
     line-height: 115.5%;    
     letter-spacing: 0.05em;
     color: #ED1E24;
-}
-
-.service-image{
-width:45%;
-}
-.service-description{
-    width:45%;
-
-}
-.service-description p{
-    font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 155%;
-letter-spacing: 0.05em;
-color: #FFFFFF;
-
 }
