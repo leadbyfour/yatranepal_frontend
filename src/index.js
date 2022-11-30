@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Home from "./pages/home";
+import { BrowserRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css"
+import App from 'app';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-ReactDOM.createRoot(document.getElementById('root')).render(<Home />);
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <BrowserRouter>
+    <App/>
+    </BrowserRouter>
+);

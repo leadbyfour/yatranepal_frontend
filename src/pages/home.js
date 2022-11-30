@@ -135,14 +135,12 @@ function Aboutyatra() {
 function Home() {
   return (
     <>
-      <Navbar />
       <div className="banner-1">
         <img src={Banner} alt="bannerphoto" className="img-fluid" />
       </div>
       <QualifiedSection />
       <WhyUsSection />
       <Aboutyatra />
-      <Footer />
     </>
   );
 }
