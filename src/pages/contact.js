@@ -47,11 +47,27 @@ const Contact = () => {
           </div>
        </div>
    </div>
+
 				<div className='container mt-5'>
 				    <img src={chain} classname="img-fluid" alt="chain"/>
 							</div>
 
-							<div className='banner-3 padtb'>
+
+
+<div className='banner-2'>
+    <div className="container">
+        <h1 className='mb-5 location'>Precise Location</h1>
+        <div className='row'>
+            <div className='col-lg-12'>
+            <iframe width="100%" height="600" 
+            id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=jadibuti,kathmandu&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+			<div className='banner-3 padtb'>
             <div className='container'>
                 <div className='row'>
                     <div className='col-lg-6 text-center'>

@@ -37,6 +37,18 @@ height: 157px;
     
 }
 
+.banner-2{
+    margin-top: 250px !important;
+}
+.location{
+    font-family: 'Orbitron';
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 115.5%;
+letter-spacing: 0.05em;
+color: #ED1E24;
+}
 .faq{
     font-weight: 700;
 font-size: 128px;
