@@ -4,6 +4,7 @@ import chain from "../images/chain.png"
 import qnmark from "../images/qnmark.png"
 import plus from "../images/plus.png"
 import "../styles/contact.css";
+import Maps from 'components/maps';
 
 const Contact = () => {
   return (
@@ -48,21 +49,16 @@ const Contact = () => {
        </div>
    </div>
 
-				<div className='container mt-5'>
-				    <img src={chain} classname="img-fluid" alt="chain"/>
-							</div>
-
-
+<div className='container mt-5'>
+	<img src={chain} classname="img-fluid" alt="chain"/>
+	</div>
 
 <div className='banner-2'>
     <div className="container">
         <h1 className='mb-5 location'>Precise Location</h1>
         <div className='row'>
             <div className='col-lg-12'>
-            <iframe width="100%" height="600" 
-            id="gmap_canvas" 
-            src="https://maps.google.com/maps?q=jadibuti,kathmandu&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <Maps/>
             </div>
         </div>
     </div>
@@ -77,19 +73,20 @@ const Contact = () => {
                     </div>
                     <div className='col-lg-6'>
                         <h5 className='red'>What is Lorem Ipsum?</h5>
-                        <p className='mt-3 text-white'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
-                    <ul className='red'>
-                        <li>What is Lorem Ipsum Lorem?<img src={plus} className="img-fluid ms-2" alt="plus"/></li>
-                        <li>What is Lorem Ipsum Lorem?<img src={plus} className="img-fluid ms-2" alt="plus"/></li>
-                        <li>What is Lorem Ipsum Lorem?<img src={plus} className="img-fluid ms-2" alt="plus"/></li>
-                        <li>What is Lorem Ipsum Lorem?<img src={plus} className="img-fluid ms-2" alt="plus"/></li>
-                    </ul>
+                        <p className='mt-3 faq-description'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum</p>
+                        <div className='faq-point'>
+                        <p>What is Lorem Ipsum Lorem?<img src={plus} className="img-fluid ms-2" alt="plus"/></p>
+                        <p>What is Lorem Ipsum Lorem?<img src={plus} className="img-fluid ms-2" alt="plus"/></p>
+                        <p>What is Lorem Ipsum Lorem?<img src={plus} className="img-fluid ms-2" alt="plus"/></p>
+                        <p>What is Lorem Ipsum Lorem?<img src={plus} className="img-fluid ms-2" alt="plus"/></p>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
 
-				<Footer/>
+				
+<Footer/>
     </>
   )
 }

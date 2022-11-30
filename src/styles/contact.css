@@ -18,7 +18,6 @@ background: rgba(217, 217, 217, 0.4) !important;
 border: none !important;
 border-radius: 0% !important;
 color: #ffffff !important;
-
 }
 
 .text-area{
@@ -33,8 +32,7 @@ height: 157px;
     margin-top: 100px;
 }
 .red{
-    color:#ED1E24;
-    
+    color:#ED1E24; 
 }
 
 .banner-2{
@@ -64,9 +62,9 @@ color: #ED1E24;
     letter-spacing: 0.135em;
     color: #ED1E24;
 }
-.banner-3 p{
-    font-style: normal;
-    font-weight: 800;
+.banner-3 .faq-description{
+font-style: normal;
+font-weight: 800;
 font-size: 18px;
 line-height: 130%;
 letter-spacing: 0.135em;
@@ -80,11 +78,14 @@ line-height: 130%;
 letter-spacing: 0.135em;
 color: #FFFFFF;
 }
-.banner-3 ul li{
+.banner-3 .faq-point{
     font-style: normal;
     font-weight: 800;
     font-size: 22px;
-    line-height: 200%;    
+    line-height: 130%;    
     letter-spacing: 0.135em;
     color: #ED1E24;
+}
+.faq-point p{
+    line-height: 130%;
 }
