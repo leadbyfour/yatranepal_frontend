@@ -1,22 +1,25 @@
 /* -------footer--- */
 .footer {
-width: 100%;
-background: url("../../images/footerbg.png");
-background-repeat: no-repeat;
-background-size: 100% 100%;
+  width: 100%;
+  background: url("../../images/footerbg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
+
 .footer h3 {
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 115.5%;
-    letter-spacing: 0.05em;
-    color: #ed1e24;
-  }
-  .footer span {
-    margin-top: 30px;
-    color: #ffffff;
-    font-size: 15px;
-  }
-  .footer span img {
-    width: 25px;
-  }
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ed1e24;
+}
+  
+.footer span {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.footer span img {
+  width: 25px;
+}

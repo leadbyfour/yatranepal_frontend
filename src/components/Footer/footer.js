@@ -1,43 +1,42 @@
+import React from 'react'
+import './style.css'
+import Logo from '../../images/logo.png'
+import Facebook from '../Icons/facebook'
+import Instagram from '../Icons/instagram'
+import Twitter from '../Icons/twitter'
+import Location from '../Icons/location'
+import Call from '../Icons/call'
+import Email from '../Icons/email'
 
-import React from "react";
-import "./style.css";
-import Logo from "../../images/logo.png";
-import Facebook from "../Icons/facebook";
-import Instagram from "../Icons/instagram";
-import Twitter from "../Icons/twitter";
-import Location from "../Icons/location";
-import Call from "../Icons/call";
-import Email from "../Icons/email";
-
-const footerdata = [{
-  id: 1,
-  title: 'Social Media',
-  image: <Facebook />,
-  image1: <Instagram />,
-  image2: <Twitter />,
-  link1: 'Yatra Nepal',
-  link2: 'Yatra Nepal',
-  link3: 'Yatra Nepal',
-},
-{
-  id: 2,
-  title: 'Quick Links',
-  link1: 'FAQ',
-  link2: 'Services',
-  link3: 'Precise location',
-},
-{
-  id: 3,
-  title: 'Contact',
-  image: <Call />,
-  image1: <Email />,
-  image2: <Location />,
-  link1: '9851160294, 9849167028 ,9749835510',
-  link2: 'yatranepal777@gmail.com',
-  link3: 'Bansbari, Kathmandu',
-
-},
-];
+const footerdata = [
+  {
+    id: 1,
+    title: 'Social Media',
+    image: <Facebook />,
+    image1: <Instagram />,
+    image2: <Twitter />,
+    link1: 'Yatra Nepal',
+    link2: 'Yatra Nepal',
+    link3: 'Yatra Nepal',
+  },
+  {
+    id: 2,
+    title: 'Quick Links',
+    link1: 'FAQ',
+    link2: 'Services',
+    link3: 'Precise location',
+  },
+  {
+    id: 3,
+    title: 'Contact',
+    image: <Call />,
+    image1: <Email />,
+    image2: <Location />,
+    link1: '9851160294, 9849167028 ,9749835510',
+    link2: 'yatranepal777@gmail.com',
+    link3: 'Bansbari, Kathmandu',
+  },
+]
 
 function Footer() {
   return (
@@ -67,7 +66,7 @@ function Footer() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

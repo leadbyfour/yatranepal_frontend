@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .box-1 {
-    position: relative;
-  }
+  position: relative;
+}
   
 .banner-3 .box-1 {
-    border-radius: 19px;
-    border:2px solid rgba(237, 30, 36, 0.2);
+  border-radius: 19px;
+  border:2px solid rgba(237, 30, 36, 0.2);
 }
 .box1-img {
   position: absolute;
@@ -15,12 +15,15 @@
   right: 50%;
   transform: translateX(50%);
 }
+
 .box-text p{
-font-family: "poppins";
+  font-family: "poppins";
 }
+
 .background-red{
     background-color: rgba(237, 30, 36, 0.2);
 }
+
 .background-grey{
     background-color: #191919;
 }

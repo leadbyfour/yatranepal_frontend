@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function ChainBreak() {
   return (
@@ -222,7 +222,7 @@ function ChainBreak() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }
 
-export default ChainBreak;
+export default ChainBreak

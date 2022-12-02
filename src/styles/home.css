@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .header {
   font-size: 15px;
 }
@@ -7,6 +8,7 @@
 .banner-1 img{
   width: 100%;
 }
+
 /* -------banner-2--------- */
 .banner-2 h2 {
   font-weight: 800;
@@ -48,9 +50,11 @@
   letter-spacing: 0.05em;
   color: #ffffff;
 }
+
 .banner-4 span {
   color: #ed1e24;
 }
+
 .banner-4 p {
   font-weight: 400;
   font-size: 18px;

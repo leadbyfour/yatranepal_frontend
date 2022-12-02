@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function Line() {
   return (
@@ -28,7 +28,7 @@ function Line() {
         </linearGradient>
       </defs>
     </svg>
-  );
+  )
 }
 
-export default Line;
+export default Line

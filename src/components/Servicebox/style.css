@@ -1,13 +1,12 @@
 .order-1{
-    order: 2;
-    text-align: end;
+	order: 2;
+	text-align: end;
 }
 .service-description p{
-    font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 155%;
-letter-spacing: 0.05em;
-color: #FFFFFF;
-
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 155%;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
 }
