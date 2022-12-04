@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function Facebook() {
   return (
@@ -16,7 +16,7 @@ function Facebook() {
         clipRule="evenodd"
       />
     </svg>
-  );
+  )
 }
 
-export default Facebook;
+export default Facebook

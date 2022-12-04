@@ -1,13 +1,14 @@
-import React from 'react';
-import Navbar from 'components/Navbar/navbar';
-import Footer from 'components/Footer/footer';
-const App = () => {
+import React from 'react'
+import Navbar from 'components/Navbar/navbar'
+import Footer from 'components/Footer/footer'
+const App = ({ children }) => {
   return (
     <>
-<Navbar/>
-<Footer/>
+      <Navbar />
+      {children}
+      <Footer />
     </>
   )
 }
 
-export default App;
+export default App

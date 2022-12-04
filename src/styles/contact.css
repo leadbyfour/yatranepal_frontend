@@ -1,91 +1,103 @@
-.contact-banner{
-    background-color: #252525;
-    position: relative;
-}
-.Touch{
-    position: absolute;
-    top: -30%;
-    right: 5%;
-    background-color: #252525;
-    border:2px solid #ED1E24;
-}
-input{
-width: 223px;
-height: 62px;
-}
-.form-bg{
-background: rgba(217, 217, 217, 0.4) !important;
-border: none !important;
-border-radius: 0% !important;
-color: #ffffff !important;
+.contact-banner {
+  background-color: #252525;
+  position: relative;
 }
 
-.text-area{
-    width: 508px;
-height: 157px;
+.Touch {
+  position: absolute;
+  top: -30%;
+  right: 5%;
+  background-color: #252525;
+  border: 2px solid #ED1E24;
 }
 
-::placeholder{
-    color: #ffffff !important;
-}
-.banner-3{
-    margin-top: 100px;
-}
-.red{
-    color:#ED1E24; 
+input {
+  width: 223px;
+  height: 62px;
 }
 
-.banner-2{
-    margin-top: 250px !important;
+.form-bg {
+  background: rgba(217, 217, 217, 0.4) !important;
+  border: none !important;
+  border-radius: 0% !important;
+  color: #ffffff !important;
 }
-.location{
-    font-family: 'Orbitron';
-font-style: normal;
-font-weight: 700;
-font-size: 38px;
-line-height: 115.5%;
-letter-spacing: 0.05em;
-color: #ED1E24;
+
+.text-area {
+  width: 508px;
+  height: 157px;
 }
-.faq{
-    font-weight: 700;
-font-size: 128px;
-line-height: 130%;
-letter-spacing: 0.135em;
-color: #ED1E24;
+
+::placeholder {
+  color: #ffffff !important;
 }
-.banner-3 h5{
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 130%;
-    letter-spacing: 0.135em;
-    color: #ED1E24;
+
+.banner-3 {
+  margin-top: 100px;
 }
-.banner-3 .faq-description{
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 130%;
-letter-spacing: 0.135em;
-color: #FFFFFF;
+
+.red {
+  color: #ED1E24;
 }
-.frequently{
-    font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 130%;
-letter-spacing: 0.135em;
-color: #FFFFFF;
+
+.banner-2 {
+  margin-top: 250px !important;
 }
-.banner-3 .faq-point{
-    font-style: normal;
-    font-weight: 800;
-    font-size: 22px;
-    line-height: 130%;    
-    letter-spacing: 0.135em;
-    color: #ED1E24;
+
+.location {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ED1E24;
 }
-.faq-point p{
-    line-height: 130%;
+
+.faq {
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 130%;
+  letter-spacing: 0.135em;
+  color: #ED1E24;
+}
+
+.banner-3 h5 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.135em;
+  color: #ED1E24;
+}
+
+.banner-3 .faq-description {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.135em;
+  color: #FFFFFF;
+}
+
+.frequently {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.135em;
+  color: #FFFFFF;
+}
+
+.banner-3 .faq-point {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.135em;
+  color: #ED1E24;
+}
+
+.faq-point p {
+  line-height: 130%;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 function Email() {
   return (
@@ -19,7 +19,7 @@ function Email() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }
 
-export default Email;
+export default Email
