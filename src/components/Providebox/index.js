@@ -11,7 +11,7 @@ const Providebox = ({ title, color }) => {
         })}
       >
         <div className="service-box text-center">
-          <h5>{title}</h5>
+          <h5 className="text-white">{title}</h5>
         </div>
       </div>
     </div>

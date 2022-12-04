@@ -1,14 +1,7 @@
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: #ED1E24 !important;
-    position: relative;
 }
-.navbar .navbar-nav .nav-link.active::after{
-    content: " ";
-    background-color: #ED1E24;
-    width: 58px;
-    height: 2px;
-    right: 0;
-    top: 30px;
-    position: absolute;
+.active{
+    color: #ED1E24;
 }

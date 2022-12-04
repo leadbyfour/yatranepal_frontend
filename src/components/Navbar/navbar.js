@@ -1,19 +1,18 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import Routers from 'routers'
 import Logo from '../../images/logo.png'
 import Call from '../Icons/call'
 import Email from '../Icons/email'
 import './style.css'
-
 function Navbar() {
   return (
     <>
       <div className="header">
         <nav className="navbar navbar-expand-lg">
           <div className="container">
-            <Link className="navbar-brand" to="/">
+            <NavLink className="navbar-brand" to="/">
               <img src={Logo} alt="logo" />
-            </Link>
+            </NavLink>
             <div className="phn-no ms-5 text-white">
               <Call />
 
@@ -41,49 +40,49 @@ function Navbar() {
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link
-                    className="nav-link active text-white me-2"
+                  <NavLink
+                    className="nav-link text-white me-2"
                     aria-current="page"
                     to="/"
                   >
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link
+                  <NavLink
                     className="nav-link text-white me-2"
                     aria-current="page"
                     to="/about"
                   >
                     About Us
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link
+                  <NavLink
                     className="nav-link text-white me-2"
                     aria-current="page"
                     to="/service"
                   >
                     Service
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link
+                  <NavLink
                     className="nav-link text-white me-2"
                     aria-current="page"
                     to="/contact"
                   >
                     Contact
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <Link
+                  <NavLink
                     className="nav-link text-white"
                     aria-current="page"
                     to="/gallery"
                   >
                     Gallery
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>

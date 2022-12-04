@@ -3,12 +3,15 @@
   position: relative;
 }
 
-.Touch {
+.touch {
   position: absolute;
   top: -30%;
   right: 5%;
   background-color: #252525;
   border: 2px solid #ED1E24;
+}
+.text-area{
+height: 157px;
 }
 
 input {
@@ -22,9 +25,11 @@ input {
   border-radius: 0% !important;
   color: #ffffff !important;
 }
+.banner-contact{
+    margin-top: 250px !important;
+}
 
 .text-area {
-  width: 508px;
   height: 157px;
 }
 
@@ -40,9 +45,6 @@ input {
   color: #ED1E24;
 }
 
-.banner-2 {
-  margin-top: 250px !important;
-}
 
 .location {
   font-family: 'Orbitron';
