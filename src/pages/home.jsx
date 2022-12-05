@@ -1,15 +1,13 @@
-import Navbar from '../components/Navbar/navbar'
 import Banner from '../images/banner.png'
 import Ticks from '../components/Icons/tick'
 import Machine from '../images/machine.png'
 import Garage from '../images/garage.png'
-import Footer from '../components/Footer/footer'
-import '../styles/home.css'
 import Battery from 'components/Icons/battery'
 import Mechanic from 'components/Icons/mechanic'
 import Setting from 'components/Icons/setting'
 import Infobox from 'components/InfoBox'
 import ChainBreak from 'components/Icons/chainBreak'
+import '../styles/home.css'
 
 const Whyusdata = [
   {

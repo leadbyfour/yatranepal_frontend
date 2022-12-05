@@ -1,8 +1,5 @@
-import Footer from 'components/Footer/footer'
 import Providebox from 'components/Providebox'
 import Servicebox from 'components/Servicebox'
-import React from 'react'
-import Navbar from '../components/Navbar/navbar'
 import service from '../images/service.png'
 import '../styles/service.css'
 
@@ -120,12 +117,10 @@ const serviceData = [
 const Service = () => {
   return (
     <>
-      <Navbar />
-      <div className="banner-2">
+      <div className="banner-service">
         <img src={service} className="img-fluid" alt="services" />
       </div>
-
-      <div className="banner-3 padtb">
+      <div className="banner-3">
         <div className="container">
           <h1 className="my-5">What We Provide?</h1>
           <div className="row gy-5">
@@ -153,8 +148,6 @@ const Service = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
     </>
   )
 }
