@@ -1,5 +1,3 @@
-import Navbar from 'components/Navbar/navbar';
-import Footer from 'components/Footer/footer';
 import chain from "../images/chain.png"
 import qnmark from "../images/qnmark.png"
 import plus from "../images/plus.png"
@@ -9,7 +7,6 @@ import Maps from 'components/maps';
 const Contact = () => {
   return (
     <>
-    <Navbar/>
 <div className='container padtb'>
     <h2 className='red mt-3'>Contact Us</h2>
     </div>
@@ -86,7 +83,6 @@ const Contact = () => {
         </div>
 
 				
-<Footer/>
     </>
   )
 }
