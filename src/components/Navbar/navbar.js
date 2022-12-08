@@ -76,13 +76,13 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink
+                  {/* <NavLink
                     className="nav-link text-white"
                     aria-current="page"
                     to="/gallery"
                   >
                     Gallery
-                  </NavLink>
+                  </NavLink> */}
                 </li>
               </ul>
             </div>
