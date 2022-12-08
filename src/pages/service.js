@@ -1,8 +1,6 @@
-import Footer from 'components/Footer/footer';
 import Providebox from 'components/Providebox';
 import Servicebox from 'components/Servicebox';
 import React from 'react'
-import Navbar from "../components/Navbar/navbar";
 import service from "../images/service.png";
 import "../styles/service.css";
 
@@ -118,7 +116,6 @@ const serviceData=[
 const Service = () => {
   return (
     <>
-    <Navbar/>
     <div className='banner-2'>
     <img src={service} className="img-fluid" alt='services'/>
     </div>
@@ -153,7 +150,6 @@ color={provideusdata.bg}/>
     </div>
  </div>
 
- <Footer/>
     </>
   )
 }
