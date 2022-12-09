@@ -7,7 +7,7 @@
 	border: 2px solid rgba(237, 30, 36, 0.2);
 }
 
-.box1-img {
+.box-mission-img {
 	position: absolute;
 	top: -10%;
 	text-align: center;
@@ -15,7 +15,7 @@
 	transform: translateX(50%);
 }
 
-.box-text h3 {
+.box-mission-text h3 {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 38px;
@@ -24,7 +24,7 @@
 	color: #FFFFFF;
 }
 
-.box-text p {
+.box-mission-text p {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;

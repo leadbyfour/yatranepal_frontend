@@ -2,6 +2,42 @@
   width: 100%;
 }
 
+.about-yatra {
+  margin-top: 70px;
+}
+
+.about-yatra h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ED1E24;
+
+}
+
+.about-yatra p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.mission-box {
+  margin-top: 100px;
+}
+
+.meet-team {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ED1E24;
+}
+
 .box-team {
   border-radius: 19px;
   border: 2px solid rgba(237, 30, 36, 0.2);

@@ -7,6 +7,7 @@ import Mechanic from 'components/Icons/mechanic'
 import Setting from 'components/Icons/setting'
 import Infobox from 'components/InfoBox'
 import ChainBreak from 'components/Icons/chainBreak'
+import Line from '../images/line.png'
 import '../styles/home.css'
 
 const Whyusdata = [
@@ -61,7 +62,7 @@ const WhyUsSection = () => {
 
 const QualifiedSection = () => {
   return (
-    <div className="banner-2 padtb">
+    <div className="banner-machine padtb">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
@@ -106,15 +107,16 @@ const QualifiedSection = () => {
 
 function Aboutyatra() {
   return (
-    <div className="banner-4 mt-5">
+    <div className="banner-about">
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row">
           <div className="col-lg-6">
-            <h2>
+            <h2 className="">
               About
-              <span className="yatraNepal">Yatra Nepal</span>
+              <span className="yatraNepal"> Yatra Nepal</span>
             </h2>
-            <p className="mt-4">
+            <img src={Line} className="img-fluid" alt="line" />
+            <p className="mt-5">
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
               point of using Lorem Ipsum is that it has a more-or-less normal
@@ -133,6 +135,9 @@ function Aboutyatra() {
           </div>
           <div className="col-lg-6">
             <img src={Garage} className="img-fluid" alt="garage" />
+            <div className="yatra-btn mt-3">
+              <p className="text-center explore">Explore Yatra</p>
+            </div>
           </div>
         </div>
       </div>

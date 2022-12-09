@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import './style.css'
 
-const Infobox = ({ title, description, image, color, post }) => {
+const Teambox = ({ title, description, image, color, post }) => {
   return (
     <div className="col-lg-4">
       <div
@@ -22,4 +22,4 @@ const Infobox = ({ title, description, image, color, post }) => {
     </div>
   )
 }
-export default Infobox
+export default Teambox

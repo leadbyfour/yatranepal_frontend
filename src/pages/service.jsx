@@ -120,7 +120,7 @@ const Service = () => {
       <div className="banner-service">
         <img src={service} className="img-fluid" alt="services" />
       </div>
-      <div className="banner-3">
+      <div className="banner-provide">
         <div className="container">
           <h1 className="my-5">What We Provide?</h1>
           <div className="row gy-5">
