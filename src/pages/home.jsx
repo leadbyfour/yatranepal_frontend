@@ -13,25 +13,25 @@ const Whyusdata = [
   {
     id: 1,
     image: <Battery />,
-    title: 'lorem ipsum',
+    title: 'Excellence at Service',
     description:
-      'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
+      'At Nepal Service Center we offer long lasting maintenance and servicing for all multi brands two wheelers.',
     bg: 'red',
   },
   {
     id: 2,
     image: <Mechanic />,
-    title: 'lorem ipsum',
+    title: 'Ride on Reliability',
     description:
-      'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
+      "Reliability and transparency are key elements of our business. Once your bike arrives at our workshop, you don't have to worry about anything.",
     bg: 'grey',
   },
   {
     id: 3,
     image: <Setting />,
-    title: 'lorem ipsum',
+    title: 'Skilled Team',
     description:
-      'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
+      'At yatra nepal we have team of skilled and well equipped people to ensure best services.',
     bg: 'red',
   },
 ]
@@ -68,33 +68,28 @@ const QualifiedSection = () => {
             <img src={Machine} className="img-fluid" alt="banner2" />
           </div>
           <div className="col-lg-6">
-            <div className="text-center  mt-5">
+            <div className="mt-5">
               <h2>We are qualified & of experience in this field</h2>
               <ul>
                 <li className="mt-5">
                   <Ticks />
                   <span className="ms-3">
-                    It is a long established fact that a reader will be
-                    distracted.
+                    Servicing and maintenance of multi brand two wheers.
                   </span>
                 </li>
                 <li className="mt-5">
                   <Ticks />
                   <span className="ms-3">
-                    It is a long established fact that a reader will be
-                    distracted.
+                    On road Breakdown Support or service.
                   </span>
                 </li>
                 <li className="mt-5">
                   <Ticks />
-                  <span className="ms-3">
-                    It is a long established fact that a reader will be
-                    distracted.
-                  </span>
+                  <span className="ms-3">Spares warranty and many more.</span>
                 </li>
               </ul>
             </div>
-            <div className="chain-break mt-5">
+            <div className="chain-break-machine">
               <ChainBreak />
             </div>
           </div>
@@ -115,17 +110,20 @@ function Aboutyatra() {
               <span className="yatraNepal">Yatra Nepal</span>
             </h2>
             <p className="mt-4">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using Content here,
-              content, making it look like readable English.
+              Yatra Nepal Service Centre is the multi-brand two-wheeler
+              servicing center in Nepal. Yatra Nepal Service Center offers
+              cutting-edge two-wheeler repair and maintenance services. Yatra
+              Nepal Service Center is revolutionizing two-wheeler servicing with
+              wide range of dependable services.
             </p>
             <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters,
+              Yatra Nepal Service Center is started in 2022 and rapidly
+              expanding around the country. Yatra Nepal Service Center
+              specialize in “Service is our Strength.” which involves providing
+              on-the-job training to transform individuals into skilled and
+              professional service providers. This effort aims to help young
+              people become financially self-sufficient while also improving the
+              economy of the country.
             </p>
             <div className="chain-break mt-5">
               <ChainBreak />

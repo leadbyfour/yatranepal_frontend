@@ -11,9 +11,9 @@ const Infobox = ({ title, description, image, color }) => {
         })}
       >
         <div className="box1-img text-center">{image}</div>
-        <div className="box-text p-5">
-          <h3 className="text-center">{title}</h3>
-          <p className="mt-4">{description}</p>
+        <div className="box-text">
+          <h3 className="text-center pt-5">{title}</h3>
+          <p className="mt-2 p-3">{description}</p>
         </div>
       </div>
     </div>
