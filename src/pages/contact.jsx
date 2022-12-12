@@ -101,27 +101,26 @@ const Contact = () => {
               <h1 className="faq">FAQ</h1>
             </div>
             <div className="col-lg-6">
-              <h5 className="red">What is Lorem Ipsum?</h5>
+              <h5 className="red">What is Yatra Nepal Service center?</h5>
               <p className="mt-3 faq-description">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum
+                Yatra Nepal Service Centre is the multi-brand two-wheeler
+                servicing center in Nepal.
               </p>
               <div className="faq-point">
                 <p>
-                  What is Lorem Ipsum Lorem?
+                  Where is Yatra Nepal Located?
                   <img src={plus} className="img-fluid ms-2" alt="plus" />
                 </p>
                 <p>
-                  What is Lorem Ipsum Lorem?
+                  What are services avilable?
                   <img src={plus} className="img-fluid ms-2" alt="plus" />
                 </p>
                 <p>
-                  What is Lorem Ipsum Lorem?
+                  Is Door step service avilable?
                   <img src={plus} className="img-fluid ms-2" alt="plus" />
                 </p>
                 <p>
-                  What is Lorem Ipsum Lorem?
+                  Is insurance service avilable?
                   <img src={plus} className="img-fluid ms-2" alt="plus" />
                 </p>
               </div>
