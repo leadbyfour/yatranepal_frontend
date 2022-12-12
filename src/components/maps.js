@@ -7,7 +7,7 @@ const Maps = () => {
         width="100%"
         height="600"
         id="gmap_canvas"
-        src="https://maps.google.com/maps?q=jadibuti,kathmandu&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        src="https://maps.google.com/maps?q=bansbari,kathmandu&t=&z=15&ie=UTF8&iwloc=&output=embed"
         frameborder="0"
         scrolling="no"
         marginheight="0"
