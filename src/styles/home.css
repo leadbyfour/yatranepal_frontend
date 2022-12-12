@@ -5,7 +5,7 @@
 }
 
 /* --------banner-1------------ */
-.banner-1 img{
+.banner-1 img {
   width: 100%;
 }
 
@@ -30,6 +30,10 @@
 
 .banner-2 ul {
   margin-top: 50px;
+}
+
+.chain-break-machine {
+  margin-top: 70px;
 }
 
 /* -----banner-3--------- */
@@ -62,4 +66,3 @@
   letter-spacing: 0.05em;
   color: #ffffff;
 }
-
