@@ -33,6 +33,10 @@
   margin-top: 50px;
 }
 
+.chain-break-machine {
+  margin-top: 70px;
+}
+
 /* -----banner-3--------- */
 .banner-3 h2 {
   font-weight: 700;
@@ -92,4 +96,5 @@
   justify-content: center;
   background: #ED1E24;
   border-radius: 13px;
+  color: #ffffff;
 }

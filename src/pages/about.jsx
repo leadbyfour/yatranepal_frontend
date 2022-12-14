@@ -9,7 +9,7 @@ const Missiondata = [
     image: '../image/mission.png',
     title: 'Our Mission',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+      'Our ultimate goal is to have a chain of multi-brand motorcycle workshops across the country and reach out to our customers as quickly as possible. Yatra Nepal Service Center specialize in “Service is our Strength.” which involves providing on-the-job training to transform individuals into skilled and professional service providers. This effort aims to help young people become financially self-sufficient while also improving the economy of the country.',
     bg: 'red',
   },
   {
@@ -17,7 +17,7 @@ const Missiondata = [
     image: '../image/vision.png',
     title: 'Our Vision',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+      'With each passing day, we strive to improve the ride and driving experience for each individual. We make sure you enjoy your trip while we take care of the rest during the trip.We ensure that customer satisfaction is at the heart of everything we do while improving the lives of our customers by providing quality products with best service.',
     bg: 'grey',
   },
 ]
@@ -25,27 +25,27 @@ const Missiondata = [
 const Teamdata = [
   {
     id: 1,
-    image: '../image/mahesh.png',
-    title: 'lorem ipsum',
-    post: 'Cheif Executive officer',
+    image: '../image/maheesh.png',
+    title: 'Mahesh Gyawali',
+    post: 'Chairman',
     description:
-      'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
+      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
     bg: 'red',
   },
   {
     id: 2,
-    image: '../image/mahesh.png',
-    title: 'lorem ipsum',
-    post: 'Cheif Executive officer',
+    image: '../image/ajay.png',
+    title: 'Ajay Singh',
+    post: 'Vice-Chairman',
     description:
       'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
     bg: 'grey',
   },
   {
     id: 3,
-    image: '../image/mahesh.png',
-    title: 'lorem ipsum',
-    post: 'Cheif Executive officer',
+    image: '../image/hari.png',
+    title: 'Hari Kumar Thakuri',
+    post: 'Managing Director',
     description:
       'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
     bg: 'red',
@@ -64,22 +64,26 @@ const About = () => {
             <div className="col-lg-12">
               <h1 className="mb-4">About Yatra Nepal</h1>
               <p className="text-white">
-                SpeedForce is India’s leading chain of multi-brand two-wheeler
-                servicing franchise. We are one of its kind across the nation.
-                We provide innovative repair and maintenance services for any
-                two-wheelers. With our wide range of trustworthy services like
-                pick up and drop facility, on-road breakdown support, insurance
-                support, Annual Maintenance Contracts, warranty program on spare
-                parts, and lubricants we are bringing a revolution in servicing
-                of two-wheelers. With well-equipped two-wheeler service stations
-                and skillful mechanics, we provide quality services with
-                excellent packages that are intended to offer you great
-                maintenance and saving. SpeedForce is a one-stop solution for
-                all two-wheeler needs. We started in 2012 and we are growing
-                speedily across the nation. Our franchises are operational in 16
-                different states of the country and is speedily counting more.
-                We are majorly into “ORGANISING THE UNORGANISED SECTOR” in which
-                provide on-job training to an individual.
+                Yatra Nepal Service Centre is the multi-brand two-wheeler
+                servicing center in Nepal. Yatra Nepal Service Center offers
+                cutting-edge two-wheeler repair and maintenance services. Yatra
+                Nepal Service Center is revolutionizing two-wheeler servicing
+                with wide range of dependable services such as pick-up and
+                drop-off, on-road breakdown support, insurance coverage, Annual
+                Maintenance Contracts, warranty programme on replacement parts,
+                and lubricants. We provide quality services with outstanding
+                packages that are aimed to provide you exceptional maintenance
+                and savings. Yatra Nepal Service Center is a one-stop shop for
+                all things two-wheeled.
+              </p>
+              <p className="text-white">
+                Yatra Nepal Service Center is started in 2022 and rapidly
+                expanding around the country. Yatra Nepal Service Center
+                specialize in “Service is our Strength.” which involves
+                providing on-the-job training to transform individuals into
+                skilled and professional service providers. This effort aims to
+                help young people become financially self-sufficient while also
+                improving the economy of the country.
               </p>
             </div>
           </div>
