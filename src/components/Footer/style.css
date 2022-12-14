@@ -23,7 +23,11 @@
   color: #ED1E24;
 }
 
-.footer span {
+.img-link {
+  height: 30px;
+}
+
+.footer .link {
   margin-top: 30px;
   color: #ffffff;
   font-style: normal;

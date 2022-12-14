@@ -9,13 +9,13 @@ const Contact = () => {
     <>
       <div className="contact-us-section">
         <div className="container">
-          <h2 className="red contact-us">Contact Us</h2>
+          <h2 className="red contact-us mb-5">Contact Us</h2>
         </div>
         <div className="text-white contact-banner">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 contact-data">
-                <div className="contact-banne text-white">
+                <div className="text-white">
                   <h5 className="red contact-info">Call Us</h5>
                   <p> 9851160294,9849167028,9749835510</p>
                   <h5 className="mt-5 red contact-info">E-Mail</h5>
@@ -80,7 +80,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="container">
+        <div className="container mt-chain">
           <ChainBreak />
         </div>
       </div>
@@ -116,19 +116,19 @@ const Contact = () => {
                 servicing center in Nepal.
               </p>
               <div className="faq-point">
-                <p>
+                <p className="mt-4">
                   Where is Yatra Nepal Located?
                   <img src={plus} className="img-fluid ms-2" alt="plus" />
                 </p>
-                <p>
+                <p className="mt-faq">
                   What are services avilable?
                   <img src={plus} className="img-fluid ms-2" alt="plus" />
                 </p>
-                <p>
+                <p className="mt-faq">
                   Is Door step service avilable?
                   <img src={plus} className="img-fluid ms-2" alt="plus" />
                 </p>
-                <p>
+                <p className="mt-faq">
                   Is insurance service avilable?
                   <img src={plus} className="img-fluid ms-2" alt="plus" />
                 </p>

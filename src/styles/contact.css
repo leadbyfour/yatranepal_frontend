@@ -6,22 +6,20 @@
 }
 
 .contact-banner {
-  /* background-color: #252525; */
-  background-image: url("../images/contact-bg.png");
-  background-repeat: no-repeat;
-  background-size: 100% 65%;
-  background-position: center;
-  /* position: relative; */
+  background-color: #252525;
+  height: 507px;
+  display: flex;
+  align-items: center;
 }
 
 .contact-us {
   font-style: normal;
   font-weight: 800;
   font-size: 38px;
-  /* line-height: 115.5%; */
   letter-spacing: 0.05em;
   color: #ED1E24;
 }
+
 
 .contact-data p {
   font-family: 'Outfit';
@@ -43,9 +41,6 @@
 }
 
 .touch {
-  /* position: absolute;
-  top: -30%;
-  right: 5%; */
   background-color: #252525;
   border: 2px solid #ED1E24;
 }
@@ -117,6 +112,10 @@ input {
   background: #ED1E24;
 }
 
+.mt-chain {
+  margin-top: 100px;
+}
+
 .banner-3 {
   margin-top: 100px;
 }
@@ -138,6 +137,10 @@ input {
 
 .banner-faq {
   margin-top: 150px;
+}
+
+.mt-faq {
+  margin-top: 43px;
 }
 
 .faq {

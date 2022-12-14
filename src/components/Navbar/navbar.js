@@ -20,7 +20,14 @@ function Navbar() {
             </div>
             <div className="Email ms-4 text-white">
               <Email />
-              <span className="ms-2 nav-details">yatranepal@gmail.com</span>
+              <span
+                onClick={() =>
+                  (window.location = 'mailto:yatranepal@gmail.com')
+                }
+                className="ms-2 nav-details"
+              >
+                yatranepal@gmail.com
+              </span>
             </div>
 
             <button

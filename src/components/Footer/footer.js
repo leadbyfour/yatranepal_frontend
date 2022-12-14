@@ -51,18 +51,18 @@ function Footer() {
             {footerdata.map((props) => (
               <div className="col-lg-3">
                 <h3>{props.title}</h3>
-                <span className="d-block">
-                  {props.image}
-                  <span className="ms-2">{props.link1}</span>
-                </span>
-                <span className="d-block">
-                  {props.image1}
-                  <span className="ms-2">{props.link2}</span>
-                </span>
-                <span className="d-block">
+                <div className="d-flex align-items-center link">
+                  <div className="img-link">{props.image}</div>
+                  <div className="ms-3">{props.link1}</div>
+                </div>
+                <div className="d-flex align-items-center link">
+                  <div className="img-link">{props.image1}</div>
+                  <div className="ms-3">{props.link2}</div>
+                </div>
+                <div className="d-flex align-items-center link">
                   {props.image2}
-                  <span className="ms-2">{props.link3}</span>
-                </span>
+                  <div className="ms-3">{props.link3}</div>
+                </div>
               </div>
             ))}
           </div>

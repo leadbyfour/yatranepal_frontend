@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Pridi:wght@200;300;400;500;600;700&display=swap');
 
 .header {
   font-size: 15px;
@@ -67,9 +67,9 @@
 }
 
 .banner-about p {
-  font-family: 'Outfit';
+  font-family: 'Pridi', serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 22px;
   line-height: 147.5%;
   letter-spacing: 0.05em;
