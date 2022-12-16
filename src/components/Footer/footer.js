@@ -32,7 +32,7 @@ const footerdata = [
     image: <Call />,
     image1: <Email />,
     image2: <Location />,
-    link1: '9851160294, 9849167028 ,9749835510',
+    link1: '9851160294,01-49174458',
     link2: 'yatranepal777@gmail.com',
     link3: 'Bansbari, Kathmandu',
   },
@@ -40,32 +40,35 @@ const footerdata = [
 
 function Footer() {
   return (
-    <div className="footer mt-5 padtb">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-3 d-flex align-items-center">
-            <img src={Logo} className="w-75" alt="logo" />
-          </div>
-          {footerdata.map((props) => (
-            <div className="col-lg-3">
-              <h3>{props.title}</h3>
-              <span className="d-block">
-                {props.image}
-                <span className="ms-2">{props.link1}</span>
-              </span>
-              <span className="d-block">
-                {props.image1}
-                <span className="ms-2">{props.link2}</span>
-              </span>
-              <span className="d-block">
-                {props.image2}
-                <span className="ms-2">{props.link3}</span>
-              </span>
+    <>
+      <div className="footer mt-5 padtb">
+        <div className="footer-line"></div>
+        <div className="container mt-5">
+          <div className="row justify-content-center">
+            <div className="col-lg-3 d-flex align-items-center">
+              <img src={Logo} className="w-75" alt="logo" />
             </div>
-          ))}
+            {footerdata.map((props) => (
+              <div className="col-lg-3">
+                <h3>{props.title}</h3>
+                <div className="d-flex align-items-center link">
+                  <div className="img-link">{props.image}</div>
+                  <div className="ms-3">{props.link1}</div>
+                </div>
+                <div className="d-flex align-items-center link">
+                  <div className="img-link">{props.image1}</div>
+                  <div className="ms-3">{props.link2}</div>
+                </div>
+                <div className="d-flex align-items-center link">
+                  {props.image2}
+                  <div className="ms-3">{props.link3}</div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

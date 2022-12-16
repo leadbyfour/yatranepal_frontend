@@ -58,11 +58,11 @@ const About = () => {
         <img src={about} className="img-fluid" alt="about image" />
       </div>
 
-      <div className="about-yatra padtb">
+      <div className="about-yatra">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h1 className="text-danger mb-4">About Yatra Nepal</h1>
+              <h1 className="mb-4">About Yatra Nepal</h1>
               <p className="text-white">
                 Yatra Nepal Service Centre is the multi-brand two-wheeler
                 servicing center in Nepal. Yatra Nepal Service Center offers
@@ -90,7 +90,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container mt-5">
+      <div className="container mission-box">
         <div className="row justify-content-between">
           {Missiondata.map((missionItem) => (
             <Missionbox
@@ -103,9 +103,9 @@ const About = () => {
         </div>
       </div>
 
-      <div className="banner-3 mt-5 padtb">
+      <div className="banner-team mt-5 padtb">
         <div className="container">
-          <h2 className="text-center text-danger mb-4">Meet The Team</h2>
+          <h2 className="text-center meet-team my-5">Meet The Team</h2>
           <div className="row mt-3">
             {Teamdata.map((whyusItem) => (
               <Teambox

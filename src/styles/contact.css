@@ -1,17 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.contact-us-section {
+  margin-top: 110px;
+}
+
 .contact-banner {
   background-color: #252525;
-  position: relative;
+  height: 507px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-us {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  letter-spacing: 0.05em;
+  color: #ED1E24;
+}
+
+
+.contact-data p {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 115.5%;
+  letter-spacing: 0.135em;
+  color: #FFFFFF;
+}
+
+.contact-info {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  padding-top: 20px;
 }
 
 .touch {
-  position: absolute;
-  top: -30%;
-  right: 5%;
   background-color: #252525;
   border: 2px solid #ED1E24;
 }
-.text-area{
-height: 157px;
+
+.touch h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ED1E24;
+}
+
+.touch p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.text-area {
+  height: 157px;
 }
 
 input {
@@ -25,8 +78,9 @@ input {
   border-radius: 0% !important;
   color: #ffffff !important;
 }
-.banner-contact{
-    margin-top: 250px !important;
+
+.banner-contact {
+  margin-top: 200px !important;
 }
 
 .text-area {
@@ -35,6 +89,31 @@ input {
 
 ::placeholder {
   color: #ffffff !important;
+}
+
+.send-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.send-message {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  width: 369px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ED1E24;
+}
+
+.mt-chain {
+  margin-top: 100px;
 }
 
 .banner-3 {
@@ -56,6 +135,14 @@ input {
   color: #ED1E24;
 }
 
+.banner-faq {
+  margin-top: 150px;
+}
+
+.mt-faq {
+  margin-top: 43px;
+}
+
 .faq {
   font-weight: 700;
   font-size: 128px;
@@ -64,7 +151,7 @@ input {
   color: #ED1E24;
 }
 
-.banner-3 h5 {
+.banner-faq h5 {
   font-style: normal;
   font-weight: 800;
   font-size: 24px;
@@ -73,7 +160,7 @@ input {
   color: #ED1E24;
 }
 
-.banner-3 .faq-description {
+.banner-faq .faq-description {
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -91,7 +178,7 @@ input {
   color: #FFFFFF;
 }
 
-.banner-3 .faq-point {
+.banner-faq .faq-point {
   font-style: normal;
   font-weight: 800;
   font-size: 22px;

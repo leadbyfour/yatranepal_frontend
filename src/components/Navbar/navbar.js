@@ -16,11 +16,18 @@ function Navbar() {
             <div className="phn-no ms-5 text-white">
               <Call />
 
-              <span className="ms-2">977-985106598</span>
+              <span className="ms-2 nav-details">977-985106598</span>
             </div>
             <div className="Email ms-4 text-white">
               <Email />
-              <span className="ms-2">yatranepal@gmail.com</span>
+              <span
+                onClick={() =>
+                  (window.location = 'mailto:yatranepal@gmail.com')
+                }
+                className="ms-2 nav-details"
+              >
+                yatranepal@gmail.com
+              </span>
             </div>
 
             <button
@@ -41,7 +48,7 @@ function Navbar() {
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <NavLink
-                    className="nav-link text-white me-2"
+                    className="nav-link text-white me-2 home"
                     aria-current="page"
                     to="/"
                   >

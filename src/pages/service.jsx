@@ -27,30 +27,30 @@ const provideData = [
   {
     id: 5,
     title: 'Pickup & Drop',
-    bg: 'red',
+    bg: 'grey',
   },
   {
     id: 6,
     title: 'Breakdown Service',
-    bg: 'grey',
+    bg: 'red',
   },
   {
     id: 7,
     title: 'Value Added Services',
-    bg: 'red',
+    bg: 'grey',
   },
 
   {
     id: 8,
     title: 'Recondition',
-    bg: 'grey',
+    bg: 'red',
   },
 ]
 
 const serviceData = [
   {
     id: 1,
-    title: '1.Periodic Services',
+    title: '1. Periodic Services',
     image: '../image/perodicimage.png',
     orintation: 'imageLast',
     description:
@@ -66,7 +66,7 @@ const serviceData = [
   },
   {
     id: 3,
-    title: '3. Accidental Repaiirs',
+    title: '3. Accidental Repairs',
     image: '../image/perodicimage.png',
     orintation: 'imageLast',
     description:
@@ -120,7 +120,7 @@ const Service = () => {
       <div className="banner-service">
         <img src={service} className="img-fluid" alt="services" />
       </div>
-      <div className="banner-3">
+      <div className="banner-provide">
         <div className="container">
           <h1 className="my-5">What We Provide?</h1>
           <div className="row gy-5">

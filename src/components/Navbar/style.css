@@ -2,6 +2,36 @@
 .navbar .navbar-nav .nav-link.active {
     color: #ED1E24 !important;
 }
-.active{
+
+.active {
     color: #ED1E24;
+}
+
+.nav-details {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 115.5%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.nav-link {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 115.5%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.home {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 115.5%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+
 }

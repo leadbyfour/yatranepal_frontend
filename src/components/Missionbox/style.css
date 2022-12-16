@@ -1,21 +1,22 @@
-.box-1 {
+.box-mission {
 	position: relative;
 }
 
-.box-1 {
+.box-mission {
 	border-radius: 19px;
-	border: 2px solid rgba(237, 30, 36, 0.2);
+	border: 1px solid #ed1e24;
+	height: 529px;
 }
 
-.box1-img {
+.box-mission-img {
 	position: absolute;
-	top: -10%;
+	top: -8%;
 	text-align: center;
 	right: 50%;
 	transform: translateX(50%);
 }
 
-.box-text h3 {
+.box-mission-text h3 {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 38px;
@@ -24,7 +25,7 @@
 	color: #FFFFFF;
 }
 
-.box-text p {
+.box-mission-text p {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
