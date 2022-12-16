@@ -17,6 +17,11 @@ const Infobox = ({ title, description, image, color, post }) => {
           <h3 className="text-center">{title}</h3>
           <h4 className="text-center">{post}</h4>
           <p className="mt-4">{description}</p>
+          <div className="social-links text-center mt-4">
+            <span class="fa-brands fa-facebook"></span>
+            <span class="fa-brands fa-instagram ms-4"></span>
+            <span class="fa-brands fa-twitter ms-4"></span>
+          </div>
         </div>
       </div>
     </div>
