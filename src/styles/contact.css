@@ -70,6 +70,13 @@
 input {
   width: 223px;
   height: 62px;
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px !important;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #FFFFFF !important;
 }
 
 .form-bg {
@@ -88,7 +95,13 @@ input {
 }
 
 ::placeholder {
-  color: #ffffff !important;
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px !important;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #FFFFFF !important;
 }
 
 .send-btn {
@@ -100,7 +113,7 @@ input {
   font-family: 'Orbitron';
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 20px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
   color: #FFFFFF;
@@ -110,6 +123,10 @@ input {
   align-items: center;
   justify-content: center;
   background: #ED1E24;
+}
+
+button {
+  border: none;
 }
 
 .mt-chain {

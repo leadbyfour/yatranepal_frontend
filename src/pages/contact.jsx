@@ -31,49 +31,69 @@ const Contact = () => {
                     Have some inquiry or wanna give us a feedback? Feel free to
                     leave us a message.
                   </p>
-                  <div className="row gy-5">
-                    <div className="col-lg-6">
-                      <input
-                        type="text"
-                        className="form-control form-bg"
-                        id="exampleFormControlInput1"
-                        placeholder="First Name"
-                      />
+                  <form action="https://formspree.io/f/mjvdbkqr" method="POST">
+                    <div className="row gy-5">
+                      <div className="col-lg-6">
+                        <input
+                          type="text"
+                          name="first-name"
+                          className="form-control form-bg"
+                          id="exampleFormControlInput1"
+                          placeholder="First Name"
+                          autoComplete="off"
+                        />
+                      </div>
+                      <div className="col-lg-6">
+                        <input
+                          type="text"
+                          name="last-name"
+                          className="form-control form-bg"
+                          id="exampleFormControlInput1"
+                          placeholder="Last Name"
+                          autoComplete="off"
+                          required
+                        />
+                      </div>
+                      <div className="col-lg-6">
+                        <input
+                          type="number"
+                          name="contact-number"
+                          className="form-control form-bg"
+                          id="exampleFormControlInput1"
+                          placeholder="Contact Number"
+                          autoComplete="off"
+                          required
+                        />
+                      </div>
+                      <div className="col-lg-6">
+                        <input
+                          type="text"
+                          name="address"
+                          className="form-control form-bg"
+                          id="exampleFormControlInput1"
+                          placeholder="Address"
+                          autoComplete="off"
+                          required
+                        />
+                      </div>
+                      <textarea
+                        className="form-control mt-5 form-bg text-area"
+                        name="description"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        placeholder="Leave Us A Message....."
+                        autoComplete="off"
+                      ></textarea>
+                      <div className="send-btn mt-5">
+                        <button
+                          type="submit"
+                          className="text-center send-message"
+                        >
+                          Send Message
+                        </button>
+                      </div>
                     </div>
-                    <div className="col-lg-6">
-                      <input
-                        type="text"
-                        className="form-control form-bg"
-                        id="exampleFormControlInput1"
-                        placeholder="Last Name"
-                      />
-                    </div>
-                    <div className="col-lg-6">
-                      <input
-                        type="text"
-                        className="form-control form-bg"
-                        id="exampleFormControlInput1"
-                        placeholder="Contact Number"
-                      />
-                    </div>
-                    <div className="col-lg-6">
-                      <input
-                        type="text"
-                        className="form-control form-bg"
-                        id="exampleFormControlInput1"
-                        placeholder="Address"
-                      />
-                    </div>
-                    <textarea
-                      className="form-control mt-5 form-bg text-area"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                      placeholder="Leave Us A Message....."
-                    ></textarea>
-                    <div className="send-btn mt-5">
-                      <p className="text-center send-message">Send Message</p>
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
