@@ -7,6 +7,7 @@ import Twitter from '../Icons/twitter'
 import Location from '../Icons/location'
 import Call from '../Icons/call'
 import Email from '../Icons/email'
+import Footerbox from 'components/Footerbox'
 
 const footerdata = [
   {
@@ -15,9 +16,7 @@ const footerdata = [
     image: <Facebook />,
     image1: <Instagram />,
     image2: <Twitter />,
-    link1: 'Yatra Nepal',
-    link2: 'Yatra Nepal',
-    link3: 'Yatra Nepal',
+    flex: 'inline',
   },
   {
     id: 2,
@@ -48,22 +47,17 @@ function Footer() {
             <div className="col-lg-3 d-flex align-items-center">
               <img src={Logo} className="w-75" alt="logo" />
             </div>
-            {footerdata.map((props) => (
-              <div className="col-lg-3">
-                <h3>{props.title}</h3>
-                <div className="d-flex align-items-center link">
-                  <div className="img-link">{props.image}</div>
-                  <div className="ms-3">{props.link1}</div>
-                </div>
-                <div className="d-flex align-items-center link">
-                  <div className="img-link">{props.image1}</div>
-                  <div className="ms-3">{props.link2}</div>
-                </div>
-                <div className="d-flex align-items-center link">
-                  {props.image2}
-                  <div className="ms-3">{props.link3}</div>
-                </div>
-              </div>
+            {footerdata.map((footeritem) => (
+              <Footerbox
+                title={footeritem.title}
+                link1={footeritem.link1}
+                link2={footeritem.link2}
+                link3={footeritem.link3}
+                image={footeritem.image}
+                image1={footeritem.image1}
+                image2={footeritem.image2}
+                display={footeritem.flex}
+              />
             ))}
           </div>
         </div>
