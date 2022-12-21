@@ -10,6 +10,9 @@ const Footerbox = ({
   image2,
   image1,
   display,
+  mailTo,
+  isSocialLink,
+  socialLinks,
 }) => {
   return (
     <div className="col-lg-3">
@@ -21,12 +24,18 @@ const Footerbox = ({
         })}
       >
         <div className="d-flex align-items-center link">
-          <div className="img-link ms-3">{image}</div>
+          {isSocialLink ? (
+            <a href={socialLinks[0]}>{image}</a>
+          ) : (
+            <div className="img-link ms-3">{image}</div>
+          )}
           <div className="ms-3">{link1}</div>
         </div>
         <div className="d-flex align-items-center link">
           <div className="img-link ms-3">{image1}</div>
-          <div className="ms-3">{link2}</div>
+          <div className="ms-3" onClick={mailTo ? mailTo : null}>
+            {link2}
+          </div>
         </div>
         <div className="d-flex align-items-center link">
           <div className="img-link ms-3">{image2}</div>

@@ -9,6 +9,11 @@ import Call from '../Icons/call'
 import Email from '../Icons/email'
 import Footerbox from 'components/Footerbox'
 
+const mailToFunction = () => {
+  window.location = 'mailto:yatranepal@gmail.com'
+  debugger
+}
+
 const footerdata = [
   {
     id: 1,
@@ -16,6 +21,8 @@ const footerdata = [
     image: <Facebook />,
     image1: <Instagram />,
     image2: <Twitter />,
+    socialLinks: ['www.fb.com', 'instagram.com', 'twitter.com'],
+    isSocialLink: true,
     flex: 'inline',
   },
   {
@@ -24,6 +31,7 @@ const footerdata = [
     link1: 'FAQ',
     link2: 'Services',
     link3: 'Precise location',
+    isSocialLink: false,
   },
   {
     id: 3,
@@ -34,6 +42,8 @@ const footerdata = [
     link1: '9851160294,01-49174458',
     link2: 'yatranepal777@gmail.com',
     link3: 'Bansbari, Kathmandu',
+    isSocialLink: false,
+    mailTo: mailToFunction,
   },
 ]
 
@@ -56,6 +66,9 @@ function Footer() {
                 image={footeritem.image}
                 image1={footeritem.image1}
                 image2={footeritem.image2}
+                mailTo={footeritem.mailTo}
+                isSocialLink={footeritem.isSocialLink}
+                socialLinks={footeritem.socialLinks}
                 display={footeritem.flex}
               />
             ))}
