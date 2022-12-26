@@ -17,6 +17,11 @@ const Teambox = ({ title, description, image, color, post }) => {
           <h3 className="text-center">{title}</h3>
           <h4 className="text-center mt-3">{post}</h4>
           <p className="mt-4">{description}</p>
+          <div className="social-links text-center mt-4">
+            <span class="fa fa-facebook"></span>
+            <span class="fa fa-instagram ms-4"></span>
+            <span class="fa fa-twitter ms-4"></span>
+          </div>
         </div>
       </div>
     </div>
