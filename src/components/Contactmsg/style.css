@@ -1,0 +1,28 @@
+.moodal {
+    max-width: 400px;
+    background-color: #252525;
+    /* height: 208px; */
+}
+
+.thank {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 115.5%;
+    letter-spacing: 0.05em;
+    color: #ED1E24;
+    margin-top: 30px;
+    margin-left: 35px;
+    text-align: center;
+}
+
+.moodal .pop-msg {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 115.5%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}

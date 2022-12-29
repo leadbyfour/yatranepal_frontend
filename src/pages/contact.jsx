@@ -3,6 +3,7 @@ import plus from '../images/plus.png'
 import Maps from 'components/maps'
 import ChainBreak from 'components/Icons/chainBreak'
 import '../styles/contact.css'
+import Contactmsg from 'components/Contactmsg'
 
 const Contact = () => {
   return (
