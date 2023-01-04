@@ -19,16 +19,17 @@ const Gallery = () => {
         <img src={gallery} className="img-fluid" alt="aboutimage" />
       </div>
       <div className="container mt-3">
-        <h1 className="photo-gallery">
-          A Photo Gallery of <br />
-          <span className="red">Yatra Nepal</span>
-        </h1>
-        <p className="gallery-desc">
-          Check out some gimps of our service at
-          <span className="red">Yatra Nepal</span>.
-        </p>
-        <div className="grid-container">
-          <div className="item"></div>
+        <div className="grid-container mt-5">
+          <div className="item">
+            <h1 className="photo-gallery">
+              A Photo Gallery of <br />
+              <span className="red">Yatra Nepal</span>
+            </h1>
+            <p className="gallery-desc">
+              Check out some gimps of our service at
+              <span className="red">Yatra Nepal</span>.
+            </p>
+          </div>
           <div className="item-1">
             <img src={photo1} className="img-fluid" alt="gallary-img" />
           </div>
