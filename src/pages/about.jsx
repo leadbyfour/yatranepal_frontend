@@ -31,6 +31,8 @@ const Teamdata = [
     description:
       'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
     bg: 'red',
+    linkfb: 'https://www.facebook.com/mahesh.gyawali.98',
+    linkin: 'https://www.instagram.com/mohesxettrii/',
   },
   {
     id: 2,
@@ -40,6 +42,8 @@ const Teamdata = [
     description:
       'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
     bg: 'grey',
+    linkfb: 'https://www.facebook.com/ajay.singhthakuri.54',
+    linkin: 'https://www.instagram.com/',
   },
   {
     id: 3,
@@ -49,6 +53,8 @@ const Teamdata = [
     description:
       'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
     bg: 'red',
+    linkfb: 'https://www.facebook.com/kumar.shah.777',
+    linkin: 'https://www.instagram.com/kumarsinghthakuri/',
   },
 ]
 const About = () => {
@@ -114,6 +120,8 @@ const About = () => {
                 post={whyusItem.post}
                 image={whyusItem.image}
                 color={whyusItem.bg}
+                linkfb={whyusItem.linkfb}
+                linkin={whyusItem.linkin}
               />
             ))}
           </div>
