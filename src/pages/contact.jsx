@@ -3,6 +3,7 @@ import plus from '../images/plus.png'
 import Maps from 'components/maps'
 import ChainBreak from 'components/Icons/chainBreak'
 import '../styles/contact.css'
+import BasicExample from 'components/Accodian'
 
 const Contact = () => {
   return (
@@ -115,24 +116,7 @@ const Contact = () => {
                 Yatra Nepal Service Centre is the multi-brand two-wheeler
                 servicing center in Nepal.
               </p>
-              <div className="faq-point">
-                <p className="mt-4">
-                  Where is Yatra Nepal Located?
-                  <img src={plus} className="img-fluid ms-2" alt="plus" />
-                </p>
-                <p className="mt-faq">
-                  What are services avilable?
-                  <img src={plus} className="img-fluid ms-2" alt="plus" />
-                </p>
-                <p className="mt-faq">
-                  Is Door step service avilable?
-                  <img src={plus} className="img-fluid ms-2" alt="plus" />
-                </p>
-                <p className="mt-faq">
-                  Is insurance service avilable?
-                  <img src={plus} className="img-fluid ms-2" alt="plus" />
-                </p>
-              </div>
+              <BasicExample />
             </div>
           </div>
         </div>
