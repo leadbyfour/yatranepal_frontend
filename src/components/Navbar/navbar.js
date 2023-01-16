@@ -24,7 +24,7 @@ function Navbar() {
                 onClick={() =>
                   (window.location = 'mailto:yatranepal@gmail.com')
                 }
-                className="ms-2 nav-details"
+                className="ms-2 nav-details pointer"
               >
                 yatranepal@gmail.com
               </span>

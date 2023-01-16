@@ -133,7 +133,7 @@ function Aboutyatra() {
           <div className="col-lg-6">
             <img src={Garage} className="img-fluid" alt="garage" />
             <div className="yatra-btn mt-3">
-              <p className="text-center explore">Explore Yatra</p>
+              <p className="text-center explore pointer">Explore Yatra</p>
             </div>
           </div>
         </div>
