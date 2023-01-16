@@ -32,13 +32,23 @@ const Footerbox = ({
           <div className="ms-3">{link1}</div>
         </div>
         <div className="d-flex align-items-center link">
-          <div className="img-link ms-3">{image1}</div>
+          {isSocialLink?(
+                 <a href={socialLinks[1]} className='ms-3'>{image1}</a>
+
+          ):(
+            <div className="img-link ms-3">{image1}</div>
+
+          )}
           <div className="ms-3" onClick={mailTo ? mailTo : null}>
             {link2}
           </div>
         </div>
         <div className="d-flex align-items-center link">
-          <div className="img-link ms-3">{image2}</div>
+          {isSocialLink?(
+               <a href={socialLinks[2]} className="ms-3">{image2}</a>
+          ):(
+            <div className="img-link ms-3">{image2}</div>
+          )}
           <div className="ms-3">{link3}</div>
         </div>
       </div>

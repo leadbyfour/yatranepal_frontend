@@ -10,7 +10,7 @@ import Email from '../Icons/email'
 import Footerbox from 'components/Footerbox'
 
 const mailToFunction = () => {
-  window.location = 'mailto:yatranepal@gmail.com'
+  window.location = 'mailto:yatranepal777@gmail.com'
   debugger
 }
 
@@ -21,7 +21,7 @@ const footerdata = [
     image: <Facebook />,
     image1: <Instagram />,
     image2: <Twitter />,
-    socialLinks: ['www.fb.com', 'instagram.com', 'twitter.com'],
+    socialLinks: ['https://www.facebook.com/profile.php?id=100086152637787', 'https://www.instagram.com', 'https://www.twitter.com'],
     isSocialLink: true,
     flex: 'inline',
   },
