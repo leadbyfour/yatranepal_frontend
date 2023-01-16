@@ -18,16 +18,16 @@ const Gallery = () => {
       <div className="banner-1">
         <img src={gallery} className="img-fluid" alt="aboutimage" />
       </div>
-      <div className="container mt-3">
+      <div className="container mt-top">
         <div className="grid-container mt-5">
           <div className="item">
             <h1 className="photo-gallery">
-              A Photo Gallery of <br />
+              A Photo<br/> Gallery of <br />
               <span className="red">Yatra Nepal</span>
             </h1>
             <p className="gallery-desc">
-              Check out some gimps of our service at
-              <span className="red">Yatra Nepal</span>.
+              Check out some gimps of our<br/> service at
+              <span className="red"> Yatra Nepal</span>.
             </p>
           </div>
           <div className="item-1">
