@@ -4,6 +4,9 @@ import Maps from 'components/maps'
 import ChainBreak from 'components/Icons/chainBreak'
 import '../styles/contact.css'
 import BasicExample from 'components/Accodian'
+import Call from 'components/Icons/call'
+import Email from 'components/Icons/email'
+import Location from 'components/Icons/location'
 
 const Contact = () => {
   return (
@@ -17,11 +20,11 @@ const Contact = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 contact-data">
                 <div className="text-white">
-                  <h5 className="red contact-info">Call Us</h5>
+                  <h5 className="red contact-info"><Call/><span className='ms-3'>Call Us</span></h5>
                   <p> 9851160294,9849167028,9749835510</p>
-                  <h5 className="mt-5 red contact-info">E-Mail</h5>
+                  <h5 className="mt-5 red contact-info"><Email/><span className='ms-3'>E-Mail</span></h5>
                   <p>yatranepal777@gmail.com</p>
-                  <h5 className="mt-5 red contact-info">Location</h5>
+                  <h5 className="mt-5 red contact-info"><Location/><span className='ms-3'>Location</span></h5>
                   <p>Bansbari,Kathmandu</p>
                 </div>
               </div>
