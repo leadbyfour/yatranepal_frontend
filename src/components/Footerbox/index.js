@@ -13,6 +13,7 @@ const Footerbox = ({
   mailTo,
   isSocialLink,
   socialLinks,
+  displaytwo,
 }) => {
   return (
     <div className="col-lg-3">
@@ -21,6 +22,7 @@ const Footerbox = ({
       <div
         className={classNames('footer-text', {
           'display-flex': display === 'inline',
+          'align-items-baseline':displaytwo==='baseline'
         })}
       >
         <div className="d-flex align-items-center link">

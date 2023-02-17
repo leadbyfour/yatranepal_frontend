@@ -23,6 +23,7 @@ const footerdata = [
     socialLinks: ['https://www.facebook.com/profile.php?id=100086152637787', 'https://www.instagram.com', 'https://www.twitter.com'],
     isSocialLink: true,
     flex: 'inline',
+    align:'baseline'
   },
   {
     id: 2,
@@ -69,6 +70,8 @@ function Footer() {
                 isSocialLink={footeritem.isSocialLink}
                 socialLinks={footeritem.socialLinks}
                 display={footeritem.flex}
+                displaytwo={footeritem.align}
+
               />
             ))}
           </div>
