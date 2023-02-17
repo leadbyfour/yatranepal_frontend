@@ -43,7 +43,6 @@ const Teamdata = [
       'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
     bg: 'grey',
     linkfb: 'https://www.facebook.com/ajay.singhthakuri.54',
-    linkin: 'https://www.instagram.com/',
   },
   {
     id: 3,
