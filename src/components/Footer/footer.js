@@ -32,7 +32,7 @@ const footerdata = [
     image1: <Email />,
     image2: <Location />,
     link1: '9851160294,01-49174458',
-    link2: 'yatranepal777@gmail.com',
+    link2: 'yatranepal777@ gmail.com',
     link3: 'Bansbari, Kathmandu',
   },
 ]
@@ -44,8 +44,8 @@ function Footer() {
         <div className="footer-line"></div>
         <div className="container mt-5">
           <div className="row justify-content-center">
-            <div className="col-lg-3 d-flex align-items-center">
-              <img src={Logo} className="w-75" alt="logo" />
+            <div className="col-lg-3 d-flex align-items-center col-md-6 mt-3">
+              <img src={Logo} className="img-fluid yatra-logo" alt="logo" />
             </div>
             {footerdata.map((footeritem) => (
               <Footerbox

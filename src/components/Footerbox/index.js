@@ -12,7 +12,7 @@ const Footerbox = ({
   display,
 }) => {
   return (
-    <div className="col-lg-3">
+    <div className="col-lg-3 col-md-6 mt-5">
       <h3 className="ms-3">{title}</h3>
 
       <div

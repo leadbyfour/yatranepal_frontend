@@ -98,3 +98,27 @@
   border-radius: 13px;
   color: #ffffff;
 }
+
+/* .chain-line{
+  width: 100px !important;
+} */
+
+.chain-break{
+  width: 50%;
+}
+/* ----------Responsive-------------- */
+@media screen and (max-width:992px) {
+  .box-info{
+    margin-top: 80px;
+  }
+  .explore{
+    margin-top: 50px;
+  }
+  .mt-small{
+    margin-top: 40px;
+  }
+  .chain-break{
+    width: 100%;
+  }
+ 
+}

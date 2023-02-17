@@ -4,7 +4,7 @@ function Line() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="536"
+      width="100%"
       height="3"
       fill="none"
       viewBox="0 0 536 3"

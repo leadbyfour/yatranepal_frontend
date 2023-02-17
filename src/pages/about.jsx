@@ -29,7 +29,7 @@ const Teamdata = [
     title: 'Mahesh Gyawali',
     post: 'Chairman',
     description:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'It is a long established fact that a reader will be distracted by the readable .',
     bg: 'red',
     linkfb: 'https://www.facebook.com/mahesh.gyawali.98',
     linkin: 'https://www.instagram.com/mohesxettrii/',
@@ -51,7 +51,7 @@ const Teamdata = [
     title: 'Hari Kumar Thakuri',
     post: 'Managing Director',
     description:
-      'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
+      'It is a long established fact that a reader will be. It Is.',
     bg: 'red',
     linkfb: 'https://www.facebook.com/kumar.shah.777',
     linkin: 'https://www.instagram.com/kumarsinghthakuri/',

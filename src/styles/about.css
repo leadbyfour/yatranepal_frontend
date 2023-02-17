@@ -43,3 +43,15 @@
   border: 1px solid #ED1E24;
   height: 606px;
 }
+
+
+/* ---------responsive---- */
+
+@media screen and (max-width:992px){
+  .box-mission{
+    margin-top: 80px;
+  }
+  .box-team{
+    margin-top: 50px;
+  }
+}

@@ -2,7 +2,7 @@
 
 .box-info {
   position: relative;
-  height: 296px;
+  min-height: 296px;
 }
 
 .banner-3 .box-info {
