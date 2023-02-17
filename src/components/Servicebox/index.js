@@ -20,9 +20,8 @@ const Servicebox = ({ title, image, description, orintation,descriptiontwo }) =>
           </div>
           <div className="col-lg-6">
             <div className="service-description">
-              <p>{description}</p>
-              <p className='mt-4'>{descriptiontwo}</p>
-
+              <p className='justified'>{description}</p>
+              <p className='mt-4 justified'>{descriptiontwo}</p>
             </div>
           </div>
         </div>

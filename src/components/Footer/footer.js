@@ -23,6 +23,7 @@ const footerdata = [
     socialLinks: ['https://www.facebook.com/profile.php?id=100086152637787', 'https://www.instagram.com', 'https://www.twitter.com'],
     isSocialLink: true,
     flex: 'inline',
+    align:'baseline'
   },
   {
     id: 2,
@@ -54,7 +55,7 @@ function Footer() {
         <div className="container mt-5">
           <div className="row justify-content-center">
             <div className="col-lg-3 d-flex align-items-center">
-              <img src={Logo} className="w-75" alt="logo" />
+              <img src={Logo} className="img-fluid footer-logo" alt="logo" />
             </div>
             {footerdata.map((footeritem) => (
               <Footerbox
@@ -69,6 +70,8 @@ function Footer() {
                 isSocialLink={footeritem.isSocialLink}
                 socialLinks={footeritem.socialLinks}
                 display={footeritem.flex}
+                displaytwo={footeritem.align}
+
               />
             ))}
           </div>

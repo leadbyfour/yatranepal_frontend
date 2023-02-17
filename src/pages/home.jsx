@@ -9,6 +9,7 @@ import Infobox from 'components/InfoBox'
 import ChainBreak from 'components/Icons/chainBreak'
 import Line from '../images/line.png'
 import '../styles/home.css'
+import { Link } from 'react-router-dom'
 
 const Whyusdata = [
   {
@@ -110,14 +111,15 @@ function Aboutyatra() {
               About
               <span className="yatraNepal"> Yatra Nepal</span>
             </h2>
-            <p className="mt-5">
+            <img src={Line}/>
+            <p className="mt-5 justified">
               Yatra Nepal Service Centre is the multi-brand two-wheeler
               servicing center in Nepal. Yatra Nepal Service Center offers
               cutting-edge two-wheeler repair and maintenance services. Yatra
               Nepal Service Center is revolutionizing two-wheeler servicing with
               wide range of dependable services.
             </p>
-            <p>
+            <p className='justified'>
               Yatra Nepal Service Center is started in 2022 and rapidly
               expanding around the country. Yatra Nepal Service Center
               specialize in “Service is our Strength.” which involves providing
@@ -133,7 +135,7 @@ function Aboutyatra() {
           <div className="col-lg-6">
             <img src={Garage} className="img-fluid" alt="garage" />
             <div className="yatra-btn mt-3">
-              <p className="text-center explore pointer">Explore Yatra</p>
+              <Link to="/about" className="text-center explore pointer">Explore Yatra</Link>
             </div>
           </div>
         </div>
