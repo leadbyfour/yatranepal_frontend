@@ -11,7 +11,6 @@ import Footerbox from 'components/Footerbox'
 
 const mailToFunction = () => {
   window.location = 'mailto:yatranepal777@gmail.com'
-  debugger
 }
 
 const footerdata = [
