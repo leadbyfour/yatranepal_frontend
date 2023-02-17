@@ -22,11 +22,11 @@ function Navbar() {
               <Email />
               <span
                 onClick={() =>
-                  (window.location = 'mailto:yatranepal@gmail.com')
+                  (window.location = 'mailto:yatranepal777@gmail.com')
                 }
                 className="ms-2 nav-details pointer"
               >
-                yatranepal@gmail.com
+                yatranepal777@gmail.com
               </span>
             </div>
 
