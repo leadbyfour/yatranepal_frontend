@@ -24,7 +24,7 @@ const Teambox = ({
         <div className="teambox-text p-5">
           <h3 className="text-center">{title}</h3>
           <h4 className="text-center mt-3">{post}</h4>
-          <p className="mt-4">{description}</p>
+          <p className="mt-4 justified">{description}</p>
           <div className="social-links text-center mt-4">
             <a href={linkfb} class="fa fa-facebook"></a>
             <a href={linkin} class="fa fa-instagram ms-4"></a>

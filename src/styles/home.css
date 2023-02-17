@@ -102,3 +102,7 @@
 .explore:hover{
   color: #FFFFFF;
 }
+
+.justified{
+  text-align: justify;
+}

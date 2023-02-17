@@ -111,14 +111,14 @@ function Aboutyatra() {
               About
               <span className="yatraNepal"> Yatra Nepal</span>
             </h2>
-            <p className="mt-5">
+            <p className="mt-5 justified">
               Yatra Nepal Service Centre is the multi-brand two-wheeler
               servicing center in Nepal. Yatra Nepal Service Center offers
               cutting-edge two-wheeler repair and maintenance services. Yatra
               Nepal Service Center is revolutionizing two-wheeler servicing with
               wide range of dependable services.
             </p>
-            <p>
+            <p className='justified'>
               Yatra Nepal Service Center is started in 2022 and rapidly
               expanding around the country. Yatra Nepal Service Center
               specialize in “Service is our Strength.” which involves providing
