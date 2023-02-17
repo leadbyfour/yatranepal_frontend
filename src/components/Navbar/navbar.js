@@ -13,7 +13,7 @@ function Navbar() {
             <NavLink className="navbar-brand" to="/">
               <img src={Logo} alt="logo" />
             </NavLink>
-            <div className="phn-no ms-5 text-white">
+            <div className="phn-no ms-2 text-white">
               <Call />
 
               <span className="ms-2 nav-details">977-985106598</span>
@@ -83,13 +83,13 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  {/* <NavLink
+                  <NavLink
                     className="nav-link text-white"
                     aria-current="page"
                     to="/gallery"
                   >
                     Gallery
-                  </NavLink> */}
+                  </NavLink>
                 </li>
               </ul>
             </div>
