@@ -111,11 +111,6 @@ const Contact = () => {
               <h1 className="faq">FAQ</h1>
             </div>
             <div className="col-lg-6">
-              <h5 className="red">What is Yatra Nepal Service center?</h5>
-              <p className="mt-3 faq-description">
-                Yatra Nepal Service Centre is the multi-brand two-wheeler
-                servicing center in Nepal.
-              </p>
               <BasicExample />
             </div>
           </div>
