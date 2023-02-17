@@ -9,6 +9,7 @@ import Infobox from 'components/InfoBox'
 import ChainBreak from 'components/Icons/chainBreak'
 import Line from '../images/line.png'
 import '../styles/home.css'
+import { Link } from 'react-router-dom'
 
 const Whyusdata = [
   {
@@ -133,7 +134,7 @@ function Aboutyatra() {
           <div className="col-lg-6">
             <img src={Garage} className="img-fluid" alt="garage" />
             <div className="yatra-btn mt-3">
-              <p className="text-center explore pointer">Explore Yatra</p>
+              <Link to="/about" className="text-center explore pointer">Explore Yatra</Link>
             </div>
           </div>
         </div>

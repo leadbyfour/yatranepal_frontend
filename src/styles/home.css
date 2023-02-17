@@ -85,7 +85,8 @@
   font-family: 'Orbitron';
   font-style: normal;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 22px;
+  text-decoration: none;
   line-height: 115.5%;
   letter-spacing: 0.05em;
   color: #FFFFFF;
@@ -97,4 +98,7 @@
   background: #ED1E24;
   border-radius: 13px;
   color: #ffffff;
+}
+.explore:hover{
+  color: #FFFFFF;
 }
