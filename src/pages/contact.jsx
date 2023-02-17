@@ -21,7 +21,7 @@ const Contact = () => {
               <div className="col-lg-6 contact-data">
                 <div className="text-white">
                   <h5 className="red contact-info"><Call/><span className='ms-3'>Call Us</span></h5>
-                  <p> 9851160294,9849167028,9749835510</p>
+                  <p>9851160294,01-49174458</p>
                   <h5 className="mt-5 red contact-info"><Email/><span className='ms-3'>E-Mail</span></h5>
                   <p>yatranepal777@gmail.com</p>
                   <h5 className="mt-5 red contact-info"><Location/><span className='ms-3'>Location</span></h5>
