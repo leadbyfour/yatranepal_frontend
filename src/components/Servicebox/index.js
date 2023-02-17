@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import Line from 'components/Icons/line'
 import './style.css'
 
-const Servicebox = ({ title, image, description, orintation }) => {
+const Servicebox = ({ title, image, description, orintation,descriptiontwo }) => {
   return (
     <>
       <div className="col-lg-12 padtb">
@@ -21,6 +21,8 @@ const Servicebox = ({ title, image, description, orintation }) => {
           <div className="col-lg-6">
             <div className="service-description">
               <p>{description}</p>
+              <p className='mt-4'>{descriptiontwo}</p>
+
             </div>
           </div>
         </div>
