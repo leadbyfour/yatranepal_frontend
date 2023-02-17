@@ -1,6 +1,6 @@
 import Banner from '../images/banner.png'
 import Ticks from '../components/Icons/tick'
-import Machine from '../images/machine.png'
+import Bike from '../images/bike.png'
 import Garage from '../images/garage.png'
 import Battery from 'components/Icons/battery'
 import Mechanic from 'components/Icons/mechanic'
@@ -66,7 +66,7 @@ const QualifiedSection = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <img src={Machine} className="img-fluid" alt="banner2" />
+            <img src={Bike} className="img-fluid" alt="banner2" />
           </div>
           <div className="col-lg-6">
             <div className="mt-5">
