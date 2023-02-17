@@ -1,3 +1,4 @@
+import Line from 'components/Icons/line'
 import Providebox from 'components/Providebox'
 import Servicebox from 'components/Servicebox'
 import service from '../images/service.png'
@@ -149,6 +150,7 @@ const Service = () => {
               />
             ))}
           </div>
+          
         </div>
       </div>
     </>

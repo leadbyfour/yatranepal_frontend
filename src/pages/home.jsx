@@ -73,19 +73,19 @@ const QualifiedSection = () => {
             <div className="mt-5">
               <h2>We are qualified & of experience in this field</h2>
               <ul>
-                <li className="mt-5">
+                <li className="mt-5 d-flex">
                   <Ticks />
-                  <span className="ms-3">
+                  <p className="ms-3">
                     Servicing and maintenance of multi brand two wheers.
-                  </span>
+                  </p>
                 </li>
-                <li className="mt-5">
+                <li className="mt-5 d-flex">
                   <Ticks />
-                  <span className="ms-3">
+                  <span className="ms-3 d-flex">
                     On road Breakdown Support or service.
                   </span>
                 </li>
-                <li className="mt-5">
+                <li className="mt-5 d-flex">
                   <Ticks />
                   <span className="ms-3">Spares warranty and many more.</span>
                 </li>
@@ -128,16 +128,16 @@ function Aboutyatra() {
               people become financially self-sufficient while also improving the
               economy of the country.
             </p>
-            <div className="chain-break mt-5">
-              <ChainBreak />
-            </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 mt-small">
             <img src={Garage} className="img-fluid" alt="garage" />
             <div className="yatra-btn mt-3">
               <Link to="/about" className="text-center explore pointer">Explore Yatra</Link>
             </div>
           </div>
+          <div className="chain-break mt-5 text-start">
+              <ChainBreak />
+            </div>
         </div>
       </div>
     </div>

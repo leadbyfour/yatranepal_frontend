@@ -4,7 +4,7 @@ function ChainBreak() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="600"
+      width="100%"
       height="17"
       fill="none"
       viewBox="0 0 600 17"
