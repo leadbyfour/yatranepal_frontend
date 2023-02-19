@@ -90,21 +90,21 @@ const Contact = () => {
         </div> */}
       </div>
 
-      <div className="banner-contact">
+      <div className="banner-contact" id='precise'>
         <div className="container">
           <h1 className="mb-5 location">Precise Location</h1>
           <div className="row">
             <div className="col-lg-12">
               <Maps />
             </div>
-          </div>
         </div>
       </div>
       <div className="text-center mt-5">
         <ChainBreak />
       </div>
+      </div>
 
-      <div className="banner-faq padtb">
+      <div className="banner-faq padtb" id='faq'>
         <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center">
