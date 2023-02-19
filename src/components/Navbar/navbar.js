@@ -4,7 +4,9 @@ import Logo from '../../images/logo.png'
 import Call from '../Icons/call'
 import Email from '../Icons/email'
 import './style.css'
+
 function Navbar() {
+
   return (
     <>
       <div className="header">
@@ -18,7 +20,7 @@ function Navbar() {
 
               <span className="ms-2 nav-details">977-985106598</span>
             </div>
-            <div className="Email ms-2 text-white d-flex align-items-center">
+            <div className="email ms-2 text-white align-items-center">
               <Email />
               <span
                 onClick={() =>
@@ -39,7 +41,7 @@ function Navbar() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon" />
+              <span className="fa fa-bars text-white" aria-hidden="true"></span>
             </button>
             <div
               className="collapse navbar-collapse"
@@ -98,8 +100,11 @@ function Navbar() {
       </div>
 
       <Routers />
+
+      
     </>
   )
 }
 
-export default Navbar
+export default Navbar;
+

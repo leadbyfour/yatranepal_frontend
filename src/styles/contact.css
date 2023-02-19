@@ -5,13 +5,15 @@
   margin-top: 110px;
 }
 
-.contact-banner {
+.contact-banner{
   background-color: #252525;
   height: 507px;
   display: flex;
   align-items: center;
 }
-
+.chain-sm{
+  /* width: 50% !important; */
+}
 .contact-us {
   font-style: normal;
   font-weight: 800;
@@ -180,4 +182,21 @@ input {
 
 .faq-point p {
   line-height: 130%;
+}
+
+
+/* ---Responsive----------- */
+@media screen and (max-width:992px){
+  .mt-sm{
+    margin-top: 40px;
+  }
+  .contact-banner{
+    background-color:inherit;
+    height: inherit;
+    
+  }
+  .faq {
+    font-size: 80px;
+  }
+  
 }

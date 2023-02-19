@@ -40,7 +40,7 @@ const footerdata = [
     image1: <Email />,
     image2: <Location />,
     link1: '9851160294,01-49174458',
-    link2: 'yatranepal777@gmail.com',
+    link2: 'yatranepal777@ gmail.com',
     link3: 'Bansbari, Kathmandu',
     isSocialLink: false,
     mailTo: mailToFunction,

@@ -3,6 +3,10 @@
 	text-align: end;
 }
 
+.order-2{
+	order: 1;
+	/* text-align: end; */
+}
 .service-description p {
 	font-style: normal;
 	font-weight: 500;
@@ -10,4 +14,17 @@
 	line-height: 155%;
 	letter-spacing: 0.05em;
 	color: #FFFFFF;
+}
+
+@media screen and (max-width:992px) {
+	
+	.image-order{
+		order: 2 !important;
+		margin-top: 35px;
+		text-align: center;
+
+	}
+	.p-order{
+		order: 1 !important ;
+	}
 }

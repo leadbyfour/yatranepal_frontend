@@ -18,7 +18,8 @@ const Contact = () => {
         <div className="text-white contact-banner">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 contact-data">
+              <div className="col-lg-6 contact-data col-12">
+              {/* <div className="text-white contact-banner"> */}
                 <div className="text-white">
                   <h5 className="red contact-info"><Call/><span className='ms-3'>Call Us</span></h5>
                   <p>9851160294,01-49174458</p>
@@ -26,9 +27,9 @@ const Contact = () => {
                   <p>yatranepal777@gmail.com</p>
                   <h5 className="mt-5 red contact-info"><Location/><span className='ms-3'>Location</span></h5>
                   <p>Bansbari,Kathmandu</p>
+                  </div>
                 </div>
-              </div>
-              <div className="col-lg-6 touch">
+              <div className="col-lg-6 touch col-12 mt-sm">
                 <div className="form-card p-5">
                   <h4 className="red my-3">Get in Touch</h4>
                   <p className="my-4">
@@ -84,9 +85,9 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="container mt-chain">
+        {/* <div className="container mt-chain chain-sm">
           <ChainBreak />
-        </div>
+        </div> */}
       </div>
 
       <div className="banner-contact">
