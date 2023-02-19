@@ -20,7 +20,7 @@ function Navbar() {
 
               <span className="ms-2 nav-details">977-985106598</span>
             </div>
-            <div className="Email ms-2 text-white d-flex align-items-center">
+            <div className="email ms-2 text-white align-items-center">
               <Email />
               <span
                 onClick={() =>

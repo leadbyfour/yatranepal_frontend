@@ -28,6 +28,9 @@
     letter-spacing: 0.05em;
     color: #FFFFFF;
 }
+.email{
+    display: flex;
+}
 
 .home {
     font-style: normal;
@@ -40,7 +43,8 @@
 }
 @media screen and (max-width:992px) {
     .phn-no{
-display: none;
+    display: none;
+
     }
     .email{
         display: none;

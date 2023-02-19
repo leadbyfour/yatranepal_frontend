@@ -111,7 +111,7 @@ function Aboutyatra() {
               About
               <span className="yatraNepal"> Yatra Nepal</span>
             </h2>
-            <img src={Line}/>
+            <img src={Line} className='img-fluid'/>
             <p className="mt-5 justified">
               Yatra Nepal Service Centre is the multi-brand two-wheeler
               servicing center in Nepal. Yatra Nepal Service Center offers
