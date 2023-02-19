@@ -8,6 +8,7 @@ import Location from '../Icons/location'
 import Call from '../Icons/call'
 import Email from '../Icons/email'
 import Footerbox from 'components/Footerbox'
+import { Link } from 'react-router-dom';
 
 const mailToFunction = () => {
   window.location = 'mailto:yatranepal777@gmail.com'
@@ -28,10 +29,9 @@ const footerdata = [
   {
     id: 2,
     title: 'Quick Links',
-    link1: 'FAQ',
-    link2: 'Services',
-    link3: 'Precise location',
-    isSocialLink: false,
+    link1: <Link to='/contact#faq'>FAQ</Link>,
+    link2: <Link to='/service'>Services</Link>,
+    link3: <Link to='/contact#precise'>Precise location</Link>,
   },
   {
     id: 3,

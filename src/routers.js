@@ -5,7 +5,6 @@ import About from './pages/about'
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Gallery from 'pages/gallary'
-
 const Routers = () => {
   return (
     <>

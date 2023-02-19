@@ -41,7 +41,7 @@ const Footerbox = ({
             <div className="img-link ms-3">{image1}</div>
 
           )}
-          <div className="ms-3" onClick={mailTo ? mailTo : null}>
+          <div className="ms-3 pointer" onClick={mailTo ? mailTo : null}>
             {link2}
           </div>
         </div>
@@ -53,8 +53,8 @@ const Footerbox = ({
           )}
           <div className="ms-3">{link3}</div>
         </div>
+        </div>
       </div>
-    </div>
   )
 }
 export default Footerbox
