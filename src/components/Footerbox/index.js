@@ -53,8 +53,8 @@ const Footerbox = ({
           )}
           <div className="ms-3">{link3}</div>
         </div>
+        </div>
       </div>
-    </div>
   )
 }
 export default Footerbox
