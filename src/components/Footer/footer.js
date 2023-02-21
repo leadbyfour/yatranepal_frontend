@@ -54,7 +54,7 @@ function Footer() {
         <div className="footer-line"></div>
         <div className="container mt-5">
           <div className="row justify-content-center">
-            <div className="col-lg-3 d-flex align-items-center">
+            <div className="col-lg-3 d-flex align-items-center col-md-6">
               <img src={Logo} className="img-fluid footer-logo" alt="logo" />
             </div>
             {footerdata.map((footeritem) => (
