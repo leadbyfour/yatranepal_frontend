@@ -6,13 +6,15 @@ import Email from '../Icons/email'
 import './style.css'
 
 function Navbar() {
-    var links = document.querySelectorAll('.navbar-nav li'); 
-    links.forEach(function(link) { 
-      link.addEventListener('click', function()
-       { if (window.innerWidth < 992) 
-        { var dropdown = document.querySelector('.navbar-collapse');
-         dropdown.classList.remove('show');
-         } }); });
+  var links = document.querySelectorAll('.navbar-nav li')
+  links.forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (window.innerWidth < 992) {
+        var dropdown = document.querySelector('.navbar-collapse')
+        dropdown.classList.remove('show')
+      }
+    })
+  })
 
   return (
     <>
@@ -107,11 +109,8 @@ function Navbar() {
       </div>
 
       <Routers />
-
-      
     </>
   )
 }
 
-export default Navbar;
-
+export default Navbar
