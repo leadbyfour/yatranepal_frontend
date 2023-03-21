@@ -1,6 +1,15 @@
 .banner-1 img {
   width: 100%;
 }
+.about-text {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
 
 .about-yatra {
   margin-top: 70px;
