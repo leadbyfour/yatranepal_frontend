@@ -1,27 +1,29 @@
 .banner-1 img {
   width: 100%;
 }
+.about-text{
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 160%;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+}
 
 .about-yatra {
   margin-top: 70px;
 }
 
 .about-yatra h1 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 115.5%;
-  letter-spacing: 0.05em;
-  color: #ed1e24;
-}
+  font-family: 'Helvetica Rounded';
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 115.5%;
+letter-spacing: 0.05em;
+color: #ED1E24;
 
-.about-yatra p {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 160%;
-  letter-spacing: 0.05em;
-  color: #ffffff;
 }
 
 .mission-box {
@@ -38,8 +40,13 @@
 }
 
 .box-team {
+<<<<<<< HEAD
   border-radius: 19px;
   border: 1px solid #ed1e24;
+=======
+  border-radius: 42px;
+  border: 1px solid #ED1E24;
+>>>>>>> 2eda39b (change on it according to figma)
   height: 606px;
 }
 
