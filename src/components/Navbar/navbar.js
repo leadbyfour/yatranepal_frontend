@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import Routers from 'routers'
 import Logo from '../../images/logo.png'
@@ -6,15 +7,26 @@ import Email from '../Icons/email'
 import './style.css'
 
 function Navbar() {
-  var links = document.querySelectorAll('.navbar-nav li')
-  links.forEach(function (link) {
-    link.addEventListener('click', function () {
-      if (window.innerWidth < 992) {
-        var dropdown = document.querySelector('.navbar-collapse')
-        dropdown.classList.remove('show')
+  const navbarRef = useRef(null)
+
+  useEffect(() => {
+    function handleNavItemClick() {
+      if (navbarRef.current.classList.contains('show')) {
+        navbarRef.current.classList.remove('show')
       }
+    }
+
+    const navLinks = document.querySelectorAll('.nav-link')
+    navLinks.forEach((link) => {
+      link.addEventListener('click', handleNavItemClick)
     })
-  })
+
+    return () => {
+      navLinks.forEach((link) => {
+        link.removeEventListener('click', handleNavItemClick)
+      })
+    }
+  }, [])
 
   return (
     <>
@@ -55,6 +67,7 @@ function Navbar() {
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
+              ref={navbarRef}
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
