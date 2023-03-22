@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import qnmark from '../images/qnmark.png'
 import plus from '../images/plus.png'
 import Maps from 'components/maps'
@@ -6,6 +7,28 @@ import '../styles/contact.css'
 import Contactmsg from 'components/Contactmsg'
 
 const Contact = () => {
+  const [status, setStatus] = useState('')
+  const [submitted, setSubmitted] = useState(false)
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    const form = event.target
+    const data = new FormData(form)
+    const xhr = new XMLHttpRequest()
+    xhr.open(form.method, form.action)
+    xhr.setRequestHeader('Accept', 'application/json')
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return
+      if (xhr.status === 200) {
+        form.reset()
+        setStatus('SUCCESS')
+      } else {
+        setStatus('ERROR')
+      }
+    }
+    xhr.send(data)
+    setSubmitted(true)
+  }
   return (
     <>
       <div className="contact-us-section">
@@ -32,7 +55,11 @@ const Contact = () => {
                     Have some inquiry or wanna give us a feedback? Feel free to
                     leave us a message.
                   </p>
-                  <form action="https://formspree.io/f/mjvdbkqr" method="POST">
+                  <form
+                    onSubmit={handleSubmit}
+                    action="https://formspree.io/f/mjvdbkqr"
+                    method="POST"
+                  >
                     <div className="row gy-5">
                       <div className="col-lg-6">
                         <input
@@ -92,6 +119,9 @@ const Contact = () => {
                         >
                           Send Message
                         </button>
+                        {submitted && (
+                          <Contactmsg setSubmitted={setSubmitted} />
+                        )}
                       </div>
                     </div>
                   </form>

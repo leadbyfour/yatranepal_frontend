@@ -1,9 +1,31 @@
 .moodal {
     max-width: 400px;
-    background-color: #252525;
+    background-color: hsl(0, 0%, 15%);
     /* height: 208px; */
+    z-index: 9999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
 }
 
+.popup-inner {
+    animation: popup 0.5s forwards;
+  }
+
+  @keyframes popup {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+.button-minus{
+    background-color: hsl(0, 0%, 15%);
+}
 .thank {
     font-family: 'Orbitron';
     font-style: normal;
