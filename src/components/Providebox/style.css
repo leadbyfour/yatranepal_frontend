@@ -1,4 +1,5 @@
 .service-box {
+  font-family: 'Helvetica';
   border: 1px solid #ED1E24;
   border-radius: 15px;
   color: #FFFFFF !important;
@@ -14,8 +15,12 @@
 
 .background-red {
   background-color: rgba(237, 30, 36, 0.2);
+  border-radius: 15px;
+
 }
 
 .background-grey {
   background-color: #191919;
+  border-radius: 15px;
+
 }
