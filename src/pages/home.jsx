@@ -92,7 +92,7 @@ const QualifiedSection = () => {
                 </li>
               </ul>
             </div>
-            <div className="chain-break-machine">
+            <div className="chain-break-machine mt-5 pt-3">
               <ChainBreak />
             </div>
           </div>
@@ -106,7 +106,7 @@ function Aboutyatra() {
   return (
     <div className="banner-about">
       <div className="container">
-        <div className="row">
+        <div className="row div-row">
           <div className="col-lg-6">
             <h2 className="">
               About
