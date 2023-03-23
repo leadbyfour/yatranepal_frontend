@@ -111,7 +111,7 @@ function Aboutyatra() {
               About
               <span className="yatraNepal"> Yatra Nepal</span>
             </h2>
-            <img src={Line} className='img-fluid'/>
+            <img src={Line} className="img-fluid" />
             <p className="mt-5 justified">
               Yatra Nepal Service Centre is the multi-brand two-wheeler
               servicing center in Nepal. Yatra Nepal Service Center offers
@@ -119,7 +119,7 @@ function Aboutyatra() {
               Nepal Service Center is revolutionizing two-wheeler servicing with
               wide range of dependable services.
             </p>
-            <p className='justified'>
+            <p className="justified">
               Yatra Nepal Service Center is started in 2022 and rapidly
               expanding around the country. Yatra Nepal Service Center
               specialize in “Service is our Strength.” which involves providing
@@ -132,12 +132,14 @@ function Aboutyatra() {
           <div className="col-lg-6 mt-small">
             <img src={Garage} className="img-fluid" alt="garage" />
             <div className="yatra-btn mt-3">
-              <Link to="/about" className="text-center explore pointer">Explore Yatra</Link>
+              <Link to="/about" className="text-center explore pointer">
+                Explore Yatra
+              </Link>
             </div>
           </div>
           <div className="chain-break mt-5 text-start">
-              <ChainBreak />
-            </div>
+            <ChainBreak />
+          </div>
         </div>
       </div>
     </div>

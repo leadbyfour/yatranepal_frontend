@@ -20,12 +20,6 @@ function Navbar() {
     navLinks.forEach((link) => {
       link.addEventListener('click', handleNavItemClick)
     })
-
-    return () => {
-      navLinks.forEach((link) => {
-        link.removeEventListener('click', handleNavItemClick)
-      })
-    }
   }, [])
 
   return (
