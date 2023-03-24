@@ -1,70 +1,72 @@
+.accordionss {
+  margin-top: 20px;
+  font-family: Helvetica;
+}
 .accordion-button {
-	font-style: normal;
-	font-weight: 800;
-	font-size: 22px;
-	line-height: 130%;
-	letter-spacing: 0.135em;
-	color: #ED1E24;
-	background-color: #121212;
-	border: none !important;
-	border-radius: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.135em;
+  color: #ed1e24;
+  background-color: #121212;
+  border: none !important;
+  border-radius: none;
 }
 
 .accordion-button:focus {
-	box-shadow: none;
+  box-shadow: none;
 }
 
 .accordion {
-	border: none;
-	border-top-left-radius: none;
-	border-top-right-radius: none;
+  border: none;
+  border-top-left-radius: none;
+  border-top-right-radius: none;
 }
- .faq-description {
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 130%;
-letter-spacing: 0.135em;
-color: #FFFFFF;
-
-  }
+.faq-description {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.135em;
+  color: #ffffff;
+}
 
 .accordion-button:not(.collapsed) {
-	font-style: normal;
-	font-weight: 800;
-	font-size: 22px;
-	line-height: 130%;
-	letter-spacing: 0.135em;
-	color: #ED1E24;
-	background-color: #121212;
-
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.135em;
+  color: #ed1e24;
+  background-color: #121212;
 }
 
 .accordion-item:last-of-type .accordion-button.collapsed {
-	border-bottom-right-radius: unset;
-	border-bottom-left-radius: unset;
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
 }
 
 .accordion-item:first-of-type .accordion-button {
-	border-top-left-radius: unset;
-	border-top-right-radius: unset;
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
 }
 
 .accordion-item {
-	border: none;
-	border-radius: unset;
-	background-color: #121212;
+  border: none;
+  border-radius: unset;
+  background-color: #121212;
 }
 
 .accordion-button::after {
-	background-image: url("../../images/plus.png");
+  background-image: url('../../images/plus.png');
 }
 
 .accordion-button:not(.collapsed)::after {
-	background-image: url("../../images/plus.png");
+  background-image: url('../../images/plus.png');
 }
 
 .accordion-collapse {
-	background-color: #121212;
-	color: #ffffff;
+  background-color: #121212;
+  color: #ffffff;
 }
