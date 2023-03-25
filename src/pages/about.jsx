@@ -1,6 +1,7 @@
 import Missionbox from 'components/Missionbox'
 import Teambox from 'components/Teambox'
 import about from 'images/about.png'
+import { useEffect } from 'react'
 import '../styles/about.css'
 
 const Missiondata = [
@@ -49,14 +50,19 @@ const Teamdata = [
     image: '../image/hari.png',
     title: 'Hari Kumar Thakuri',
     post: 'Managing Director',
-    description:
-      'It is a long established fact that a reader will be. It Is.',
+    description: 'It is a long established fact that a reader will be. It Is.',
     bg: 'red',
     linkfb: 'https://www.facebook.com/kumar.shah.777',
     linkin: 'https://www.instagram.com/kumarsinghthakuri/',
   },
 ]
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }, [])
   return (
     <>
       <div className="banner-1">

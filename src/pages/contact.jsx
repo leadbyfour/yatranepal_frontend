@@ -78,12 +78,14 @@ const Contact = () => {
                         placeholder="Address"
                       />
                     </div>
-                    <textarea
-                      className="form-control mt-5 form-bg text-area"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                      placeholder="Leave Us A Message....."
-                    ></textarea>
+                    <div className="col-lg-12">
+                      <textarea
+                        className="form-control mt-5 form-bg text-area"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        placeholder="Leave Us A Message....."
+                      ></textarea>
+                    </div>
                     <div className="send-btn mt-5">
                       <p className="text-center send-message">Send Message</p>
                     </div>
