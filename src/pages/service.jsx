@@ -1,6 +1,7 @@
 import Line from 'components/Icons/line'
 import Providebox from 'components/Providebox'
 import Servicebox from 'components/Servicebox'
+import { useEffect } from 'react'
 import service from '../images/service.png'
 import '../styles/service.css'
 
