@@ -1,43 +1,43 @@
 .box-mission {
-	position: relative;
+  position: relative;
 }
 
 .box-mission {
-	border-radius: 19px;
-	border: 1px solid #ed1e24;
-	min-height: 529px;
+  border-radius: 19px;
+  border: 1px solid #ed1e24;
+  min-height: 529px;
 }
 
 .box-mission-img {
-	position: absolute;
-	top: -8%;
-	text-align: center;
-	right: 50%;
-	transform: translateX(50%);
+  position: absolute;
+  top: -8%;
+  text-align: center;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .box-mission-text h3 {
-	font-style: normal;
-	font-weight: 700;
-	font-size: 38px;
-	line-height: 115.5%;
-	letter-spacing: 0.05em;
-	color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
 .box-mission-text p {
-	font-style: normal;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 115.5%;
-	letter-spacing: 0.05em;
-	color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
 .background-red {
-	background-color: rgba(237, 30, 36, 0.2);
+  background-color: rgba(237, 30, 36, 0.2);
 }
 
 .background-grey {
-	background-color: #191919;
+  background-color: #191919;
 }

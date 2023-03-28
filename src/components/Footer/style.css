@@ -1,7 +1,7 @@
 /* -------footer--- */
 .footer {
   width: 100%;
-  background: url("../../images/footerbg.png");
+  background: url('../../images/footerbg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -11,16 +11,15 @@
   width: 100%;
   background-repeat: no-repeat;
   height: 3px;
-
 }
-.footer-logo{
+.footer-logo {
   height: 76px;
   width: 177px;
 }
-a{
-  color:#fff;
+a {
+  color: #fff;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: #fff;
 }

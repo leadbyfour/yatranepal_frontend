@@ -6,7 +6,7 @@ const Servicebox = ({
   title,
   image,
   description,
-  orintation,
+  orientation,
   descriptiontwo,
 }) => {
   return (
@@ -19,7 +19,7 @@ const Servicebox = ({
               className={classNames(
                 'col-lg-6 justify-content-between image-order',
                 {
-                  'order-1': orintation === 'imageLast',
+                  'order-1': orientation === 'imageLast',
                 },
               )}
             >
@@ -32,7 +32,7 @@ const Servicebox = ({
               className={classNames(
                 'col-lg-6 justify-content-between p-order',
                 {
-                  'order-2': orintation === 'imageFirst',
+                  'order-2': orientation === 'imageFirst',
                 },
               )}
             >

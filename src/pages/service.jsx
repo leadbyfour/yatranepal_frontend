@@ -169,7 +169,7 @@ const Service = () => {
                 image={serviceItem.image}
                 description={serviceItem.description}
                 descriptiontwo={serviceItem.descriptiontwo}
-                orintation={serviceItem.orintation}
+                orientation={serviceItem.orientation}
               />
             ))}
           </div>
