@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
 .contact-us-section {
   margin-top: 110px;
 }
 
-.contact-banner{
+.contact-banner {
   background-color: #252525;
   height: 507px;
   display: flex;
   align-items: center;
 }
-.chain-sm{
+.chain-sm {
   /* width: 50% !important; */
 }
 .contact-us {
@@ -19,9 +18,8 @@
   font-weight: 800;
   font-size: 38px;
   letter-spacing: 0.05em;
-  color: #ED1E24;
+  color: #ed1e24;
 }
-
 
 .contact-data p {
   font-family: 'Outfit';
@@ -30,7 +28,7 @@
   font-size: 18px;
   line-height: 115.5%;
   letter-spacing: 0.135em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contact-info {
@@ -44,7 +42,7 @@
 
 .touch {
   background-color: #252525;
-  border: 2px solid #ED1E24;
+  border: 2px solid #ed1e24;
 }
 
 .touch h4 {
@@ -53,7 +51,7 @@
   font-size: 38px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #ED1E24;
+  color: #ed1e24;
 }
 
 .touch p {
@@ -62,7 +60,7 @@
   font-size: 18px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .text-area {
@@ -74,8 +72,26 @@ input {
   height: 62px;
 }
 
+.PhoneInput {
+  /* width: 223px; */
+  height: 62px;
+  border-radius: 0% !important;
+  background: rgba(217, 217, 217, 0.4) !important;
+  border: none !important;
+}
+.PhoneInput:focus {
+  border: none !important;
+  outline: none !important;
+}
+
 .form-bg {
   background: rgba(217, 217, 217, 0.4) !important;
+  border: none !important;
+  border-radius: 0% !important;
+  color: #ffffff !important;
+}
+.PhoneInputInput {
+  background: rgb(106 104 104 / 40%) !important;
   border: none !important;
   border-radius: 0% !important;
   color: #ffffff !important;
@@ -105,13 +121,13 @@ input {
   font-size: 38px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 369px;
   height: 57px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ED1E24;
+  background: #ed1e24;
 }
 
 .mt-chain {
@@ -123,9 +139,8 @@ input {
 }
 
 .red {
-  color: #ED1E24;
+  color: #ed1e24;
 }
-
 
 .location {
   font-family: 'Orbitron';
@@ -134,7 +149,7 @@ input {
   font-size: 38px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #ED1E24;
+  color: #ed1e24;
 }
 
 .banner-faq {
@@ -150,7 +165,7 @@ input {
   font-size: 128px;
   line-height: 130%;
   letter-spacing: 0.135em;
-  color: #ED1E24;
+  color: #ed1e24;
 }
 
 .banner-faq h5 {
@@ -159,7 +174,7 @@ input {
   font-size: 24px;
   line-height: 130%;
   letter-spacing: 0.135em;
-  color: #ED1E24;
+  color: #ed1e24;
 }
 
 .frequently {
@@ -168,7 +183,7 @@ input {
   font-size: 20px;
   line-height: 130%;
   letter-spacing: 0.135em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .banner-faq .faq-point {
@@ -177,26 +192,23 @@ input {
   font-size: 22px;
   line-height: 130%;
   letter-spacing: 0.135em;
-  color: #ED1E24;
+  color: #ed1e24;
 }
 
 .faq-point p {
   line-height: 130%;
 }
 
-
 /* ---Responsive----------- */
-@media screen and (max-width:992px){
-  .mt-sm{
+@media screen and (max-width: 992px) {
+  .mt-sm {
     margin-top: 40px;
   }
-  .contact-banner{
-    background-color:inherit;
+  .contact-banner {
+    background-color: inherit;
     height: inherit;
-    
   }
   .faq {
     font-size: 80px;
   }
-  
 }
