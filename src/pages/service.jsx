@@ -2,6 +2,7 @@ import Line from 'components/Icons/line'
 import Providebox from 'components/Providebox'
 import Servicebox from 'components/Servicebox'
 import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import service from '../images/service.png'
 import '../styles/service.css'
 
@@ -121,6 +122,17 @@ const serviceData = [
 ]
 
 const Service = () => {
+  const location = useLocation()
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search)
+    const scrollTo = params.get('scrollTo')
+    if (scrollTo) {
+      window.scroll({
+        top: 0,
+      })
+    }
+  }, [location])
   return (
     <>
       <div className="banner-service">

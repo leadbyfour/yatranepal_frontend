@@ -7,8 +7,25 @@ import BasicExample from 'components/Accodian'
 import Call from 'components/Icons/call'
 import Email from 'components/Icons/email'
 import Location from 'components/Icons/location'
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 
 const Contact = () => {
+  const location = useLocation()
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search)
+    const scrollTo = params.get('scrollTo')
+    if (document.getElementById(scrollTo)) {
+      const offsetsTop = document
+        .getElementById(scrollTo)
+        .getBoundingClientRect().top
+      const topPosition = Math.abs(document.body.getBoundingClientRect().top)
+      window.scroll({
+        top: topPosition + offsetsTop,
+      })
+    }
+  }, [location])
   return (
     <>
       <div className="contact-us-section">
@@ -103,7 +120,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="banner-contact" id="precise">
+      <div className="banner-contact" id="location">
         <div className="container">
           <h1 className="location">Precise Location</h1>
           <div className="row">

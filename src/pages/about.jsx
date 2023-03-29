@@ -2,6 +2,7 @@ import Missionbox from 'components/Missionbox'
 import Teambox from 'components/Teambox'
 import about from 'images/about.png'
 import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import '../styles/about.css'
 
 const Missiondata = [
@@ -57,6 +58,23 @@ const Teamdata = [
   },
 ]
 const About = () => {
+  const location = useLocation()
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search)
+    const scrollTo = params.get('scrollTo')
+    if (document.getElementById(scrollTo)) {
+      const offsetsTop = document
+        .getElementById(scrollTo)
+        .getBoundingClientRect().top
+      const topPosition = Math.abs(document.body.getBoundingClientRect().top)
+
+      window.scroll({
+        top: topPosition + offsetsTop + 50,
+      })
+    }
+  }, [])
+
   return (
     <>
       <div className="banner-1">
@@ -108,7 +126,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="banner-team mt-5 padtb">
+      <div className="banner-team mt-5 padtb" id="info">
         <div className="container">
           <h2 className="text-center meet-team my-5">Meet The Team</h2>
           <div className="row mt-3">
