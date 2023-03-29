@@ -121,12 +121,6 @@ const serviceData = [
 ]
 
 const Service = () => {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }, [])
   return (
     <>
       <div className="banner-service">

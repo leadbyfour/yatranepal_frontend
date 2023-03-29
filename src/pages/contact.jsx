@@ -25,7 +25,7 @@ const Contact = () => {
                     <Call />
                     <span className="ms-3">Call Us</span>
                   </h5>
-                  <p>9851160294,01-49174458</p>
+                  <p>9851160294,9849167028,9749835510</p>
                   <h5 className="mt-5 red contact-info">
                     <Email />
                     <span className="ms-3">E-Mail</span>

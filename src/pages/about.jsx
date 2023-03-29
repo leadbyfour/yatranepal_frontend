@@ -57,12 +57,6 @@ const Teamdata = [
   },
 ]
 const About = () => {
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }, [])
   return (
     <>
       <div className="banner-1">
