@@ -58,21 +58,10 @@ const Teamdata = [
   },
 ]
 const About = () => {
-  const location = useLocation()
-
   useEffect(() => {
-    const params = new URLSearchParams(location.search)
-    const scrollTo = params.get('scrollTo')
-    if (document.getElementById(scrollTo)) {
-      const offsetsTop = document
-        .getElementById(scrollTo)
-        .getBoundingClientRect().top
-      const topPosition = Math.abs(document.body.getBoundingClientRect().top)
-
-      window.scroll({
-        top: topPosition + offsetsTop + 50,
-      })
-    }
+    window.scroll({
+      top: 0,
+    })
   }, [])
 
   return (
