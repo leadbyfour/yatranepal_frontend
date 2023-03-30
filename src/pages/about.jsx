@@ -1,8 +1,7 @@
 import Missionbox from 'components/Missionbox'
 import Teambox from 'components/Teambox'
-import about from 'images/about.png'
+import AboutPageImage from 'images/about.png'
 import { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
 import '../styles/about.css'
 
 const Missiondata = [
@@ -67,7 +66,7 @@ const About = () => {
   return (
     <>
       <div className="banner-1">
-        <img src={about} className="img-fluid" alt="about image" />
+        <img src={AboutPageImage} className="img-fluid" alt="about image" />
       </div>
 
       <div className="about-yatra">

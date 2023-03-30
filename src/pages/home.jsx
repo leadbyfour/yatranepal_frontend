@@ -102,16 +102,6 @@ const QualifiedSection = () => {
 }
 
 function Aboutyatra() {
-  const scrollToInfo = () => {
-    const infoElement = document.getElementById('info')
-    if (infoElement) {
-      window.scrollTo({
-        top: infoElement.offsetTop,
-        behavior: 'smooth',
-      })
-    }
-  }
-
   return (
     <div className="banner-about">
       <div className="container">
