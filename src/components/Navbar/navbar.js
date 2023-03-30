@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import Routers from 'routers'
 import Logo from '../../images/logo.png'
@@ -6,6 +7,20 @@ import Email from '../Icons/email'
 import './style.css'
 
 function Navbar() {
+  const navbarRef = useRef(null)
+
+  useEffect(() => {
+    function handleNavItemClick() {
+      if (navbarRef.current.classList.contains('show')) {
+        navbarRef.current.classList.remove('show')
+      }
+    }
+
+    const navLinks = document.querySelectorAll('.nav-link')
+    navLinks.forEach((link) => {
+      link.addEventListener('click', handleNavItemClick)
+    })
+  }, [])
 
   return (
     <>
@@ -46,6 +61,7 @@ function Navbar() {
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
+              ref={navbarRef}
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
@@ -100,11 +116,8 @@ function Navbar() {
       </div>
 
       <Routers />
-
-      
     </>
   )
 }
 
-export default Navbar;
-
+export default Navbar
