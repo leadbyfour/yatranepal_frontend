@@ -19,16 +19,22 @@ const Teambox = ({
         })}
       >
         <div className="teambox-img text-center">
-          <img src={image} className="img-fluid" alt="image" />
+          <img src={image} className="img-fluid" alt="img-fluid" />
         </div>
         <div className="teambox-text p-5">
           <h3 className="text-center">{title}</h3>
           <h4 className="text-center mt-3">{post}</h4>
           <p className="mt-4">{description}</p>
           <div className="social-links text-center mt-4">
-            <a href={linkfb} class="fa fa-facebook"></a>
-            <a href={linkin} class="fa fa-instagram ms-4"></a>
-            <a class="fa fa-twitter ms-4"></a>
+            <a href={linkfb} className="fa fa-facebook">
+              {' '}
+            </a>
+            <a href={linkin} className="fa fa-instagram ms-4">
+              {' '}
+            </a>
+            <a href="#" className="fa fa-twitter ms-4">
+              {' '}
+            </a>
           </div>
         </div>
       </div>
