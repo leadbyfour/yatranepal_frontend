@@ -145,15 +145,25 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-right: 0;
+    padding-top: 50px;
   }
   .banner-machine .chain-break-machine {
     width: 100%;
+    padding-top: 50px !important;
   }
   .banner-3 {
-    margin-top: 144px !important;
+    padding-top: 50px;
   }
   .banner-3 h2 {
     margin-bottom: 0;
+  }
+  .banner-3 .chain-break-machine {
+    padding-top: 50px !important;
+    margin-top: 3rem;
+  }
+  .banner-about {
+    padding-top: 50px;
+    margin-top: 3rem;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 990px) {
@@ -163,4 +173,11 @@
   .banner-3 {
     margin-top: 144px !important;
   }
+  .banner-machine .chain-break-machine {
+    margin-right: 0px;
+}
+.chain-break {
+  margin-left: 0;
+  padding-left: calc(var(--bs-gutter-x) * .5);
+}
 }
