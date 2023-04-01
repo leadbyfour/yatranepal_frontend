@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import qnmark from '../images/qnmark.png'
 import plus from '../images/plus.png'
 import Maps from 'components/maps'
@@ -7,11 +7,27 @@ import '../styles/contact.css'
 import Contactmsg from 'components/Contactmsg'
 
 const Contact = () => {
+  const [number, setNumber] = useState('')
+  const [validNumber, setValidNumber] = useState(false)
   const [status, setStatus] = useState('')
   const [submitted, setSubmitted] = useState(false)
 
+  useEffect(() => {
+    const nepaliPhoneNumberRegex = /^9[6-8]\d{8}$/
+    const result = nepaliPhoneNumberRegex.test(number)
+    if (result) {
+      setValidNumber(true)
+      return
+    }
+    setValidNumber(false)
+  }, [number])
+
   function handleSubmit(event) {
     event.preventDefault()
+    ////////////////////
+    console.log(validNumber)
+    //------>>>  if validNumber is true send message otherwise show error section
+    /////////////////////
     const form = event.target
     const data = new FormData(form)
     const xhr = new XMLHttpRequest()
@@ -69,6 +85,7 @@ const Contact = () => {
                           id="exampleFormControlInput1"
                           placeholder="First Name"
                           autoComplete="off"
+                          required
                         />
                       </div>
                       <div className="col-lg-6">
@@ -83,7 +100,10 @@ const Contact = () => {
                         />
                       </div>
                       <div className="col-lg-6">
+                        {/* ////// */}
                         <input
+                          value={number}
+                          onChange={(e) => setNumber(e.target.value)}
                           type="number"
                           name="contact-number"
                           className="form-control form-bg"
@@ -92,6 +112,8 @@ const Contact = () => {
                           autoComplete="off"
                           required
                         />
+
+                        {/* ///// */}
                       </div>
                       <div className="col-lg-6">
                         <input
