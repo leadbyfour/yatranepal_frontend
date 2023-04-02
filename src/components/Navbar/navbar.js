@@ -6,7 +6,6 @@ import Email from '../Icons/email'
 import './style.css'
 
 function Navbar() {
-
   return (
     <>
       <div className="header">
@@ -100,11 +99,8 @@ function Navbar() {
       </div>
 
       <Routers />
-
-      
     </>
   )
 }
 
-export default Navbar;
-
+export default Navbar

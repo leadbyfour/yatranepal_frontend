@@ -8,6 +8,10 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "classnames": "^2.3.2",
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "font-awesome": "^4.7.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.6.0",
@@ -23,7 +27,8 @@
     "test": "react-scripts test",
     "lint": "react-scripts eslint",
     "lint --fix": "react-scripts eslint --fix",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src"
   },
   "eslintConfig": {
     "extends": [

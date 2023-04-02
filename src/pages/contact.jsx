@@ -19,16 +19,25 @@ const Contact = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 contact-data col-12">
-              {/* <div className="text-white contact-banner"> */}
+                {/* <div className="text-white contact-banner"> */}
                 <div className="text-white">
-                  <h5 className="red contact-info"><Call/><span className='ms-3'>Call Us</span></h5>
+                  <h5 className="red contact-info">
+                    <Call />
+                    <span className="ms-3">Call Us</span>
+                  </h5>
                   <p>9851160294,01-49174458</p>
-                  <h5 className="mt-5 red contact-info"><Email/><span className='ms-3'>E-Mail</span></h5>
+                  <h5 className="mt-5 red contact-info">
+                    <Email />
+                    <span className="ms-3">E-Mail</span>
+                  </h5>
                   <p>yatranepal777@gmail.com</p>
-                  <h5 className="mt-5 red contact-info"><Location/><span className='ms-3'>Location</span></h5>
+                  <h5 className="mt-5 red contact-info">
+                    <Location />
+                    <span className="ms-3">Location</span>
+                  </h5>
                   <p>Bansbari,Kathmandu</p>
-                  </div>
                 </div>
+              </div>
               <div className="col-lg-6 touch col-12 mt-sm">
                 <div className="form-card p-5">
                   <h4 className="red my-3">Get in Touch</h4>
@@ -90,21 +99,21 @@ const Contact = () => {
         </div> */}
       </div>
 
-      <div className="banner-contact" id='precise'>
+      <div className="banner-contact" id="precise">
         <div className="container">
           <h1 className="mb-5 location">Precise Location</h1>
           <div className="row">
             <div className="col-lg-12">
               <Maps />
             </div>
+          </div>
+        </div>
+        <div className="text-center mt-5">
+          <ChainBreak />
         </div>
       </div>
-      <div className="text-center mt-5">
-        <ChainBreak />
-      </div>
-      </div>
 
-      <div className="banner-faq padtb" id='faq'>
+      <div className="banner-faq padtb" id="faq">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center">
