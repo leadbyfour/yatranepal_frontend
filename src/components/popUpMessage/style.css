@@ -1,5 +1,5 @@
 .moodal {
-    max-width: 400px;
+    max-width: 674px;
     background-color: hsl(0, 0%, 15%);
     /* height: 208px; */
     z-index: 9999;
@@ -22,29 +22,36 @@
       transform: scale(1);
     }
   }
-  
+.button-minus-div{
+    text-align: right;
+}
 .button-minus{
     background-color: hsl(0, 0%, 15%);
 }
-.thank {
+.moodal .thank {
     font-family: 'Orbitron';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 115.5%;
     letter-spacing: 0.05em;
-    color: #ED1E24;
+    color: #ED1E24 !important;
     margin-top: 30px;
-    margin-left: 35px;
     text-align: center;
 }
 
 .moodal .pop-msg {
-    font-family: 'Orbitron';
+    font-family: Helvetica;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 115.5%;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+}
+@media only screen and (max-width: 1020px) {
+.heading-div{
+    display: flex;
+    justify-content: space-between;
+}
 }

@@ -1,33 +1,28 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import qnmark from '../images/qnmark.png'
 import plus from '../images/plus.png'
 import Maps from 'components/maps'
 import ChainBreak from 'components/Icons/chainBreak'
 import '../styles/contact.css'
-import Contactmsg from 'components/Contactmsg'
+import PopUpMessage from 'components/popUpMessage'
 
 const Contact = () => {
   const [number, setNumber] = useState('')
-  const [validNumber, setValidNumber] = useState(false)
   const [status, setStatus] = useState('')
-  const [submitted, setSubmitted] = useState(false)
-
-  useEffect(() => {
-    const nepaliPhoneNumberRegex = /^9[6-8]\d{8}$/
-    const result = nepaliPhoneNumberRegex.test(number)
-    if (result) {
-      setValidNumber(true)
-      return
-    }
-    setValidNumber(false)
-  }, [number])
+  const [showError, setShowError] = useState(true)
+  const [showSuccess, setShowSuccess] = useState(true)
 
   function handleSubmit(event) {
     event.preventDefault()
-    ////////////////////
-    console.log(validNumber)
-    //------>>>  if validNumber is true send message otherwise show error section
-    /////////////////////
+
+    const nepaliPhoneNumberRegex =
+      /^(98[4-6]|97[45]|980|981|982|961|962|988|972|963)\d{7}$/
+    const result = nepaliPhoneNumberRegex.test(number)
+    if (!result) {
+      setShowError(true)
+      return
+    }
+
     const form = event.target
     const data = new FormData(form)
     const xhr = new XMLHttpRequest()
@@ -43,7 +38,7 @@ const Contact = () => {
       }
     }
     xhr.send(data)
-    setSubmitted(true)
+    setShowSuccess(true)
   }
   return (
     <>
@@ -100,7 +95,6 @@ const Contact = () => {
                         />
                       </div>
                       <div className="col-lg-6">
-                        {/* ////// */}
                         <input
                           value={number}
                           onChange={(e) => setNumber(e.target.value)}
@@ -112,8 +106,6 @@ const Contact = () => {
                           autoComplete="off"
                           required
                         />
-
-                        {/* ///// */}
                       </div>
                       <div className="col-lg-6">
                         <input
@@ -141,8 +133,17 @@ const Contact = () => {
                         >
                           Send Message
                         </button>
-                        {submitted && (
-                          <Contactmsg setSubmitted={setSubmitted} />
+                        {showSuccess && (
+                          <PopUpMessage
+                            status="success"
+                            closePopUp={setShowSuccess}
+                          />
+                        )}
+                        {showError && (
+                          <PopUpMessage
+                            status="error"
+                            closePopUp={setShowError}
+                          />
                         )}
                       </div>
                     </div>
