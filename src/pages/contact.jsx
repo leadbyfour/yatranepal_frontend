@@ -9,8 +9,8 @@ import PopUpMessage from 'components/popUpMessage'
 const Contact = () => {
   const [number, setNumber] = useState('')
   const [status, setStatus] = useState('')
-  const [showError, setShowError] = useState(true)
-  const [showSuccess, setShowSuccess] = useState(true)
+  const [showError, setShowError] = useState(false)
+  const [showSuccess, setShowSuccess] = useState(false)
 
   function handleSubmit(event) {
     event.preventDefault()
@@ -38,6 +38,7 @@ const Contact = () => {
       }
     }
     xhr.send(data)
+    setNumber('')
     setShowSuccess(true)
   }
   return (
