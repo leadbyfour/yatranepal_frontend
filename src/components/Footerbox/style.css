@@ -29,3 +29,6 @@
     letter-spacing: 0.05em;
     color: #FFFFFF;
 }
+.link2{
+    word-break: break-all;
+}
