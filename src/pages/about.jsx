@@ -3,11 +3,16 @@ import Teambox from 'components/Teambox'
 import about from 'images/about.png'
 import { useEffect } from 'react'
 import '../styles/about.css'
+import MissionPhoto from '../images/mission.png'
+import VisionPhoto from '../images/vision.png'
+import MaheeshPhoto from '../images/maheesh.png'
+import AjayPhoto from '../images/ajay.png'
+import HariPhoto from '../images/hari.png'
 
 const Missiondata = [
   {
     id: 1,
-    image: '../image/mission.png',
+    image: MissionPhoto,
     title: 'Our Mission',
     description:
       'Our ultimate goal is to have a chain of multi-brand motorcycle workshops across the country and reach out to our customers as quickly as possible. Yatra Nepal Service Center specialize in “Service is our Strength.” which involves providing on-the-job training to transform individuals into skilled and professional service providers. This effort aims to help young people become financially self-sufficient while also improving the economy of the country.',
@@ -15,7 +20,7 @@ const Missiondata = [
   },
   {
     id: 2,
-    image: '../image/vision.png',
+    image: VisionPhoto,
     title: 'Our Vision',
     description:
       'With each passing day, we strive to improve the ride and driving experience for each individual. We make sure you enjoy your trip while we take care of the rest during the trip.We ensure that customer satisfaction is at the heart of everything we do while improving the lives of our customers by providing quality products with best service.',
@@ -26,7 +31,7 @@ const Missiondata = [
 const Teamdata = [
   {
     id: 1,
-    image: '../image/maheesh.png',
+    image: MaheeshPhoto,
     title: 'Mahesh Gyawali',
     post: 'Chairman',
     description:
@@ -37,7 +42,7 @@ const Teamdata = [
   },
   {
     id: 2,
-    image: '../image/ajay.png',
+    image: AjayPhoto,
     title: 'Ajay Singh',
     post: 'Vice-Chairman',
     description:
@@ -47,7 +52,7 @@ const Teamdata = [
   },
   {
     id: 3,
-    image: '../image/hari.png',
+    image: HariPhoto,
     title: 'Hari Kumar Thakuri',
     post: 'Managing Director',
     description: 'It is a long established fact that a reader will be. It Is.',
