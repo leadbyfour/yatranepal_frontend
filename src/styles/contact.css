@@ -5,7 +5,9 @@ input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+.phone-numbers{
+  word-wrap:break-word;
+}
 .contact-us-section {
   margin-top: 110px;
 }

@@ -61,7 +61,9 @@ const Contact = () => {
                     <Call />
                     <span className="ms-3">Call Us</span>
                   </h5>
-                  <p>9851160294,9849167028,9749835510</p>
+                  <p className="phone-numbers">
+                    9851160294,9849167028,9749835510
+                  </p>
                   <h5 className="mt-5 red contact-info">
                     <Email />
                     <span className="ms-3">E-Mail</span>
@@ -133,14 +135,16 @@ const Contact = () => {
                           required
                         />
                       </div>
-                      <textarea
-                        className="form-control mt-5 form-bg text-area"
-                        name="description"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                        placeholder="Leave Us A Message....."
-                        autoComplete="off"
-                      ></textarea>
+                      <div className="col-lg-12">
+                        <textarea
+                          className="form-control form-bg text-area"
+                          name="description"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                          placeholder="Leave Us A Message....."
+                          autoComplete="off"
+                        ></textarea>
+                      </div>
                       <div className="send-btn mt-5">
                         <button
                           type="submit"
