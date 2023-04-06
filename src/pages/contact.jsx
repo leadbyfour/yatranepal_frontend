@@ -5,6 +5,10 @@ import Maps from 'components/maps'
 import ChainBreak from 'components/Icons/chainBreak'
 import '../styles/contact.css'
 import PopUpMessage from 'components/popUpMessage'
+import BasicExample from 'components/Accodian'
+import Call from 'components/Icons/call'
+import Email from 'components/Icons/email'
+import Location from 'components/Icons/location'
 
 const Contact = () => {
   const [number, setNumber] = useState('')
@@ -50,17 +54,27 @@ const Contact = () => {
         <div className="text-white contact-banner">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-lg-6 contact-data">
+              <div className="col-lg-6 contact-data col-12">
+                {/* <div className="text-white contact-banner"> */}
                 <div className="text-white">
-                  <h5 className="red contact-info">Call Us</h5>
-                  <p> 9851160294,9849167028,9749835510</p>
-                  <h5 className="mt-5 red contact-info">E-Mail</h5>
+                  <h5 className="red contact-info">
+                    <Call />
+                    <span className="ms-3">Call Us</span>
+                  </h5>
+                  <p>9851160294,9849167028,9749835510</p>
+                  <h5 className="mt-5 red contact-info">
+                    <Email />
+                    <span className="ms-3">E-Mail</span>
+                  </h5>
                   <p>yatranepal777@gmail.com</p>
-                  <h5 className="mt-5 red contact-info">Location</h5>
-                  <p>Bansbari,Kathmandu</p>
+                  <h5 className="mt-5 red contact-info">
+                    <Location />
+                    <span className="ms-3">Location</span>
+                  </h5>
+                  <p className="address">Bansbari,Kathmandu</p>
                 </div>
               </div>
-              <div className="col-lg-6 touch">
+              <div className="col-lg-6 touch col-12 mt-sm">
                 <div className="form-card p-5">
                   <h4 className="red my-3">Get in Touch</h4>
                   <p className="my-4">
@@ -154,60 +168,40 @@ const Contact = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="container mt-chain">
+      <div className="row">
+        <div className="mt-chain chain-sm col-lg-6">
           <ChainBreak />
         </div>
       </div>
 
-      <div className="banner-contact">
+      <div className="banner-contact" id="precise">
         <div className="container">
-          <h1 className="mb-5 location">Precise Location</h1>
+          <h1 className="location">Precise Location</h1>
           <div className="row">
             <div className="col-lg-12">
               <Maps />
             </div>
           </div>
         </div>
-      </div>
-      <div className="text-center mt-5">
-        <ChainBreak />
+        <div className="text-center map-chain">
+          <ChainBreak />
+        </div>
       </div>
 
-      <div className="banner-faq padtb">
+      <div className="banner-faq" id="faq">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center">
               <img src={qnmark} className="img-fluid" />
-              <h4 className="text-white mt-2 frequently">
+              <h1 className="faq">FAQ</h1>
+              <h4 className="text-white mt-3 frequently">
                 Frequently Asked Questions
               </h4>
-              <h1 className="faq">FAQ</h1>
             </div>
             <div className="col-lg-6">
-              <h5 className="red">What is Yatra Nepal Service center?</h5>
-              <p className="mt-3 faq-description">
-                Yatra Nepal Service Centre is the multi-brand two-wheeler
-                servicing center in Nepal.
-              </p>
-              <div className="faq-point">
-                <p className="mt-4">
-                  Where is Yatra Nepal Located?
-                  <img src={plus} className="img-fluid ms-2" alt="plus" />
-                </p>
-                <p className="mt-faq">
-                  What are services avilable?
-                  <img src={plus} className="img-fluid ms-2" alt="plus" />
-                </p>
-                <p className="mt-faq">
-                  Is Door step service avilable?
-                  <img src={plus} className="img-fluid ms-2" alt="plus" />
-                </p>
-                <p className="mt-faq">
-                  Is insurance service avilable?
-                  <img src={plus} className="img-fluid ms-2" alt="plus" />
-                </p>
-              </div>
+              <BasicExample />
             </div>
           </div>
         </div>

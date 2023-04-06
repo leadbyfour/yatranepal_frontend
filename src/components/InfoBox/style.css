@@ -2,7 +2,7 @@
 
 .box-info {
   position: relative;
-  height: 296px;
+  min-height: 296px;
 }
 
 .banner-3 .box-info {
@@ -24,7 +24,8 @@
   font-size: 18px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-family: Helvetica;
 }
 
 .info-box-text h3 {
@@ -33,7 +34,8 @@
   font-size: 24px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-family: Helvetica;
 }
 
 .background-red {

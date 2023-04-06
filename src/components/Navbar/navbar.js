@@ -1,10 +1,27 @@
+import { useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import Routers from 'routers'
 import Logo from '../../images/logo.png'
 import Call from '../Icons/call'
 import Email from '../Icons/email'
 import './style.css'
+
 function Navbar() {
+  const navbarRef = useRef(null)
+
+  useEffect(() => {
+    function handleNavItemClick() {
+      if (navbarRef.current.classList.contains('show')) {
+        navbarRef.current.classList.remove('show')
+      }
+    }
+
+    const navLinks = document.querySelectorAll('.nav-link')
+    navLinks.forEach((link) => {
+      link.addEventListener('click', handleNavItemClick)
+    })
+  }, [])
+
   return (
     <>
       <div className="header">
@@ -13,20 +30,20 @@ function Navbar() {
             <NavLink className="navbar-brand" to="/">
               <img src={Logo} alt="logo" />
             </NavLink>
-            <div className="phn-no ms-5 text-white">
+            <div className="phn-no ms-2 text-white">
               <Call />
 
               <span className="ms-2 nav-details">977-985106598</span>
             </div>
-            <div className="Email ms-4 text-white">
+            <div className="email ms-2 text-white align-items-center">
               <Email />
               <span
                 onClick={() =>
-                  (window.location = 'mailto:yatranepal@gmail.com')
+                  (window.location = 'mailto:yatranepal777@gmail.com')
                 }
-                className="ms-2 nav-details"
+                className="ms-2 nav-details pointer"
               >
-                yatranepal@gmail.com
+                yatranepal777@gmail.com
               </span>
             </div>
 
@@ -39,11 +56,12 @@ function Navbar() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon" />
+              <span className="fa fa-bars text-white" aria-hidden="true"></span>
             </button>
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
+              ref={navbarRef}
             >
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
@@ -83,13 +101,13 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  {/* <NavLink
+                  <NavLink
                     className="nav-link text-white"
                     aria-current="page"
                     to="/gallery"
                   >
                     Gallery
-                  </NavLink> */}
+                  </NavLink>
                 </li>
               </ul>
             </div>

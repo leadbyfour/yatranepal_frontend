@@ -1,6 +1,7 @@
 import Missionbox from 'components/Missionbox'
 import Teambox from 'components/Teambox'
 import about from 'images/about.png'
+import { useEffect } from 'react'
 import '../styles/about.css'
 
 const Missiondata = [
@@ -29,8 +30,10 @@ const Teamdata = [
     title: 'Mahesh Gyawali',
     post: 'Chairman',
     description:
-      'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+      'It is a long established fact that a reader will be distracted by the readable .',
     bg: 'red',
+    linkfb: 'https://www.facebook.com/mahesh.gyawali.98',
+    linkin: 'https://www.instagram.com/mohesxettrii/',
   },
   {
     id: 2,
@@ -40,15 +43,17 @@ const Teamdata = [
     description:
       'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
     bg: 'grey',
+    linkfb: 'https://www.facebook.com/ajay.singhthakuri.54',
   },
   {
     id: 3,
     image: '../image/hari.png',
     title: 'Hari Kumar Thakuri',
     post: 'Managing Director',
-    description:
-      'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
+    description: 'It is a long established fact that a reader will be. It Is.',
     bg: 'red',
+    linkfb: 'https://www.facebook.com/kumar.shah.777',
+    linkin: 'https://www.instagram.com/kumarsinghthakuri/',
   },
 ]
 const About = () => {
@@ -63,7 +68,7 @@ const About = () => {
           <div className="row">
             <div className="col-lg-12">
               <h1 className="mb-4">About Yatra Nepal</h1>
-              <p className="text-white">
+              <p className="text-white justified">
                 Yatra Nepal Service Centre is the multi-brand two-wheeler
                 servicing center in Nepal. Yatra Nepal Service Center offers
                 cutting-edge two-wheeler repair and maintenance services. Yatra
@@ -76,7 +81,7 @@ const About = () => {
                 and savings. Yatra Nepal Service Center is a one-stop shop for
                 all things two-wheeled.
               </p>
-              <p className="text-white">
+              <p className="text-white justified">
                 Yatra Nepal Service Center is started in 2022 and rapidly
                 expanding around the country. Yatra Nepal Service Center
                 specialize in “Service is our Strength.” which involves
@@ -114,6 +119,8 @@ const About = () => {
                 post={whyusItem.post}
                 image={whyusItem.image}
                 color={whyusItem.bg}
+                linkfb={whyusItem.linkfb}
+                linkin={whyusItem.linkin}
               />
             ))}
           </div>

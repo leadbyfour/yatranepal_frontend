@@ -5,7 +5,7 @@
 .box-mission {
 	border-radius: 19px;
 	border: 1px solid #ed1e24;
-	height: 529px;
+	min-height: 529px;
 }
 
 .box-mission-img {

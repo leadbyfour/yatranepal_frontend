@@ -9,6 +9,9 @@ input[type=number]::-webkit-inner-spin-button {
 .contact-us-section {
   margin-top: 110px;
 }
+.contact-us-section .container {
+  padding-right: 0 !important;
+}
 
 .contact-banner {
   background-color: #252525;
@@ -16,24 +19,33 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
 }
-
+.chain-sm {
+  padding-left: 40px;
+}
 .contact-us {
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 38px;
   letter-spacing: 0.05em;
-  color: #ED1E24;
+  color: #ed1e24;
+  font-family: Helvetica;
+  line-height: 115.5%;
+}
+.contact-data {
+  font-family: Helvetica;
 }
 
-
 .contact-data p {
-  font-family: 'Outfit';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 115.5%;
   letter-spacing: 0.135em;
-  color: #FFFFFF;
+  color: #ffffff;
+  margin-left: 50px;
+}
+.contact-data .address {
+  margin-left: 45px !important;
 }
 
 .contact-info {
@@ -43,11 +55,13 @@ input[type=number]::-webkit-inner-spin-button {
   line-height: 115.5%;
   letter-spacing: 0.05em;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 .touch {
   background-color: #252525;
-  border: 2px solid #ED1E24;
+  border: 2px solid #ed1e24;
+  font-family: Helvetica;
 }
 
 .touch h4 {
@@ -56,7 +70,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 38px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #ED1E24;
+  color: #ed1e24;
 }
 
 .touch p {
@@ -65,7 +79,7 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 18px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .text-area {
@@ -95,6 +109,10 @@ input {
   margin-top: 200px !important;
 }
 
+.banner-contact .container {
+  padding-right: 0 !important;
+}
+
 .text-area {
   height: 157px;
 }
@@ -115,19 +133,19 @@ input {
 }
 
 .send-message {
-  font-family: 'Orbitron';
+  font-family: Helvetica;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 369px;
   height: 57px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ED1E24;
+  background: #ed1e24;
 }
 
 button {
@@ -143,22 +161,29 @@ button {
 }
 
 .red {
-  color: #ED1E24;
+  color: #ed1e24;
 }
 
-
 .location {
-  font-family: 'Orbitron';
+  font-family: Helvetica;
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #ED1E24;
+  color: #ed1e24;
+  margin-bottom: 77px;
+}
+.map-chain {
+  margin-top: 124px;
 }
 
 .banner-faq {
   margin-top: 150px;
+  margin-bottom: 100px;
+}
+.banner-faq .container {
+  padding-right: 0px !important;
 }
 
 .mt-faq {
@@ -170,7 +195,9 @@ button {
   font-size: 128px;
   line-height: 130%;
   letter-spacing: 0.135em;
-  color: #ED1E24;
+  color: #ed1e24;
+  font-family: Helvetica;
+  margin-top: 50px;
 }
 
 .banner-faq h5 {
@@ -179,16 +206,7 @@ button {
   font-size: 24px;
   line-height: 130%;
   letter-spacing: 0.135em;
-  color: #ED1E24;
-}
-
-.banner-faq .faq-description {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 130%;
-  letter-spacing: 0.135em;
-  color: #FFFFFF;
+  color: #ed1e24;
 }
 
 .frequently {
@@ -197,7 +215,8 @@ button {
   font-size: 20px;
   line-height: 130%;
   letter-spacing: 0.135em;
-  color: #FFFFFF;
+  color: #ffffff;
+  font-family: Helvetica;
 }
 
 .banner-faq .faq-point {
@@ -206,9 +225,37 @@ button {
   font-size: 22px;
   line-height: 130%;
   letter-spacing: 0.135em;
-  color: #ED1E24;
+  color: #ed1e24;
 }
 
 .faq-point p {
   line-height: 130%;
+}
+
+/* ---Responsive----------- */
+@media screen and (max-width: 992px) {
+  .mt-sm {
+    margin-top: 40px;
+  }
+  .chain-sm {
+    margin-top: 50px;
+    padding-left: 20px;
+  }
+  .banner-contact {
+    margin-top: 50px !important;
+  }
+  .map-chain {
+    margin-top: 50px;
+    padding-left: 10px;
+  }
+  .banner-faq {
+    margin: 50px 0px;
+  }
+  .contact-banner {
+    background-color: inherit;
+    height: inherit;
+  }
+  .faq {
+    font-size: 80px;
+  }
 }

@@ -15,7 +15,7 @@ const Missionbox = ({ title, description, image, color }) => {
         </div>
         <div className="box-mission-text p-5">
           <h3 className="text-center mt-4">{title}</h3>
-          <p className="mt-4">{description}</p>
+          <p className="mt-4 justified">{description}</p>
         </div>
       </div>
     </div>

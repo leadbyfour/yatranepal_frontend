@@ -1,6 +1,6 @@
 import Banner from '../images/banner.png'
 import Ticks from '../components/Icons/tick'
-import Machine from '../images/machine.png'
+import Bike from '../images/bike.png'
 import Garage from '../images/garage.png'
 import Battery from 'components/Icons/battery'
 import Mechanic from 'components/Icons/mechanic'
@@ -9,6 +9,7 @@ import Infobox from 'components/InfoBox'
 import ChainBreak from 'components/Icons/chainBreak'
 import Line from '../images/line.png'
 import '../styles/home.css'
+import { Link } from 'react-router-dom'
 
 const Whyusdata = [
   {
@@ -66,25 +67,25 @@ const QualifiedSection = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <img src={Machine} className="img-fluid" alt="banner2" />
+            <img src={Bike} className="img-fluid" alt="banner2" />
           </div>
           <div className="col-lg-6">
             <div className="mt-5">
               <h2>We are qualified & of experience in this field</h2>
               <ul>
-                <li className="mt-5">
+                <li className="mt-5 d-flex">
                   <Ticks />
-                  <span className="ms-3">
+                  <p className="ms-3">
                     Servicing and maintenance of multi brand two wheers.
-                  </span>
+                  </p>
                 </li>
-                <li className="mt-5">
+                <li className="mt-5 d-flex">
                   <Ticks />
-                  <span className="ms-3">
+                  <span className="ms-3 d-flex">
                     On road Breakdown Support or service.
                   </span>
                 </li>
-                <li className="mt-5">
+                <li className="mt-5 d-flex">
                   <Ticks />
                   <span className="ms-3">Spares warranty and many more.</span>
                 </li>
@@ -110,14 +111,15 @@ function Aboutyatra() {
               About
               <span className="yatraNepal"> Yatra Nepal</span>
             </h2>
-            <p className="mt-5">
+            <img src={Line} className="img-fluid" />
+            <p className="mt-5 justified">
               Yatra Nepal Service Centre is the multi-brand two-wheeler
               servicing center in Nepal. Yatra Nepal Service Center offers
               cutting-edge two-wheeler repair and maintenance services. Yatra
               Nepal Service Center is revolutionizing two-wheeler servicing with
               wide range of dependable services.
             </p>
-            <p>
+            <p className="justified">
               Yatra Nepal Service Center is started in 2022 and rapidly
               expanding around the country. Yatra Nepal Service Center
               specialize in “Service is our Strength.” which involves providing
@@ -126,15 +128,17 @@ function Aboutyatra() {
               people become financially self-sufficient while also improving the
               economy of the country.
             </p>
-            <div className="chain-break mt-5">
-              <ChainBreak />
-            </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 mt-small">
             <img src={Garage} className="img-fluid" alt="garage" />
             <div className="yatra-btn mt-3">
-              <p className="text-center explore">Explore Yatra</p>
+              <Link to="/about" className="text-center explore pointer">
+                Explore Yatra
+              </Link>
             </div>
+          </div>
+          <div className="chain-break mt-5 text-start">
+            <ChainBreak />
           </div>
         </div>
       </div>
