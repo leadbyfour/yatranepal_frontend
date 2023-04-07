@@ -53,7 +53,7 @@ const WhyUsSection = () => {
             />
           ))}
         </div>
-        <div className="text-center mt-5">
+        <div className="text-center chain-break-machine">
           <ChainBreak />
         </div>
       </div>
@@ -63,20 +63,21 @@ const WhyUsSection = () => {
 
 const QualifiedSection = () => {
   return (
-    <div className="banner-machine padtb">
+    <div className="banner-machine">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
             <img src={Bike} className="img-fluid" alt="banner2" />
           </div>
           <div className="col-lg-6">
-            <div className="mt-5">
+            <div className="">
               <h2>We are qualified & of experience in this field</h2>
               <ul>
                 <li className="mt-5 d-flex">
                   <Ticks />
-                  <p className="ms-3">
-                    Servicing and maintenance of multi brand two wheers.
+                  <p className="ms-3 mb-0">
+                    Servicing and maintenance of multi brand two <br></br>{' '}
+                    wheers.
                   </p>
                 </li>
                 <li className="mt-5 d-flex">
@@ -91,7 +92,7 @@ const QualifiedSection = () => {
                 </li>
               </ul>
             </div>
-            <div className="chain-break-machine">
+            <div className="chain-break-machine mt-5 pt-3">
               <ChainBreak />
             </div>
           </div>
@@ -105,21 +106,21 @@ function Aboutyatra() {
   return (
     <div className="banner-about">
       <div className="container">
-        <div className="row">
+        <div className="row div-row">
           <div className="col-lg-6">
             <h2 className="">
               About
-              <span className="yatraNepal"> Yatra Nepal</span>
+              <span className=""> Yatra Nepal</span>
             </h2>
             <img src={Line} className="img-fluid" />
-            <p className="mt-5 justified">
+            <p className="mt-5">
               Yatra Nepal Service Centre is the multi-brand two-wheeler
               servicing center in Nepal. Yatra Nepal Service Center offers
               cutting-edge two-wheeler repair and maintenance services. Yatra
               Nepal Service Center is revolutionizing two-wheeler servicing with
               wide range of dependable services.
             </p>
-            <p className="justified">
+            <p className="">
               Yatra Nepal Service Center is started in 2022 and rapidly
               expanding around the country. Yatra Nepal Service Center
               specialize in “Service is our Strength.” which involves providing
@@ -129,7 +130,7 @@ function Aboutyatra() {
               economy of the country.
             </p>
           </div>
-          <div className="col-lg-6 mt-small">
+          <div className="col-lg-6 mt-5 ">
             <img src={Garage} className="img-fluid" alt="garage" />
             <div className="yatra-btn mt-3">
               <Link to="/about" className="text-center explore pointer">

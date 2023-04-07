@@ -33,9 +33,9 @@ const footerdata = [
   {
     id: 2,
     title: 'Quick Links',
-    link1: <Link to="/contact#faq">FAQ</Link>,
-    link2: <Link to="/service">Services</Link>,
-    link3: <Link to="/contact#precise">Precise location</Link>,
+    link1: <Link to="/contact?scrollTo=faq">FAQ</Link>,
+    link2: <Link to="/service?scrollTo=service">Services</Link>,
+    link3: <Link to="/contact?scrollTo=location">Precise location</Link>,
   },
   {
     id: 3,
