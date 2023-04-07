@@ -1,6 +1,6 @@
 import Missionbox from 'components/Missionbox'
 import Teambox from 'components/Teambox'
-import about from 'images/about.png'
+import AboutPageImage from 'images/about.png'
 import { useEffect } from 'react'
 import '../styles/about.css'
 import MissionPhoto from '../images/mission.png'
@@ -62,10 +62,16 @@ const Teamdata = [
   },
 ]
 const About = () => {
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+    })
+  }, [])
+
   return (
     <>
       <div className="banner-1">
-        <img src={about} className="img-fluid" alt="about image" />
+        <img src={AboutPageImage} className="img-fluid" alt="about image" />
       </div>
 
       <div className="about-yatra">
@@ -113,7 +119,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="banner-team mt-5 padtb">
+      <div className="banner-team mt-5 padtb" id="info">
         <div className="container">
           <h2 className="text-center meet-team my-5">Meet The Team</h2>
           <div className="row mt-3">
