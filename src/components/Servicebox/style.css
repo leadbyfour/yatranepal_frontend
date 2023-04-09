@@ -1,30 +1,34 @@
 .order-1 {
-	order: 2;
-	text-align: end;
+  order: 2;
+  text-align: end;
 }
 
-.order-2{
-	order: 1;
-	/* text-align: end; */
+.order-2 {
+  order: 1;
 }
+
+.service-desc {
+  margin-top: 128px;
+}
+
 .service-description p {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 155%;
-	letter-spacing: 0.05em;
-	color: #FFFFFF;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 155%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
-@media screen and (max-width:992px) {
-	
-	.image-order{
-		order: 2 !important;
-		margin-top: 35px;
-		text-align: center;
+@media screen and (max-width: 992px) {
+  .image-order {
+    order: 2 !important;
+    margin-top: 35px;
+    text-align: center;
+  }
 
-	}
-	.p-order{
-		order: 1 !important ;
-	}
+  .p-order {
+    order: 1 !important ;
+  }
 }
