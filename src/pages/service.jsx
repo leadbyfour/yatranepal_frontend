@@ -73,7 +73,7 @@ const serviceData = [
     image: MinorMajorRepairPhoto,
     orintation: 'imageFirst',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      'The services we supply are Yatra Nepal Service Center’s most solid base. And we ensure that your travel is comfortable and trouble-free with our maintenance services. For whatever type of two-wheeler that comes in for service, we use 100% authentic spare parts at our work station. The spare parts we use to repair your two-wheelers are designed to last, so you won’t have to spend a lot of money on maintenance difficulties that come up again and again.',
   },
   {
     id: 3,
@@ -148,7 +148,7 @@ const Service = () => {
       </div>
       <div className="banner-provide">
         <div className="container">
-          <h1 className="my-5">What We Provide?</h1>
+          <h1>What We Provide?</h1>
           <div className="row gy-5">
             {provideData.map((provideusdata) => (
               <Providebox
@@ -169,7 +169,7 @@ const Service = () => {
                 image={serviceItem.image}
                 description={serviceItem.description}
                 descriptiontwo={serviceItem.descriptiontwo}
-                orintation={serviceItem.orintation}
+                orientation={serviceItem.orientation}
               />
             ))}
           </div>
