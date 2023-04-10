@@ -20,7 +20,7 @@
 }
 
 .nav-link {
-  font-family: 'Orbitron';
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -45,7 +45,7 @@
   letter-spacing: 0.05em;
   color: #ffffff;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .phn-no {
     display: none;
   }

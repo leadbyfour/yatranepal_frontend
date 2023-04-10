@@ -43,7 +43,7 @@ const footerdata = [
     image: <Call />,
     image1: <Email />,
     image2: <Location />,
-    link1: '9851160294,01-49174458',
+    link1: '9851160294,9849167028,9749835510',
     link2: 'yatranepal777@gmail.com',
     link3: 'Bansbari, Kathmandu',
     isSocialLink: false,
