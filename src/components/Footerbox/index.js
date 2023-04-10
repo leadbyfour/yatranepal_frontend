@@ -53,7 +53,7 @@ const Footerbox = ({
           ) : (
             <div className="img-link ms-3">{image2}</div>
           )}
-          <div className="ms-3">{link3}</div>
+          <div className="ms-3 pointer">{link3}</div>
         </div>
       </div>
     </div>

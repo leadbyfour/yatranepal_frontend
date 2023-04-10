@@ -90,7 +90,14 @@ const Contact = () => {
                     <Location />
                     <span className="ms-3">Location</span>
                   </h5>
-                  <p className="address">Bansbari,Kathmandu</p>
+                  <p className="address">
+                    <a
+                      href="https://maps.google.com/maps?q=Yatra+Nepal+Service+Center+Pvt+Ltd"
+                      target="_blank"
+                    >
+                      Bansbari,Kathmandu
+                    </a>
+                  </p>
                 </div>
               </div>
               <div className="col-lg-6 touch col-12 mt-sm">

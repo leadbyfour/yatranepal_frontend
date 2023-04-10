@@ -45,7 +45,14 @@ const footerdata = [
     image2: <Location />,
     link1: '9851160294,01-49174458',
     link2: 'yatranepal777@gmail.com',
-    link3: 'Bansbari, Kathmandu',
+    link3: (
+      <a
+        href="https://maps.google.com/maps?q=Yatra+Nepal+Service+Center+Pvt+Ltd"
+        target="_blank"
+      >
+        Bansbari, Kathmandu
+      </a>
+    ),
     isSocialLink: false,
     mailTo: mailToFunction,
   },
