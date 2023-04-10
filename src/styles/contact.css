@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.phone-numbers{
-  word-wrap:break-word;
+.phone-numbers {
+  word-wrap: break-word;
 }
 .contact-us-section {
   margin-top: 110px;
@@ -91,13 +91,13 @@ input[type=number]::-webkit-inner-spin-button {
 input {
   width: 223px;
   height: 62px;
-  font-family: 'Orbitron';
+  font-family: Helvetica;
   font-style: normal;
   font-weight: 500;
   font-size: 18px !important;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .form-bg {
@@ -120,13 +120,13 @@ input {
 }
 
 ::placeholder {
-  font-family: 'Orbitron';
+  font-family: Helvetica;
   font-style: normal;
   font-weight: 500;
   font-size: 18px !important;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 
 .send-btn {
