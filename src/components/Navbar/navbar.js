@@ -30,12 +30,13 @@ function Navbar() {
             <NavLink className="navbar-brand" to="/">
               <img src={Logo} alt="logo" />
             </NavLink>
-            <div className="phn-no ms-2 text-white">
+
+            <div className="phn-no ms-2 text-white d-flex align-items-center">
               <Call />
 
-              <span className="ms-2 nav-details">977-985106598</span>
+              <span className="ms-2 nav-details">+977 985-1160294</span>
             </div>
-            <div className="email ms-2 text-white align-items-center">
+            <div className="email ms-2 text-white d-flex align-items-center mb-1">
               <Email />
               <span
                 onClick={() =>
@@ -63,7 +64,7 @@ function Navbar() {
               id="navbarSupportedContent"
               ref={navbarRef}
             >
-              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
                 <li className="nav-item">
                   <NavLink
                     className="nav-link text-white me-2 home"
