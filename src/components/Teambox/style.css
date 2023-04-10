@@ -4,7 +4,7 @@
 }
 
 .teambox-text p {
-<<<<<<< HEAD
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -15,6 +15,7 @@
 }
 
 .teambox-text h3 {
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -24,41 +25,12 @@
 }
 
 .teambox-text h4 {
+  font-family: 'Helvetica';
   font-weight: 700;
   font-size: 18px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
   color: #ffffff;
-=======
-	font-family: 'Helvetica';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 115.5%;
-	text-align: center;
-	letter-spacing: 0.05em;
-	color: #FFFFFF;
-}
-
-.teambox-text h3 {
-	font-family: 'Helvetica';
-	font-style: normal;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 115.5%;
-	letter-spacing: 0.05em;
-	color: #FFFFFF;
-}
-
-.teambox-text h4 {
-	font-family: 'Helvetica';
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 115.5%;
-	letter-spacing: 0.05em;
-	color: #FFFFFF;
-
->>>>>>> 2eda39b (change on it according to figma)
 }
 
 .social-links a {
