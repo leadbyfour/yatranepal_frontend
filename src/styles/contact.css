@@ -192,6 +192,9 @@ button {
   margin-top: 43px;
 }
 
+.pointer{
+  cursor: pointer;
+}
 .faq {
   font-weight: 700;
   font-size: 128px;
