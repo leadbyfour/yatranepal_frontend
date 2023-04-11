@@ -23,6 +23,7 @@ const Footerbox = ({
         className={classNames('footer-text', {
           'display-flex': display === 'inline',
           'align-items-baseline': displaytwo === 'baseline',
+          'ms-3': isSocialLink,
         })}
       >
         <div className="d-flex align-items-center link">
