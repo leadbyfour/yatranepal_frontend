@@ -85,7 +85,14 @@ const Contact = () => {
                     <Email />
                     <span className="ms-3">E-Mail</span>
                   </h5>
-                  <p>yatranepal777@gmail.com</p>
+                  <p
+                    className="pointer"
+                    onClick={() =>
+                      (window.location = 'mailto:yatranepal777@gmail.com')
+                    }
+                  >
+                    yatranepal777@gmail.com
+                  </p>
                   <h5 className="mt-5 red contact-info">
                     <Location />
                     <span className="ms-3">Location</span>
