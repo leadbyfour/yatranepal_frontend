@@ -63,7 +63,7 @@ const Contact = () => {
     }
   }, [location])
   return (
-    <>
+    <div className="contact-us-page">
       <div className="contact-us-section">
         <div className="container">
           <h2 className="red contact-us mb-5">Contact Us</h2>
@@ -72,7 +72,6 @@ const Contact = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6 contact-data col-12">
-                {/* <div className="text-white contact-banner"> */}
                 <div className="text-white">
                   <h5 className="red contact-info">
                     <Call />
@@ -205,7 +204,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row small-wd">
         <div className="mt-chain chain-sm col-lg-6">
           <ChainBreak />
         </div>
@@ -241,7 +240,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
