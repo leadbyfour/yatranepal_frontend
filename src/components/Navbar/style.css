@@ -48,9 +48,9 @@
 }
 @media screen and (max-width: 1200px) {
   .phn-no {
-    display: none;
+    display: none !important;
   }
   .email {
-    display: none;
+    display: none !important;
   }
 }

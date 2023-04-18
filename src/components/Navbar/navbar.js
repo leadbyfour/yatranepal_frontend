@@ -30,7 +30,6 @@ function Navbar() {
             <NavLink className="navbar-brand" to="/">
               <img src={Logo} alt="logo" />
             </NavLink>
-
             <div className="phn-no ms-2 text-white d-flex align-items-center">
               <Call />
 
@@ -64,7 +63,7 @@ function Navbar() {
               id="navbarSupportedContent"
               ref={navbarRef}
             >
-              <ul className="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
+              <ul className="navbar-nav ms-auto mb-1 d-flex">
                 <li className="nav-item">
                   <NavLink
                     className="nav-link text-white me-2 home"
