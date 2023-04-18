@@ -35,7 +35,7 @@ const Teamdata = [
     title: 'Mahesh Gyawali',
     post: 'Chairman',
     description:
-      'It is a long established fact that a reader will be distracted by the readable .',
+      'We understand the importance of keeping your motorcycle in top condition, and we are committed to delivering the best possible service experience to you',
     bg: 'red',
     linkfb: 'https://www.facebook.com/mahesh.gyawali.98',
     linkin: 'https://www.instagram.com/mohesxettrii/',
@@ -46,7 +46,7 @@ const Teamdata = [
     title: 'Ajay Singh',
     post: 'Vice-Chairman',
     description:
-      'It is a long established fact that a reader will be distracted. And for whaterver reason. It Is.',
+      'Whether you need routine maintenance or more extensive repairs, you can count on us to provide reliable, efficient, and affordable solutions.',
     bg: 'grey',
     linkfb: 'https://www.facebook.com/ajay.singhthakuri.54',
   },
@@ -55,7 +55,8 @@ const Teamdata = [
     image: HariPhoto,
     title: 'Hari Kumar Thakuri',
     post: 'Managing Director',
-    description: 'It is a long established fact that a reader will be. It Is.',
+    description:
+      'Our team of skilled technicians is dedicated to providing the highest level of service and expertise, ensuring your motorcycle runs smoothly and safely on the road.',
     bg: 'red',
     linkfb: 'https://www.facebook.com/kumar.shah.777',
     linkin: 'https://www.instagram.com/kumarsinghthakuri/',
@@ -79,7 +80,7 @@ const About = () => {
           <div className="row">
             <div className="col-lg-12">
               <h1 className="mb-4">About Yatra Nepal</h1>
-              <p className="text-white justified">
+              <p className="text-white justified about-text">
                 Yatra Nepal Service Centre is the multi-brand two-wheeler
                 servicing center in Nepal. Yatra Nepal Service Center offers
                 cutting-edge two-wheeler repair and maintenance services. Yatra
@@ -92,7 +93,7 @@ const About = () => {
                 and savings. Yatra Nepal Service Center is a one-stop shop for
                 all things two-wheeled.
               </p>
-              <p className="text-white justified">
+              <p className="text-white justified about-text">
                 Yatra Nepal Service Center is started in 2022 and rapidly
                 expanding around the country. Yatra Nepal Service Center
                 specialize in “Service is our Strength.” which involves
