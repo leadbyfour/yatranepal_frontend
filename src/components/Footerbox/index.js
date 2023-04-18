@@ -23,6 +23,7 @@ const Footerbox = ({
         className={classNames('footer-text', {
           'display-flex': display === 'inline',
           'align-items-baseline': displaytwo === 'baseline',
+          'ms-3': isSocialLink,
         })}
       >
         <div className="d-flex align-items-center link">
@@ -31,7 +32,7 @@ const Footerbox = ({
           ) : (
             <div className="img-link ms-3">{image}</div>
           )}
-          <div className="ms-3">{link1}</div>
+          <div className="ms-3 link1">{link1}</div>
         </div>
         <div className="d-flex align-items-center link">
           {isSocialLink ? (

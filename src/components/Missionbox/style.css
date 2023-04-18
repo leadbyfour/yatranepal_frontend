@@ -17,6 +17,7 @@
 }
 
 .box-mission-text h3 {
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
@@ -26,6 +27,7 @@
 }
 
 .box-mission-text p {
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
