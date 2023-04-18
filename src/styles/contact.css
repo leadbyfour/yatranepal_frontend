@@ -5,7 +5,13 @@ input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.phone-numbers {
+
+.contact-us-page {
+  overflow: hidden;
+}
+
+.phone-numbers,
+.email-id {
   word-wrap: break-word;
 }
 .contact-us-section {
@@ -239,6 +245,7 @@ button {
 }
 
 /* ---Responsive----------- */
+
 @media screen and (max-width: 992px) {
   .mt-sm {
     margin-top: 40px;
@@ -246,6 +253,7 @@ button {
   .chain-sm {
     margin-top: 50px;
     padding-left: 20px;
+    padding-right: 0;
   }
   .banner-contact {
     margin-top: 50px !important;
@@ -263,5 +271,25 @@ button {
   }
   .faq {
     font-size: 80px;
+  }
+  .small-wd {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .banner-contact {
+    max-width: 96%;
+  }
+  .contact-data p {
+    margin-left: 5px;
+  }
+  .contact-data .address {
+    margin-left: 5px !important;
+  }
+  .banner-faq {
+    max-width: 96%;
+  }
+  .contact-banner {
+    max-width: 96%;
   }
 }
