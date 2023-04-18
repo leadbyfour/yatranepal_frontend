@@ -30,21 +30,23 @@ function Navbar() {
             <NavLink className="navbar-brand" to="/">
               <img src={Logo} alt="logo" />
             </NavLink>
-            <div className="phn-no ms-2 text-white d-flex align-items-center">
-              <Call />
+            <div className="d-flex align-items-center">
+              <div className="phn-no ms-2 text-white d-flex align-items-center">
+                <Call />
 
-              <span className="ms-2 nav-details">+977 985-1160294</span>
-            </div>
-            <div className="email ms-2 text-white d-flex align-items-center mb-1">
-              <Email />
-              <span
-                onClick={() =>
-                  (window.location = 'mailto:yatranepal777@gmail.com')
-                }
-                className="ms-2 nav-details pointer"
-              >
-                yatranepal777@gmail.com
-              </span>
+                <span className="ms-2 nav-details">+977 985-1160294</span>
+              </div>
+              <div className="email ms-2 text-white d-flex align-items-center mb-1">
+                <Email />
+                <span
+                  onClick={() =>
+                    (window.location = 'mailto:yatranepal777@gmail.com')
+                  }
+                  className="ms-2 nav-details pointer"
+                >
+                  yatranepal777@gmail.com
+                </span>
+              </div>
             </div>
 
             <button
@@ -63,7 +65,7 @@ function Navbar() {
               id="navbarSupportedContent"
               ref={navbarRef}
             >
-              <ul className="navbar-nav ms-auto mb-1 d-flex">
+              <ul className="navbar-nav ms-auto mb-1 d-flex align-items-center">
                 <li className="nav-item">
                   <NavLink
                     className="nav-link text-white me-2 home"
