@@ -50,15 +50,15 @@ const Contact = () => {
   const location = useLocation()
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
     const params = new URLSearchParams(location.search)
     const scrollTo = params.get('scrollTo')
     if (document.getElementById(scrollTo)) {
       const offsetsTop = document
         .getElementById(scrollTo)
         .getBoundingClientRect().top
-      const topPosition = Math.abs(document.body.getBoundingClientRect().top)
       window.scroll({
-        top: topPosition + offsetsTop,
+        top: offsetsTop,
       })
     }
   }, [location])
@@ -220,12 +220,12 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="text-center map-chain">
+        <div className="text-center map-chain" id="faq">
           <ChainBreak />
         </div>
       </div>
 
-      <div className="banner-faq" id="faq">
+      <div className="banner-faq">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center">
