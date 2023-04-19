@@ -4,7 +4,8 @@ import { useState } from 'react'
 import yatra from '../../images/yatra.png'
 import './style.css'
 
-const index = ({ status, closePopUp }) => {
+const index = ({ status, closePopUp, message }) => {
+  console.log(message)
   return (
     <>
       <div className="moodal p-3">
@@ -28,11 +29,7 @@ const index = ({ status, closePopUp }) => {
           <p className="thank">
             {status === 'success' ? ' Thank You.' : 'Sorry !'}
           </p>
-          <p className="mt-5 pop-msg text-center">
-            {status === 'success'
-              ? '  We received your message. Will get back to you soon.'
-              : 'Invalid phone number. Please enter valid phone number'}
-          </p>
+          <p className="mt-5 pop-msg text-center">{message}</p>
         </div>
       </div>
     </>

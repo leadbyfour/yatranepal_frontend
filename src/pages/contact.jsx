@@ -14,9 +14,9 @@ import { useLocation } from 'react-router-dom'
 
 const Contact = () => {
   const [number, setNumber] = useState('')
-  const [status, setStatus] = useState('')
   const [showError, setShowError] = useState(false)
   const [showSuccess, setShowSuccess] = useState(false)
+  const [message, setMessage] = useState('')
 
   function handleSubmit(event) {
     event.preventDefault()
@@ -25,6 +25,7 @@ const Contact = () => {
       /^(98[4-6]|97[45]|980|981|982|961|962|988|972|963)\d{7}$/
     const result = nepaliPhoneNumberRegex.test(number)
     if (!result) {
+      setMessage('Invalid phone number. Please enter valid phone number')
       setShowError(true)
       return
     }
@@ -38,14 +39,15 @@ const Contact = () => {
       if (xhr.readyState !== XMLHttpRequest.DONE) return
       if (xhr.status === 200) {
         form.reset()
-        setStatus('SUCCESS')
+        setMessage('We received your message. Will get back to you soon.')
+        setShowSuccess(true)
+        setNumber('')
       } else {
-        setStatus('ERROR')
+        setMessage('Unable to send message! Please check you connection.')
+        setShowError(true)
       }
     }
     xhr.send(data)
-    setNumber('')
-    setShowSuccess(true)
   }
   const location = useLocation()
 
@@ -186,12 +188,14 @@ const Contact = () => {
                           <PopUpMessage
                             status="success"
                             closePopUp={setShowSuccess}
+                            message={message}
                           />
                         )}
                         {showError && (
                           <PopUpMessage
                             status="error"
                             closePopUp={setShowError}
+                            message={message}
                           />
                         )}
                       </div>
