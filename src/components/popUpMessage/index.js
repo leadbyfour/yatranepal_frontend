@@ -5,7 +5,6 @@ import yatra from '../../images/yatra.png'
 import './style.css'
 
 const index = ({ status, closePopUp, message }) => {
-  console.log(message)
   return (
     <>
       <div className="moodal p-3">
