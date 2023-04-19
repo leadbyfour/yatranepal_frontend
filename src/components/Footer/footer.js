@@ -49,6 +49,7 @@ const footerdata = [
       <a
         href="https://maps.google.com/maps?q=Yatra+Nepal+Service+Center+Pvt+Ltd"
         target="_blank"
+        rel="noreferrer"
       >
         Bansbari, Kathmandu
       </a>
@@ -68,8 +69,9 @@ function Footer() {
             <div className="col-lg-3 d-flex align-items-center col-md-6">
               <img src={Logo} className="img-fluid footer-logo" alt="logo" />
             </div>
-            {footerdata.map((footeritem) => (
+            {footerdata.map((footeritem, index) => (
               <Footerbox
+                key={index}
                 title={footeritem.title}
                 link1={footeritem.link1}
                 link2={footeritem.link2}

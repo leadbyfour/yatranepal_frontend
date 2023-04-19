@@ -4,14 +4,15 @@ const Maps = () => {
   return (
     <>
       <iframe
+        title="Google Maps"
         width="100%"
         height="600"
         id="gmap_canvas"
         src="https://maps.google.com/maps?q=Yatra Nepal Service Center Pvt Ltd,kathmandu&t=&z=15&ie=UTF8&iwloc=&output=embed"
-        frameborder="0"
+        frameBorder="0"
         scrolling="no"
-        marginheight="0"
-        marginwidth="0"
+        marginHeight="0"
+        marginWidth="0"
       ></iframe>
     </>
   )

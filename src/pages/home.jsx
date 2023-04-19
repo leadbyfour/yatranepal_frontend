@@ -44,8 +44,9 @@ const WhyUsSection = () => {
       <div className="container">
         <h2 className="text-center">Why Us?</h2>
         <div className="row mt-5">
-          {Whyusdata.map((whyusItem) => (
+          {Whyusdata.map((whyusItem, index) => (
             <Infobox
+              key={index}
               title={whyusItem.title}
               description={whyusItem.description}
               image={whyusItem.image}
@@ -112,7 +113,7 @@ function Aboutyatra() {
               About
               <span className=""> Yatra Nepal</span>
             </h2>
-            <img src={Line} className="img-fluid" />
+            <img src={Line} className="img-fluid" alt="line" />
             <p className="mt-5">
               Yatra Nepal Service Centre is the multi-brand two-wheeler
               servicing center in Nepal. Yatra Nepal Service Center offers

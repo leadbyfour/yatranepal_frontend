@@ -72,7 +72,7 @@ const About = () => {
   return (
     <>
       <div className="banner-1">
-        <img src={AboutPageImage} className="img-fluid" alt="about image" />
+        <img src={AboutPageImage} className="img-fluid" alt="about" />
       </div>
 
       <div className="about-yatra">
@@ -109,8 +109,9 @@ const About = () => {
 
       <div className="container mission-box">
         <div className="row justify-content-between">
-          {Missiondata.map((missionItem) => (
+          {Missiondata.map((missionItem, index) => (
             <Missionbox
+              key={index}
               title={missionItem.title}
               description={missionItem.description}
               image={missionItem.image}
@@ -124,8 +125,9 @@ const About = () => {
         <div className="container">
           <h2 className="text-center meet-team my-5">Meet The Team</h2>
           <div className="row mt-3">
-            {Teamdata.map((whyusItem) => (
+            {Teamdata.map((whyusItem, index) => (
               <Teambox
+                key={index}
                 title={whyusItem.title}
                 description={whyusItem.description}
                 post={whyusItem.post}
