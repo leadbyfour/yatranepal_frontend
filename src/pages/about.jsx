@@ -109,9 +109,9 @@ const About = () => {
 
       <div className="container mission-box">
         <div className="row justify-content-between">
-          {Missiondata.map((missionItem, index) => (
+          {Missiondata.map((missionItem) => (
             <Missionbox
-              key={index}
+              key={missionItem.id}
               title={missionItem.title}
               description={missionItem.description}
               image={missionItem.image}
@@ -125,9 +125,9 @@ const About = () => {
         <div className="container">
           <h2 className="text-center meet-team my-5">Meet The Team</h2>
           <div className="row mt-3">
-            {Teamdata.map((whyusItem, index) => (
+            {Teamdata.map((whyusItem) => (
               <Teambox
-                key={index}
+                key={whyusItem.id}
                 title={whyusItem.title}
                 description={whyusItem.description}
                 post={whyusItem.post}

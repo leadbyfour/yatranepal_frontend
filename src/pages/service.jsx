@@ -150,9 +150,9 @@ const Service = () => {
         <div className="container">
           <h1>What We Provide?</h1>
           <div className="row gy-5">
-            {provideData.map((provideusdata, index) => (
+            {provideData.map((provideusdata) => (
               <Providebox
-                key={index}
+                key={provideusdata.id}
                 title={provideusdata.title}
                 color={provideusdata.bg}
               />
@@ -164,9 +164,9 @@ const Service = () => {
       <div className="banner-4 padtb">
         <div className="container">
           <div className="row">
-            {serviceData.map((serviceItem, index) => (
+            {serviceData.map((serviceItem) => (
               <Servicebox
-                key={index}
+                key={serviceItem.id}
                 title={serviceItem.title}
                 image={serviceItem.image}
                 description={serviceItem.description}

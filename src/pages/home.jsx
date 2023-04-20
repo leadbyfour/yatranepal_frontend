@@ -44,9 +44,9 @@ const WhyUsSection = () => {
       <div className="container">
         <h2 className="text-center">Why Us?</h2>
         <div className="row mt-5">
-          {Whyusdata.map((whyusItem, index) => (
+          {Whyusdata.map((whyusItem) => (
             <Infobox
-              key={index}
+              key={whyusItem.id}
               title={whyusItem.title}
               description={whyusItem.description}
               image={whyusItem.image}

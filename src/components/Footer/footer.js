@@ -69,9 +69,9 @@ function Footer() {
             <div className="col-lg-3 d-flex align-items-center col-md-6">
               <img src={Logo} className="img-fluid footer-logo" alt="logo" />
             </div>
-            {footerdata.map((footeritem, index) => (
+            {footerdata.map((footeritem) => (
               <Footerbox
-                key={index}
+                key={footeritem.id}
                 title={footeritem.title}
                 link1={footeritem.link1}
                 link2={footeritem.link2}
