@@ -49,6 +49,7 @@ const footerdata = [
       <a
         href="https://maps.google.com/maps?q=Yatra+Nepal+Service+Center+Pvt+Ltd"
         target="_blank"
+        rel="noreferrer"
       >
         Bansbari, Kathmandu
       </a>
@@ -70,6 +71,7 @@ function Footer() {
             </div>
             {footerdata.map((footeritem) => (
               <Footerbox
+                key={footeritem.id}
                 title={footeritem.title}
                 link1={footeritem.link1}
                 link2={footeritem.link2}

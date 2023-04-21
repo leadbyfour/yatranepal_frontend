@@ -1,4 +1,3 @@
-import Line from 'components/Icons/line'
 import Providebox from 'components/Providebox'
 import Servicebox from 'components/Servicebox'
 import { useEffect } from 'react'
@@ -141,6 +140,7 @@ const Service = () => {
       })
     }
   }, [location])
+
   return (
     <>
       <div className="banner-service">
@@ -152,6 +152,7 @@ const Service = () => {
           <div className="row gy-5">
             {provideData.map((provideusdata) => (
               <Providebox
+                key={provideusdata.id}
                 title={provideusdata.title}
                 color={provideusdata.bg}
               />
@@ -165,6 +166,7 @@ const Service = () => {
           <div className="row">
             {serviceData.map((serviceItem) => (
               <Servicebox
+                key={serviceItem.id}
                 title={serviceItem.title}
                 image={serviceItem.image}
                 description={serviceItem.description}

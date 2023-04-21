@@ -11,7 +11,7 @@ const Missionbox = ({ title, description, image, color }) => {
         })}
       >
         <div className="box-mission-img text-center">
-          <img src={image} className="img-fluid" />
+          <img src={image} className="img-fluid" alt="mission" />
         </div>
         <div className="box-mission-text p-5">
           <h3 className="text-center mt-4">{title}</h3>

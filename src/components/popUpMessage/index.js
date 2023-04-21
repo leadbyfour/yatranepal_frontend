@@ -1,6 +1,5 @@
 import Circletick from 'components/Icons/circletick'
 import Minus from 'components/Icons/minus'
-import { useState } from 'react'
 import yatra from '../../images/yatra.png'
 import './style.css'
 
@@ -11,7 +10,7 @@ const index = ({ status, closePopUp }) => {
         <div className="popup-inner">
           <div className="row">
             <div className="col-4">
-              <img src={yatra} className="img-fluid" />
+              <img src={yatra} className="img-fluid" alt="yatra" />
             </div>
             <div className="col-4 text-center">
               {status === 'success' && <Circletick />}

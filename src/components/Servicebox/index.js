@@ -24,7 +24,7 @@ const Servicebox = ({
               )}
             >
               <div className="service-image">
-                <img src={image} className="img-fluid mb-5" />
+                <img src={image} className="img-fluid mb-5" alt="services" />
                 <Line />
               </div>
             </div>

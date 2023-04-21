@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import qnmark from '../images/qnmark.png'
-import plus from '../images/plus.png'
 import Maps from 'components/maps'
 import ChainBreak from 'components/Icons/chainBreak'
 import '../styles/contact.css'
@@ -100,6 +99,7 @@ const Contact = () => {
                     <a
                       href="https://maps.google.com/maps?q=Yatra+Nepal+Service+Center+Pvt+Ltd"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       Bansbari,Kathmandu
                     </a>
@@ -228,7 +228,7 @@ const Contact = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 text-center">
-              <img src={qnmark} className="img-fluid" />
+              <img src={qnmark} className="img-fluid" alt="qnmark" />
               <h1 className="faq">FAQ</h1>
               <h4 className="text-white mt-3 frequently">
                 Frequently Asked Questions
