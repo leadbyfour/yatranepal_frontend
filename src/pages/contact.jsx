@@ -11,6 +11,7 @@ import Email from 'components/Icons/email'
 import Location from 'components/Icons/location'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import axios from 'axios'
 
 const Contact = () => {
   const [number, setNumber] = useState('')
@@ -18,7 +19,7 @@ const Contact = () => {
   const [showSuccess, setShowSuccess] = useState(false)
   const [message, setMessage] = useState('')
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault()
 
     const nepaliPhoneNumberRegex =
@@ -32,22 +33,23 @@ const Contact = () => {
 
     const form = event.target
     const data = new FormData(form)
-    const xhr = new XMLHttpRequest()
-    xhr.open(form.method, form.action)
-    xhr.setRequestHeader('Accept', 'application/json')
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return
-      if (xhr.status === 200) {
-        form.reset()
-        setMessage('We received your message. Will get back to you soon.')
-        setShowSuccess(true)
-        setNumber('')
-      } else {
-        setMessage('Unable to send message! Please check you connection.')
-        setShowError(true)
-      }
+    try {
+      await axios({
+        method: form.method,
+        url: form.action,
+        data: data,
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      form.reset()
+      setMessage('We received your message. Will get back to you soon.')
+      setShowSuccess(true)
+      setNumber('')
+    } catch (error) {
+      setMessage('Unable to send message! Please check your connection.')
+      setShowError(true)
     }
-    xhr.send(data)
   }
   const location = useLocation()
 
