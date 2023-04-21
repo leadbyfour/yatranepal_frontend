@@ -8,7 +8,7 @@ import Location from '../Icons/location'
 import Call from '../Icons/call'
 import Email from '../Icons/email'
 import Footerbox from 'components/Footerbox'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 const mailToFunction = () => {
   window.location = 'mailto:yatranepal777@gmail.com'
@@ -21,17 +21,21 @@ const footerdata = [
     image: <Facebook />,
     image1: <Instagram />,
     image2: <Twitter />,
-    socialLinks: ['https://www.facebook.com/profile.php?id=100086152637787', 'https://www.instagram.com', 'https://www.twitter.com'],
+    socialLinks: [
+      'https://www.facebook.com/profile.php?id=100086152637787',
+      'https://www.instagram.com',
+      'https://www.twitter.com',
+    ],
     isSocialLink: true,
     flex: 'inline',
-    align:'baseline'
+    align: 'baseline',
   },
   {
     id: 2,
     title: 'Quick Links',
-    link1: <Link to='/contact#faq'>FAQ</Link>,
-    link2: <Link to='/service'>Services</Link>,
-    link3: <Link to='/contact#precise'>Precise location</Link>,
+    link1: <Link to="/contact?scrollTo=faq">FAQ</Link>,
+    link2: <Link to="/service?scrollTo=service">Services</Link>,
+    link3: <Link to="/contact?scrollTo=location">Precise location</Link>,
   },
   {
     id: 3,
@@ -39,9 +43,16 @@ const footerdata = [
     image: <Call />,
     image1: <Email />,
     image2: <Location />,
-    link1: '9851160294,01-49174458',
-    link2: 'yatranepal777@ gmail.com',
-    link3: 'Bansbari, Kathmandu',
+    link1: '9851160294,9849167028,9749835510',
+    link2: 'yatranepal777@gmail.com',
+    link3: (
+      <a
+        href="https://maps.google.com/maps?q=Yatra+Nepal+Service+Center+Pvt+Ltd"
+        target="_blank"
+      >
+        Bansbari, Kathmandu
+      </a>
+    ),
     isSocialLink: false,
     mailTo: mailToFunction,
   },
@@ -54,7 +65,7 @@ function Footer() {
         <div className="footer-line"></div>
         <div className="container mt-5">
           <div className="row justify-content-center">
-            <div className="col-lg-3 d-flex align-items-center">
+            <div className="col-lg-3 d-flex align-items-center col-md-6">
               <img src={Logo} className="img-fluid footer-logo" alt="logo" />
             </div>
             {footerdata.map((footeritem) => (
@@ -71,7 +82,6 @@ function Footer() {
                 socialLinks={footeritem.socialLinks}
                 display={footeritem.flex}
                 displaytwo={footeritem.align}
-
               />
             ))}
           </div>

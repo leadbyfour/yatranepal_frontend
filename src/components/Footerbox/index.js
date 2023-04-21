@@ -22,7 +22,8 @@ const Footerbox = ({
       <div
         className={classNames('footer-text', {
           'display-flex': display === 'inline',
-          'align-items-baseline':displaytwo==='baseline'
+          'align-items-baseline': displaytwo === 'baseline',
+          'ms-3': isSocialLink,
         })}
       >
         <div className="d-flex align-items-center link">
@@ -31,30 +32,32 @@ const Footerbox = ({
           ) : (
             <div className="img-link ms-3">{image}</div>
           )}
-          <div className="ms-3">{link1}</div>
+          <div className="ms-3 link1">{link1}</div>
         </div>
         <div className="d-flex align-items-center link">
-          {isSocialLink?(
-                 <a href={socialLinks[1]} className='ms-3'>{image1}</a>
-
-          ):(
+          {isSocialLink ? (
+            <a href={socialLinks[1]} className="ms-3">
+              {image1}
+            </a>
+          ) : (
             <div className="img-link ms-3">{image1}</div>
-
           )}
-          <div className="ms-3 pointer" onClick={mailTo ? mailTo : null}>
+          <div className="ms-3 pointer link2" onClick={mailTo ? mailTo : null}>
             {link2}
           </div>
         </div>
         <div className="d-flex align-items-center link">
-          {isSocialLink?(
-               <a href={socialLinks[2]} className="ms-3">{image2}</a>
-          ):(
+          {isSocialLink ? (
+            <a href={socialLinks[2]} className="ms-3">
+              {image2}
+            </a>
+          ) : (
             <div className="img-link ms-3">{image2}</div>
           )}
-          <div className="ms-3">{link3}</div>
-        </div>
+          <div className="ms-3 pointer">{link3}</div>
         </div>
       </div>
+    </div>
   )
 }
 export default Footerbox

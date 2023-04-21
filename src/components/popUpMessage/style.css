@@ -1,0 +1,57 @@
+.moodal {
+    max-width: 674px;
+    background-color: hsl(0, 0%, 15%);
+    /* height: 208px; */
+    z-index: 9999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+}
+
+.popup-inner {
+    animation: popup 0.5s forwards;
+  }
+
+  @keyframes popup {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+.button-minus-div{
+    text-align: right;
+}
+.button-minus{
+    background-color: hsl(0, 0%, 15%);
+}
+.moodal .thank {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 115.5%;
+    letter-spacing: 0.05em;
+    color: #ED1E24 !important;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.moodal .pop-msg {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 115.5%;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+@media only screen and (max-width: 1020px) {
+.heading-div{
+    display: flex;
+    justify-content: space-between;
+}
+}

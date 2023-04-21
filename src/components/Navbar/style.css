@@ -1,52 +1,56 @@
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: #ED1E24 !important;
+  color: #ed1e24 !important;
 }
 .navbar-toggler:focus {
-    color: transparent;
-  }
+  color: transparent;
+}
 
 .active {
-    color: #ED1E24;
+  color: #ed1e24;
 }
 
 .nav-details {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 115.5%;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
 .nav-link {
-    font-family: 'Orbitron';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 115.5%;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
-.email{
-    display: flex;
+.email {
+  display: flex;
 }
 
-.home {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 115.5%;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
-
-}
-@media screen and (max-width:992px) {
-    .phn-no{
-    display: none;
-
-    }
-    .email{
+/* @media (max-width:992px){
+    .navbar-collapse{
         display: none;
     }
+} */
+.home {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 115.5%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+@media screen and (max-width: 1200px) {
+  .phn-no {
+    display: none !important;
+  }
+  .email {
+    display: none !important;
+  }
 }

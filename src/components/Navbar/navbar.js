@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import Routers from 'routers'
 import Logo from '../../images/logo.png'
@@ -6,6 +7,20 @@ import Email from '../Icons/email'
 import './style.css'
 
 function Navbar() {
+  const navbarRef = useRef(null)
+
+  useEffect(() => {
+    function handleNavItemClick() {
+      if (navbarRef.current.classList.contains('show')) {
+        navbarRef.current.classList.remove('show')
+      }
+    }
+
+    const navLinks = document.querySelectorAll('.nav-link')
+    navLinks.forEach((link) => {
+      link.addEventListener('click', handleNavItemClick)
+    })
+  }, [])
 
   return (
     <>
@@ -15,21 +30,23 @@ function Navbar() {
             <NavLink className="navbar-brand" to="/">
               <img src={Logo} alt="logo" />
             </NavLink>
-            <div className="phn-no ms-2 text-white">
-              <Call />
+            <div className="d-flex align-items-center">
+              <div className="phn-no ms-2 text-white d-flex align-items-center">
+                <Call />
 
-              <span className="ms-2 nav-details">977-985106598</span>
-            </div>
-            <div className="email ms-2 text-white align-items-center">
-              <Email />
-              <span
-                onClick={() =>
-                  (window.location = 'mailto:yatranepal777@gmail.com')
-                }
-                className="ms-2 nav-details pointer"
-              >
-                yatranepal777@gmail.com
-              </span>
+                <span className="ms-2 nav-details">+977 985-1160294</span>
+              </div>
+              <div className="email ms-2 text-white d-flex align-items-center mb-1">
+                <Email />
+                <span
+                  onClick={() =>
+                    (window.location = 'mailto:yatranepal777@gmail.com')
+                  }
+                  className="ms-2 nav-details pointer"
+                >
+                  yatranepal777@gmail.com
+                </span>
+              </div>
             </div>
 
             <button
@@ -46,8 +63,9 @@ function Navbar() {
             <div
               className="collapse navbar-collapse"
               id="navbarSupportedContent"
+              ref={navbarRef}
             >
-              <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav ms-auto mb-1 d-flex align-items-center">
                 <li className="nav-item">
                   <NavLink
                     className="nav-link text-white me-2 home"
@@ -100,11 +118,8 @@ function Navbar() {
       </div>
 
       <Routers />
-
-      
     </>
   )
 }
 
-export default Navbar;
-
+export default Navbar

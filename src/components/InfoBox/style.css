@@ -24,8 +24,8 @@
   font-size: 18px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
-  font-family: "Poppins";
+  color: #ffffff;
+  font-family: Helvetica;
 }
 
 .info-box-text h3 {
@@ -34,9 +34,8 @@
   font-size: 24px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
-  font-family: "Poppins";
-
+  color: #ffffff;
+  font-family: Helvetica;
 }
 
 .background-red {
@@ -45,4 +44,9 @@
 
 .background-grey {
   background-color: #191919;
+}
+@media screen and (max-width: 1200px) and (min-width: 990px) {
+  .banner-3 .box-info {
+    height: 320px;
+  }
 }

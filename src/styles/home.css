@@ -11,8 +11,14 @@
 }
 
 /* -------banner-2--------- */
+.banner-machine {
+  margin-top: 20px;
+}
 .banner-machine h2 {
-  font-weight: 800;
+  margin-top: 57px;
+  font-family: Helvetica;
+  margin-bottom: 0;
+  font-weight: 700;
   font-size: 38px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
@@ -20,7 +26,7 @@
 }
 
 .banner-machine ul li {
-  font-family: "Poppins";
+  font-family: Helvetica;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -30,27 +36,32 @@
 }
 
 .banner-machine ul {
-  margin-top: 50px;
+  margin-top: 58px;
+  padding-left: 0;
 }
 
-.chain-break-machine {
-  margin-top: 70px;
+.banner-machine .chain-break-machine {
+  margin-right: 72px;
 }
 
 /* -----banner-3--------- */
 .banner-3 h2 {
+  font-family: Helvetica;
   font-weight: 700;
   font-size: 38px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
   color: #ffffff;
-  margin-bottom: 69px;
+  margin-bottom: 100px;
+}
+.banner-3 .chain-break-machine {
+  margin-top: 130px;
 }
 
 /* ---banner-about--- */
 
 .banner-about {
-  margin-top: 120px;
+  margin-top: 144px;
 }
 
 .banner-about h2 {
@@ -59,7 +70,9 @@
   font-size: 38px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
+  margin-bottom: 0;
+  font-family: Helvetica;
 }
 
 .banner-about span {
@@ -67,13 +80,13 @@
 }
 
 .banner-about p {
-  font-family: 'outfit';
+  font-family: 'Helvetica';
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 147.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .yatra-btn {
@@ -82,28 +95,28 @@
 }
 
 .explore {
-  font-family: 'Orbitron';
+  font-family: Helvetica;
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
   text-decoration: none;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 295px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ED1E24;
+  background: #ed1e24;
   border-radius: 13px;
   color: #ffffff;
 }
-.explore:hover{
-  color: #FFFFFF;
+.explore:hover {
+  color: #ffffff;
 }
 
-.justified{
+.justified {
   text-align: justify;
 }
 
@@ -111,22 +124,60 @@
   width: 100px !important;
 } */
 
-.chain-break{
+.chain-break {
   width: 50%;
+  padding-left: 0;
+  margin-left: -15px;
 }
 /* ----------Responsive-------------- */
-@media screen and (max-width:992px) {
-  .box-info{
+@media screen and (max-width: 992px) {
+  .box-info {
     margin-top: 80px;
   }
-  .explore{
+  .explore {
     margin-top: 50px;
   }
-  .mt-small{
+  .mt-small {
     margin-top: 40px;
   }
-  .chain-break{
+  .chain-break {
     width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-right: 0;
+    padding-top: 50px;
   }
- 
+  .banner-machine .chain-break-machine {
+    width: 100%;
+    padding-top: 50px !important;
+  }
+  .banner-3 {
+    padding-top: 50px;
+  }
+  .banner-3 h2 {
+    margin-bottom: 0;
+  }
+  .banner-3 .chain-break-machine {
+    padding-top: 50px !important;
+    margin-top: 3rem;
+  }
+  .banner-about {
+    padding-top: 50px;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 990px) {
+  .div-row {
+    align-items: center;
+  }
+  .banner-3 {
+    margin-top: 144px !important;
+  }
+  .banner-machine .chain-break-machine {
+    margin-right: 0px;
+}
+.chain-break {
+  margin-left: 0;
+  padding-left: calc(var(--bs-gutter-x) * .5);
+}
 }

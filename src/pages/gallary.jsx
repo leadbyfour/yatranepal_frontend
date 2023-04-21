@@ -19,79 +19,95 @@ const Gallery = () => {
         <img src={gallery} className="img-fluid" alt="aboutimage" />
       </div>
       <div className="container">
-        <div className="grid-container mt-5">
-          <div className='row justify-content-between d-flex'>
-            <div className='col-lg-6 col-md-6'>
-            <div className="item text-center text-md-start text-lg-start">
-            <h1 className="photo-gallery text-white">
-              A Photo<br/> Gallery of <br />
-              <span className="red">Yatra Nepal</span>
-            </h1>
-            <p className="gallery-desc text-white">
-              Check out some gimps of our<br/> service at
-              <span className="red"> Yatra Nepal</span>.
-            </p>
-          </div>
+        <div className="grid-container">
+          <div className="row justify-content-between d-flex">
+            <div className="col-lg-6 col-md-6">
+              <div className="item text-center text-md-start text-lg-start">
+                <h1 className="photo-gallery text-white">
+                  <span className="red">Yatra's</span>
+                  <br /> Moments Of Glimpse
+                </h1>
+                <p className="gallery-desc text-white mt-4">
+                  Check out some gimps of our service at
+                  <span className="red">
+                    <br /> Yatra Nepal
+                  </span>
+                  .
+                </p>
+              </div>
             </div>
-            <div className='col-lg-3 col-md-3 align-self-end col-12'>
-            <div className="item-1 text-center mt-3">
-            <img src={photo1} className="img-fluid mb-3" alt="gallary-img" />
-          </div>
-            </div>
-          </div>
-
-          <div className='row d-flex justify-content-end'>
-          <div className='col-lg-3 align-self-end col-md-3 col-12'>
-            <div className="item-5 text-center">
-            <img src={photo5} className="img-fluid" alt="gallary-img" />
-          </div>
-            </div>
-            <div className='col-lg-3 col-md-3 col-12'>
-            <div className="item-4 text-center my-3 my-lg-0 my-md-0">
-            <img src={photo4} className="img-fluid" alt="gallary-img" />
-          </div>
-            </div>
-            <div className='col-lg-3 col-md-3 col-12'>
-            <div className="item-2 text-center">
-            <img src={photo2} className="img-fluid" alt="gallary-img" />
-            <img src={photo3} className="img-fluid mt-4" alt="gallary-img" />
-          </div>
-            </div>
-            
-          </div>
-          <div className='row d-flex justify-content-end'>
-          <div className='col-lg-3 align-self-end col-md-3 col-12'>
-            <div className="item-8 text-center mt-3">
-            <img src={photo8} className="img-fluid" alt="gallary-img" />
-          </div>
-            </div>
-            <div className='col-lg-3 col-md-3 col-12'>
-            <div className="item-7 text-center">
-            <img src={photo7} className="img-fluid mt-3" alt="gallary-img" />
-          </div>
-            </div>
-            <div className='col-lg-6 gy-3 col-md-6 col-12'>
-            <div className="item-6 text-center">
-            <img src={photo6} className="img-fluid" alt="gallary-img" />
-          </div>
-            </div>
-            
-          </div>
-          <div className='row d-flex justify-content-end'>
-            <div className='col-lg-6 col-md-6 col-12'>
-            <div className="item-10 text-center">
-            <img src={photo10} className="img-fluid mt-3" alt="gallary-img" />
-          </div>
-            </div>
-            <div className='col-lg-6 gy-3 col-md-6 col-12'>
-            <div className="item-9 text-center">
-            <img src={photo9} className="img-fluid" alt="gallary-img" />
-          </div>
-            </div>
-            </div>
+            <div className="col-lg-3 col-md-3 align-self-end col-12">
+              <div className="item-1 text-center mt-3">
+                <img
+                  src={photo1}
+                  className="img-fluid mb-3"
+                  alt="gallary-img"
+                />
+              </div>
             </div>
           </div>
 
+          <div className="row d-flex justify-content-end">
+            <div className="col-lg-3 align-self-end col-md-3 col-12">
+              <div className="item-5 text-center">
+                <img src={photo5} className="img-fluid" alt="gallary-img" />
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-3 col-12">
+              <div className="item-4 text-center my-3 my-lg-0 my-md-0">
+                <img src={photo4} className="img-fluid" alt="gallary-img" />
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-3 col-12">
+              <div className="item-2 text-center">
+                <img src={photo2} className="img-fluid" alt="gallary-img" />
+                <img
+                  src={photo3}
+                  className="img-fluid mt-4"
+                  alt="gallary-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="row d-flex justify-content-end">
+            <div className="col-lg-3 align-self-end col-md-3 col-12">
+              <div className="item-8 text-center mt-3">
+                <img src={photo8} className="img-fluid" alt="gallary-img" />
+              </div>
+            </div>
+            <div className="col-lg-3 col-md-3 col-12">
+              <div className="item-7 text-center">
+                <img
+                  src={photo7}
+                  className="img-fluid mt-3"
+                  alt="gallary-img"
+                />
+              </div>
+            </div>
+            <div className="col-lg-6 gy-3 col-md-6 col-12">
+              <div className="item-6 text-center">
+                <img src={photo6} className="img-fluid" alt="gallary-img" />
+              </div>
+            </div>
+          </div>
+          <div className="row d-flex justify-content-end">
+            <div className="col-lg-6 col-md-6 col-12">
+              <div className="item-10 text-center">
+                <img
+                  src={photo10}
+                  className="img-fluid mt-3"
+                  alt="gallary-img"
+                />
+              </div>
+            </div>
+            <div className="col-lg-6 gy-3 col-md-6 col-12">
+              <div className="item-9 text-center">
+                <img src={photo9} className="img-fluid" alt="gallary-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

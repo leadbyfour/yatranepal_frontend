@@ -1,28 +1,28 @@
 .banner-1 img {
   width: 100%;
 }
+.about-text {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
 
 .about-yatra {
   margin-top: 70px;
 }
 
 .about-yatra h1 {
+  font-family: 'Helvetica Rounded';
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #ED1E24;
-
-}
-
-.about-yatra p {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 160%;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ed1e24;
 }
 
 .mission-box {
@@ -35,23 +35,22 @@
   font-size: 38px;
   line-height: 115.5%;
   letter-spacing: 0.05em;
-  color: #ED1E24;
+  color: #ed1e24;
 }
 
 .box-team {
-  border-radius: 19px;
-  border: 1px solid #ED1E24;
+  border-radius: 42px;
+  border: 1px solid #ed1e24;
   height: 606px;
 }
 
-
 /* ---------responsive---- */
 
-@media screen and (max-width:992px){
-  .box-mission{
+@media screen and (max-width: 992px) {
+  .box-mission {
     margin-top: 80px;
   }
-  .box-team{
+  .box-team {
     margin-top: 50px;
   }
 }

@@ -1,18 +1,22 @@
-
+.grid-container {
+  margin-top: 142px;
+  margin-bottom: 142px;
+}
 .photo-gallery {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 72px;
-    color: #FFFFFF;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: #ffffff;
+  line-height: 55px;
+  line-height: 55px;
 }
 
 .gallery-desc {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #FFFFFF;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
 }
