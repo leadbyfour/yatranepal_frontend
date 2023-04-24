@@ -11,41 +11,53 @@ import Email from 'components/Icons/email'
 import Location from 'components/Icons/location'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import axios from 'axios'
 
 const Contact = () => {
   const [number, setNumber] = useState('')
-  const [status, setStatus] = useState('')
   const [showError, setShowError] = useState(false)
   const [showSuccess, setShowSuccess] = useState(false)
+  const [message, setMessage] = useState('')
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault()
 
     const nepaliPhoneNumberRegex =
       /^(98[4-6]|97[45]|980|981|982|961|962|988|972|963)\d{7}$/
     const result = nepaliPhoneNumberRegex.test(number)
     if (!result) {
+      setMessage('Invalid phone number. Please enter valid phone number')
+      setShowError(true)
+      return
+    }
+
+    if (!navigator.onLine) {
+      setMessage(
+        'You are currently offline. Please check your internet connection and try again.',
+      )
       setShowError(true)
       return
     }
 
     const form = event.target
     const data = new FormData(form)
-    const xhr = new XMLHttpRequest()
-    xhr.open(form.method, form.action)
-    xhr.setRequestHeader('Accept', 'application/json')
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return
-      if (xhr.status === 200) {
-        form.reset()
-        setStatus('SUCCESS')
-      } else {
-        setStatus('ERROR')
-      }
+    try {
+      await axios({
+        method: form.method,
+        url: form.action,
+        data: data,
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      form.reset()
+      setMessage('We received your message. Will get back to you soon.')
+      setShowSuccess(true)
+      setNumber('')
+    } catch (error) {
+      setMessage(error.message + '. Please Try Again.')
+      setShowError(true)
     }
-    xhr.send(data)
-    setNumber('')
-    setShowSuccess(true)
   }
   const location = useLocation()
 
@@ -186,12 +198,14 @@ const Contact = () => {
                           <PopUpMessage
                             status="success"
                             closePopUp={setShowSuccess}
+                            message={message}
                           />
                         )}
                         {showError && (
                           <PopUpMessage
                             status="error"
                             closePopUp={setShowError}
+                            message={message}
                           />
                         )}
                       </div>
