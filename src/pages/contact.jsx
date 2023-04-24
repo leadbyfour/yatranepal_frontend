@@ -31,6 +31,14 @@ const Contact = () => {
       return
     }
 
+    if (!navigator.onLine) {
+      setMessage(
+        'You are currently offline. Please check your internet connection and try again.',
+      )
+      setShowError(true)
+      return
+    }
+
     const form = event.target
     const data = new FormData(form)
     try {
@@ -47,7 +55,7 @@ const Contact = () => {
       setShowSuccess(true)
       setNumber('')
     } catch (error) {
-      setMessage('Unable to send message! Please check your connection.')
+      setMessage(error.message + '. Please Try Again.')
       setShowError(true)
     }
   }
